@@ -1,6 +1,6 @@
 import styles from './Cards.module.css'
 import Card from '../Card/Card'
-
+import fotoPrueba from '../../sprites/PeoplePhotos/fotoPrueba.jpeg'
 
 export default function Cards() {
     return (
@@ -8,7 +8,7 @@ export default function Cards() {
         <div className="container">
             <div className="row justify-content-center">
             <div className="col-md-4">
-                <Card description="prueba 1">Nombre 1</Card>
+                <Card description="prueba 1" photo={fotoPrueba}> Nombre 1</Card>
             </div>
             <div className="col-md-4">
                 <Card description="prueba 2">Nombre 2</Card>
@@ -20,5 +20,4 @@ export default function Cards() {
         </div>
         </>
     );
-  }
-  
+}
