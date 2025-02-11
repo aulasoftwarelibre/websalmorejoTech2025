@@ -1,0 +1,94 @@
+.fondo1 {
+  background: url('../../sprites/footer.svg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  height: 100%;
+  flex-shrink: 0;
+  padding-top: 15rem !important;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-top: -300px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Ensure the container takes the full viewport height */
+  padding: 20px; /* Add some padding */
+}
+
+.mainText {
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  margin-top: 50px !important;
+  font-size: clamp(2rem, 10vw, 5rem); /* Responsive font size */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+
+.iconBackground {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto; /* Ensure centering */
+  padding: 80px;
+}
+
+@media (max-width: 768px) {
+  .iconBackground {
+    width: 100%;
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .textIcons {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+.ticket {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Media query for phones */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .iconBackground {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .textIcons {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+}
