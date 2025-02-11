@@ -92,3 +92,23 @@
     font-size: 30px; /* Adjust font size for smaller screens */
   }
 }
+
+.textoCarrousel{
+  color: #FFF;
+  text-align: justify;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Oswald;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 2px;
+}
+
+.backgroundTextoCarrousel{
+border-radius: 40px;
+background: rgba(255, 255, 255, 0.10);
+max-width: 700px;
+backdrop-filter: blur(5px);
+}
