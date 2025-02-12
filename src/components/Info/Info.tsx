@@ -11,6 +11,7 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 import img0 from '../../sprites/pics/0-min.jpg';
 import img1 from '../../sprites/pics/1-min.jpg';
 import img2 from '../../sprites/pics/8-min.jpg';
+import Map from "../Map/Map";
 
 
 
@@ -90,6 +91,10 @@ export default function Info() {
           </Swiper>
         </div>
       </div>
+      <div className="row">
+      <Map />
     </div>
+    </div>
+    
   );
 }

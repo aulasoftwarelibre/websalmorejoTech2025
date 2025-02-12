@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <Info/>
-      <Map />
+      
     </div>
   )
 }
