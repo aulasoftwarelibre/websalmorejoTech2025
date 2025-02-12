@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -8,16 +7,12 @@ import styles from "./Info.module.css";
 import ticket from "../../sprites/featherIcons/ticket.svg";
 import mic from "../../sprites/featherIcons/mic.svg";
 import networking from "../../sprites/featherIcons/networking.svg";
-import ArtGallerySlider from "../Carousel/Carousel";
+import { Pagination, EffectCoverflow } from 'swiper/modules';
+import img0 from '../../sprites/pics/0-min.jpg';
+import img1 from '../../sprites/pics/1-min.jpg';
+import img2 from '../../sprites/pics/8-min.jpg';
 
-const images = [
-  "https://i.ibb.co/TxWhb9cS/12-min.jpg",
-  "https://i.ibb.co/kgs5BXcJ/0-min.jpg",
-  "https://i.ibb.co/bghL3HW8/8-min.jpg",
-  "https://i.ibb.co/XYZ123/sample1.jpg",
-  "https://i.ibb.co/XYZ456/sample2.jpg",
-  "https://i.ibb.co/XYZ789/sample3.jpg",
-];
+
 
 export default function Info() {
   return (
@@ -53,9 +48,9 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className="row container">
+      <div className="row container-fluid mt-4">
         <div className="col">
-          <div className={`${styles.backgroundTextoCarrousel} row mt-4`}>
+          <div className={`${styles.backgroundTextoCarrousel} row`}>
             <div className={`${styles.textoCarrousel}`}>
               <p>
                 Llega otro año el evento más cordobés y tech de la provincia, con grandes ponentes, networking y productos típicos de Córdoba. Coincide con Las Cruces de Mayo y es una gran oportunidad para visitar los Patios sin tanta afluencia. Gracias a patrocinadores y al Aula de Software Libre por hacerlo posible.
@@ -64,8 +59,33 @@ export default function Info() {
           </div>
         </div>
         <div className="col">
-          <ArtGallerySlider/>
-
+          <Swiper
+            modules={[Pagination, EffectCoverflow, Autoplay]}
+            pagination={{ clickable: true }}
+            effect="coverflow"
+            grabCursor={true}
+            centeredSlides={true}
+            spaceBetween={0}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            slidesPerView={3}
+            coverflowEffect={{
+              rotate: 30,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true
+            }}
+          >
+            <SwiperSlide>
+              <img className={`${styles.imageCarousel}`} src={img0} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className={`${styles.imageCarousel}`} src={img1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className={`${styles.imageCarousel}`} src={img2} />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>
