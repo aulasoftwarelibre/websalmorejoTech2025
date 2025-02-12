@@ -22,7 +22,6 @@
 
 .card:hover {
     transform: rotateY(-180deg); /* Gira la tarjeta 180 grados en el eje Y */
-    opacity: 0.5;
 }
 
 .front, .back {
@@ -43,20 +42,30 @@
 }
 
 .back {
-    background-size: cover;  /* Hace que la imagen cubra toda la parte trasera */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre botones */
+    opacity: 0;
+    transition: opacity 0.6s ease;
     border-radius: 50px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.6s ease; /* Transición suave */
     
 }
-.back img{
-/* Color plano para la parte posterior */
-    transform: rotateY(180deg); /* Inicia la parte posterior ya girada */
+
+
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
+
+.back a {
+    display: inline-block;
+    width: 50px; /* Ajusta el tamaño según tu diseño */
+    height: 50px;
+}
 
 .photoContainer {
     background-size: contain;
@@ -92,4 +101,14 @@
 
 .card:hover .back {
     opacity: 1; /* Aparece después de la animación */
+}
+
+
+.icon{
+    transform: rotateY(180deg);
+    height: 200% !important;
+    width: 200% !important;
+    opacity: 1 !important;
+    z-index: 10000;
+    
 }
