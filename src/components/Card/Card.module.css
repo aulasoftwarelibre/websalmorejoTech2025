@@ -5,7 +5,6 @@
     flex-shrink: 0;
     border-radius: 50px;
     border: 0px solid #7C0000;
-    background: #F88085;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2px);
     text-align: center;
@@ -14,12 +13,16 @@
     align-items: center; /* Centra horizontalmente */
     position: relative;
     transform-style: preserve-3d; /* Permite que los hijos se transformen en 3D */
-    transition: transform 0.6s ease; /* Transición suave para la rotación */
+    transition: transform 0.4s ease; /* Transición suave para la rotación */
+    background-size: cover;  /* Hace que la imagen cubra toda la parte trasera */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    backdrop-filter: blur(5px); /* Difumina el fondo detrás del elemento */
 }
 
-
 .card:hover {
-    transform: rotateY(180deg); /* Gira la tarjeta 180 grados en el eje Y */
+    transform: rotateY(-180deg); /* Gira la tarjeta 180 grados en el eje Y */
+    opacity: 0.5;
 }
 
 .front, .back {
@@ -40,9 +43,20 @@
 }
 
 .back {
-    background: #7C0000; /* Color plano para la parte posterior */
+    background-size: cover;  /* Hace que la imagen cubra toda la parte trasera */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    transform: rotateY(180deg);
+    border-radius: 50px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.6s ease; /* Transición suave */
+    
+}
+.back img{
+/* Color plano para la parte posterior */
     transform: rotateY(180deg); /* Inicia la parte posterior ya girada */
 }
+
 
 .photoContainer {
     background-size: contain;
@@ -74,4 +88,8 @@
     object-fit: cover;
     object-position: center;
     border-radius: 30px;
+}
+
+.card:hover .back {
+    opacity: 1; /* Aparece después de la animación */
 }
