@@ -190,7 +190,7 @@ export default function Header() {
           <p className={`${styles.logoContainer}`}>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
             <button className={`${styles.buttonInicio}`}>
-              Call4Papers
+              Entradas
             </button>
             </a>
           </p>
