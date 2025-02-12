@@ -4,32 +4,49 @@
   color: white;
   height: 100%;
   flex-shrink: 0;
-  padding-top: 15rem !important;
+  margin-top: clamp(
+    -35rem,
+    -80vh,
+    -80rem
+  ) !important; /* Increased margin using responsive units */
+  padding: 4rem 2rem !important;
+  width: calc(400vw + 500vh - 400vmin);
+  display: flex;
   max-width: 100%;
   overflow-x: hidden;
-  padding: 4rem 2rem;
-  margin-top: 0 !important;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrado horizontal */
-  justify-content: center; /* Centrado vertical */
-  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura del viewport */
+  justify-content: flex-start; /* Centrado vertical */
+  min-height: auto; /* Asegura que el contenedor ocupe toda la altura del viewport */
+  box-sizing: border-box;
+}
+
+.footerStr {
+  margin: auto;
 }
 
 .mainText {
   color: #fff;
   text-align: center;
   font-family: Oswald;
-  margin-top: 50px !important;
-  font-size: clamp(2rem, 10vw, 5rem); /* Tamaño de fuente responsivo */
+  margin-top: 60vh !important;
+  font-size: calc(3vw + 4vh - 3vmin);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+@media (max-width: 768px){
+  .mainText{
+    font-size:8vw;
+  }
+}
+
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1000px;
+  margin-top: 2rem !important;
   margin: 0 auto; /* Centra el contenedor */
   padding: 0 20px; /* Agrega padding para pantallas pequeñas */
 }
@@ -46,18 +63,35 @@
   backdrop-filter: blur(10px);
   width: 100%;
   max-width: 2000px;
-  margin: 0 auto; /* Asegura centrado */
-  padding: 80px;
+  margin: 2rem auto;
+  padding: 2rem !important; /* Reduced from 80px */
 }
 
 @media (max-width: 768px) {
   .iconBackground {
     width: 100%;
-    padding: 20px; /* Reduce padding para pantallas pequeñas */
+    padding: 1.5rem !important; /* Reduce padding para pantallas pequeñas */
+  }
+  
+  .footerStr {
+    margin-top: 10rem !important; 
   }
 
+
   .textIcons {
-    font-size: 30px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    font-size: 1.5rem !important;
+  }
+
+  .swiper-slide {
+    padding: 0 10px;
+  }
+
+  .fondo1 {
+    margin-top: 10rem; /* Larger fixed margin for mobile */
+    padding: 2rem 1rem !important;
+  }
+  .mainText {
+    margin-top: 20rem !important; /* Reduce excessive top spacing */
   }
 
   .container {
@@ -91,27 +125,31 @@
 
 /* Se aumenta el padding para que haya más espacio entre el texto y el borde */
 .textoCarrousel {
-  color: #FFF;
+  color: #fff;
   text-align: justify;
   font-family: Oswald;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
-  padding: 2rem;
+  padding: 1.5rem;
   line-height: 1.8; /* Aumenta el espacio entre líneas */
   max-width: 400px; /* Reduce el ancho para que el texto se corte antes */
   margin: auto;
 }
 
-
 .backgroundTextoCarrousel {
   border-radius: 40px;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   /* Se remueve height: 100% para que el fondo se adapte al contenido */
 }
 
 .imageCarousel {
-  max-width: 200%;
+  max-width: 200% !important;
+  width: 200%;
+  height: auto;
   border-radius: 20px;
   object-fit: cover;
   margin: auto;
@@ -124,8 +162,12 @@
     font-size: 1.2rem;
     text-align: left;
   }
-  
+
   .imageCarousel {
     height: 200px;
   }
+}
+
+.carouselPart {
+  margin-top: 8vh !important; /* Use viewport units for vertical spacing */
 }
