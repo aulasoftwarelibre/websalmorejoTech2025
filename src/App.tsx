@@ -8,6 +8,9 @@ import Map from './components/Map/Map'
 function App() {
   return (
     <div className="appContainer">
+      <Navbar />
+      <Header />
+      <Info/>
       <Map />
     </div>
   )
