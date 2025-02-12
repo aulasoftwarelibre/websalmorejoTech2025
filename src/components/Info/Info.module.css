@@ -7,13 +7,13 @@
   padding-top: 15rem !important;
   max-width: 100%;
   overflow-x: hidden;
-  margin-top: -300px !important;
+  padding: 4rem 2rem;
+  margin-top: 0 !important;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  min-height: 100vh; /* Ensure the container takes the full viewport height */
-  padding: 20px; /* Add some padding */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura del viewport */
 }
 
 .mainText {
@@ -21,7 +21,7 @@
   text-align: center;
   font-family: Oswald;
   margin-top: 50px !important;
-  font-size: clamp(2rem, 10vw, 5rem); /* Responsive font size */
+  font-size: clamp(2rem, 10vw, 5rem); /* Tamaño de fuente responsivo */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -30,16 +30,15 @@
 .container {
   width: 100%;
   max-width: 1500px;
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add padding for smaller screens */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 0 20px; /* Agrega padding para pantallas pequeñas */
 }
-
 
 .iconBackground {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
   text-align: center;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.15);
@@ -47,18 +46,18 @@
   backdrop-filter: blur(10px);
   width: 100%;
   max-width: 2000px;
-  margin: 0 auto; /* Ensure centering */
+  margin: 0 auto; /* Asegura centrado */
   padding: 80px;
 }
 
 @media (max-width: 768px) {
   .iconBackground {
     width: 100%;
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 20px; /* Reduce padding para pantallas pequeñas */
   }
 
   .textIcons {
-    font-size: 30px; /* Adjust font size for smaller screens */
+    font-size: 30px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
   }
 
   .container {
@@ -68,58 +67,65 @@
   }
 }
 
-
-
-
 .ticket {
   max-width: 100%;
   height: auto;
 }
 
-
-
-/* Media query for phones */
+/* Media query para teléfonos */
 @media (max-width: 768px) {
   .container {
-    padding: 0 10px; /* Reduce padding for smaller screens */
+    padding: 0 10px; /* Reduce padding para pantallas pequeñas */
   }
 
   .iconBackground {
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 20px; /* Reduce padding para pantallas pequeñas */
   }
 
   .textIcons {
-    font-size: 30px; /* Adjust font size for smaller screens */
+    font-size: 30px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
   }
 }
 
-.textoCarrousel{
+/* ESTILOS PARA EL TEXTCARROUSEL */
+
+/* Se aumenta el padding para que haya más espacio entre el texto y el borde */
+.textoCarrousel {
   color: #FFF;
   text-align: justify;
   font-family: Oswald;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  letter-spacing: 2px;
-  padding: 100px;
-
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  padding: 2rem;
+  line-height: 1.8; /* Aumenta el espacio entre líneas */
+  max-width: 400px; /* Reduce el ancho para que el texto se corte antes */
+  margin: auto;
 }
 
-.backgroundTextoCarrousel{
-border-radius: 40px;
-background: rgba(255, 255, 255, 0.10);
-max-width: 700px;
-backdrop-filter: blur(5px);
+
+.backgroundTextoCarrousel {
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  /* Se remueve height: 100% para que el fondo se adapte al contenido */
 }
 
 .imageCarousel {
-	width: 500px;  /* Adjust the size as needed */
-	height: auto;
-	border-radius: 20px; /* Makes the images rounded */
-	object-fit: cover;
-	margin: auto;
-	display: block;
-	border: white 1px solid;
+  max-width: 200%;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: auto;
+  border: white 1px solid;
+}
+
+@media (max-width: 768px) {
+  .textoCarrousel {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    text-align: left;
   }
   
+  .imageCarousel {
+    height: 200px;
+  }
+}

@@ -48,9 +48,9 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className="row container-fluid mt-4">
-        <div className="col">
-          <div className={`${styles.backgroundTextoCarrousel} row`}>
+      <div className="row gx-lg-5 gx-3 align-items-center container-fluid mt-4">
+        <div className="col-12 col-md-6 mb-4 mb-md-0">
+          <div className={`${styles.backgroundTextoCarrousel}`}>
             <div className={`${styles.textoCarrousel}`}>
               <p>
                 Llega otro año el evento más cordobés y tech de la provincia, con grandes ponentes, networking y productos típicos de Córdoba. Coincide con Las Cruces de Mayo y es una gran oportunidad para visitar los Patios sin tanta afluencia. Gracias a patrocinadores y al Aula de Software Libre por hacerlo posible.
@@ -58,7 +58,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-6 d-block justify-content-center align-items-center">
           <Swiper
             modules={[Pagination, EffectCoverflow, Autoplay]}
             pagination={{ clickable: true }}
@@ -66,6 +66,8 @@ export default function Info() {
             grabCursor={true}
             centeredSlides={true}
             spaceBetween={0}
+            initialSlide={2}
+            loop={true}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             slidesPerView={3}
             coverflowEffect={{
