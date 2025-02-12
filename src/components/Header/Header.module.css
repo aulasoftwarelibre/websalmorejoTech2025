@@ -256,7 +256,7 @@ a{
   }
 
   .movedRight {
-    transform: translate3d(160px, -102px, -100px);
+    transform: translate3d(120px, -102px, -100px);
   }
 
   .trigo {
@@ -315,7 +315,7 @@ a{
   }
 
   .movedPingu {
-    transform: translateY(-60px);
+    transform: translateY(110px) !important;
     transform: translate(50px, -100px);
   }
   .movedWifi {
@@ -399,7 +399,7 @@ a{
   }
 
   .movedRight {
-    transform: translate3d(60px, -40%, -100px);
+    transform: translate3d(60px, -20%, -100px);
   }
 
   .movedWheat {
@@ -411,7 +411,7 @@ a{
   }
 
   .movedPingu {
-    transform: translate3d(15px, -65px, -100px);
+    transform: translate3d(15px, 70px, -100px);
   }
 }
 
