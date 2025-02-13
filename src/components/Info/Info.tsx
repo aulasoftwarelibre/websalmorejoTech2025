@@ -12,6 +12,7 @@ import img0 from '../../sprites/pics/0-min.jpg';
 import img1 from '../../sprites/pics/1-min.jpg';
 import img2 from '../../sprites/pics/8-min.jpg';
 import Map from "../Map/Map";
+import FondoBlanco from "../FondoBlanco/FondoBlanco";
 
 
 
@@ -94,6 +95,7 @@ export default function Info() {
       <div className="row">
       <Map />
     </div>
+    {/* <FondoBlanco/> */}
     </div>
     
   );

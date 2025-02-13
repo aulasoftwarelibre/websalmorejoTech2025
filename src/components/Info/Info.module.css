@@ -9,7 +9,7 @@
     -80vh,
     -80rem
   ) !important; /* Increased margin using responsive units */
-  padding: 4rem 2rem !important;
+  
   width: calc(400vw + 500vh - 400vmin);
   display: flex;
   max-width: 100%;
@@ -25,7 +25,7 @@
 @media(min-width: 1900px){
   .fondo1 {
     margin-top: clamp(
-      -55rem,
+      -70rem,
       -80vh,
       -80rem
     ) !important; /* Increased margin using responsive units */
@@ -70,7 +70,7 @@
   color: #fff;
   text-align: center;
   font-family: Oswald;
-  margin-top: 60vh !important;
+  margin-top: 74vh !important;
   font-size: calc(3vw + 4vh - 3vmin);
   font-style: normal;
   font-weight: 400;
@@ -209,4 +209,10 @@
 
 .carouselPart {
   margin-top: 8vh !important; /* Use viewport units for vertical spacing */
+}
+
+.fondoblanco {
+  background: url('../../sprites/blanco.svg') center/cover no-repeat;
+  height: 50vh;
+
 }
