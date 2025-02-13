@@ -38,17 +38,15 @@
 
 .card {
   border-radius: 10px;
-
   background: rgba(255, 255, 255, 0.69);
-
   transition: box-shadow 0.3s ease;
   backdrop-filter: blur(4px);
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
+  max-width: 39.7% !important;
   transition: box-shadow 0.3s ease;
-  margin: 0% !important;
-  margin-right: 1% !important;
-  margin-left: 1% !important;
+  margin-right: 2% !important;
+  margin-left: 2% !important;
 }
 
 .card:hover {
@@ -334,7 +332,7 @@
   .scheduleDiv h3,
   .scheduleDiv h5 {
     font-size: 3vw;
-    padding-left: 1px;
+    padding-left: 5px;
     /**rotate: -90deg;**/
   }
   h3,
