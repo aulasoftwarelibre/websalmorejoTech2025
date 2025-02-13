@@ -9,7 +9,9 @@ import Timetable from './components/Timetable/Timetable'
 function App() {
   return (
     <div className="appContainer">
-      <Timetable />
+      <Navbar />
+      <Header />
+      <Info/>
     </div>
   )
 }

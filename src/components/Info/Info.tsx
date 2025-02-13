@@ -11,6 +11,8 @@ import { Pagination, EffectCoverflow } from 'swiper/modules';
 import img0 from '../../sprites/pics/0-min.jpg';
 import img1 from '../../sprites/pics/1-min.jpg';
 import img2 from '../../sprites/pics/8-min.jpg';
+import Map from "../Map/Map";
+import FondoBlanco from "../FondoBlanco/FondoBlanco";
 
 
 
@@ -48,7 +50,7 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className="row gx-lg-5 gx-3 align-items-center container-fluid mt-4">
+      <div className={`${styles.carouselPart} row gx-lg-5 gx-3 align-items-center container-fluid`}>
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <div className={`${styles.backgroundTextoCarrousel}`}>
             <div className={`${styles.textoCarrousel}`}>
@@ -62,7 +64,7 @@ export default function Info() {
           <Swiper
             modules={[Pagination, EffectCoverflow, Autoplay]}
             pagination={{ clickable: true }}
-            effect="coverflow"
+            effect="coverflow"  
             grabCursor={true}
             centeredSlides={true}
             spaceBetween={0}
@@ -90,6 +92,11 @@ export default function Info() {
           </Swiper>
         </div>
       </div>
+      <div className="row">
+      <Map />
     </div>
+    {/* <FondoBlanco/> */}
+    </div>
+    
   );
 }
