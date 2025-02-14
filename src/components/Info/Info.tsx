@@ -13,6 +13,7 @@ import img1 from '../../sprites/pics/1-min.jpg';
 import img2 from '../../sprites/pics/8-min.jpg';
 import Map from "../Map/Map";
 import FondoBlanco from "../FondoBlanco/FondoBlanco";
+import Schedule from "../Timetable/Timetable";
 
 
 
@@ -94,7 +95,9 @@ export default function Info() {
       </div>
       <div className="row">
       <Map />
+      {/* <Schedule/> */}
     </div>
+    
     {/* <FondoBlanco/> */}
     </div>
     
