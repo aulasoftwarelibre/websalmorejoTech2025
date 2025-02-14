@@ -8,11 +8,13 @@ import Info from './components/InfoTest/Info'
 
 function App() {
   return (
+    <>
     <div className="appContainer">
       <Navbar />
       <Header />
-      <Info/>
     </div>
+      <Info/>
+    </>
   )
 }
 

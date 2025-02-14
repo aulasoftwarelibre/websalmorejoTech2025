@@ -11,16 +11,14 @@ import img0 from '../../sprites/pics/0-min.jpg'
 import img1 from '../../sprites/pics/1-min.jpg'
 import img2 from '../../sprites/pics/8-min.jpg'
 import Map from '../Map/Map'
-import FondoBlanco from '../FondoBlanco/FondoBlanco'
-import Schedule from '../Timetable/Timetable'
 import Timetable from '../Timetable/Timetable'
 
 export default function Info() {
   return (
     <div className={styles.fondo1} id="info">
       <br />
-      <div className="row pt-5">
-        <div className="col-12 pt-5">
+      <div className="row">
+        <div className="col-12">
           <div className="row py-5">
             <p className={styles.mainText}>
               ¿AÚN NO SABES QUÉ ES EL SALMOREJOTECH?

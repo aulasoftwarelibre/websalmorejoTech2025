@@ -186,26 +186,22 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="pt-4">
-          <p className={`${styles.logoContainer}`}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
-            <button className={`${styles.buttonInicio}`}>
-              Entradas
-            </button>
-            </a>
-          </p>
-        </div>
-        <div className={`row ${styles.logos}`}>
-          <div className="col-3">
-            <div className={`${styles.trigo}`}>
-              <img
-                src={trigo}
-                className={`${styles.trigo} ${isMovedWheat ? styles.movedWheat : ''}`}
-                alt="trigo"
-              />
-            </div>
-          </div>
-          <div className="col-3">
+        
+        <div className={`position-relative text-center ${styles.entradaContainer}`}>
+  <p className={`${styles.logoContainer}`}>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
+      <button className={`${styles.buttonInicio}`}>Entradas</button>
+    </a>
+  </p>
+  <div className="row justify-content-center align-items-center">
+    <div className="col-3 text-end">
+      <img
+        src={trigo}
+        className={`${styles.trigo} ${isMovedWheat ? styles.movedWheat : ''}`}
+        alt="trigo"
+      />
+    </div>
+    <div className="col-3">
             <div className={`${styles.penguin}`}>
               <img
                 src={penguin}
@@ -213,18 +209,19 @@ export default function Header() {
                 alt="penguin"
               />
             </div>
-          </div>
-          <div className="col-3"></div>
-          <div className="col-sm-3 col-2">
-            <div
-              className={`${styles.ajo} ${isMoved ? styles.movedRight : ''}`}
-            >
-              <img src={ajo} className={`${styles.ajo}`} alt="ajo" />
-            </div>
-          </div>
-        </div>
+          </div><div className="col-3 text-end"></div>
+    <div className="col-3 text-start">
+      <img
+        src={ajo}
+        className={`${styles.ajo} ${isMoved ? styles.movedRight : ''}`}
+        alt="ajo"
+      />
+    </div>
+    </div>
+    </div>
+
+        
       </div>
-      
     </>
   )
 }
