@@ -11,9 +11,7 @@ export default function Cards() {
             <div className="col-md-4">
                 <Card description="prueba 1" photo={fotoPrueba} twlink= "https://www.google.es/" lklink= "https://www.google.es/" ghlink= "https://www.google.es/" mirrorphoto={mirrorPrueba}> Nombre 1</Card>
             </div>
-            <div className="col-md-4">
-                <Card description="prueba 2">Nombre 2</Card>
-            </div>
+
             {/*
             <div className="col-md-4">
                 <Card description="prueba 3">Nombre 3</Card>

@@ -1,4 +1,12 @@
-.card{
+/* Outer container: maintains perspective & hitbox */
+.card {
+    perspective: 1000px;
+    margin: 10px;
+    /* Optionally, set a fixed width/height if needed */
+  }
+  
+  /* Inner element: holds all the content and rotates */
+  .inner {
     display: flex;
     aspect-ratio: 485.00/726.00;
     height: 723 px;
@@ -6,9 +14,7 @@
     border-radius: 50px;
     border: 0px solid #7C0000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(2px);
     text-align: center;
-    margin: 10PX;
     flex-direction: column; /* Mantiene los elementos en columna */
     align-items: center; /* Centra horizontalmente */
     position: relative;
@@ -18,62 +24,61 @@
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     backdrop-filter: blur(5px); /* Difumina el fondo detrás del elemento */
-    perspective: 1000px;
-}
-
-.card:hover {
-    transform: rotateY(-180deg); /* Gira la tarjeta 180 grados en el eje Y */
-}
-
-.front, .back {
+  }
+  
+  
+  /* Rotate the inner element on hover */
+  .card:hover .inner {
+    transform: rotateY(-180deg);
+  }
+  
+  /* Both faces: positioned absolutely */
+  .front,
+  .back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Oculta la parte posterior durante la rotación */
+    border-radius: 50px;
+    backface-visibility: hidden; /* Hide the back face when rotated */
     -webkit-backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transition: transform 0.6 ease;
-    border-radius: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.front {
-    background: #F88085;
-    transform: rotateY(0deg); /* Asegura que la parte frontal esté orientada correctamente */
-}
-
-.back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espaciado entre botones */
-    opacity: 0;
-    transition: opacity 0.6s ease;
-    border-radius: 50px;
-    transform: rotateY(180deg); 
-
     
-}
-
-
-.back img {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Front face: default view */
+  .front {
+    background: #F88085;
+    transform: rotateY(0deg);
+  }
+  
+  /* Back face: initially rotated, becomes visible after hover */
+  .back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Spacing between buttons */
+    
+  }
+  
+  /* Other styles remain the same */
+  .back img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-
-.back a {
+  }
+  
+  .back a {
     display: inline-block;
-    width: 50px; /* Ajusta el tamaño según tu diseño */
+    width: 50px; /* Adjust as needed */
     height: 50px;
-}
-
-.photoContainer {
+  }
+  
+  .photoContainer {
     background-size: contain;
     background-position: center;
     margin-top: 0.5%;
@@ -84,44 +89,31 @@
     border: 5px solid #FFF;
     background: lightgray 50% / contain no-repeat;
     text-align: center;
-}
-
-.text {
+  }
+  
+  .text {
     margin-top: 9%;
-    aspect-ratio: 428.00 / 251.47;
+    aspect-ratio: 428 / 251.47;
     height: 34%;
     border-radius: 30px;
     opacity: 0.9;
     background: rgba(243, 46, 70, 0.96);
     text-align: center;
     padding-top: 10px;
-}
-
-.photoContainer img {
+  }
+  
+  .photoContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 30px;
-}
-
-.card:hover .back {
-    opacity: 1; /* Aparece después de la animación */
-    transform: rotateY(0deg);
-}
-
-
-.card:hover .front {
-    opacity: 1; /* Aparece después de la animación */
-    transform: rotateY(-180deg);
-
-}
-
-
-.icon{
+  }
+  
+  .icon {
     height: 200% !important;
     width: 200% !important;
     opacity: 1 !important;
     z-index: 10000;
-    
-}
+  }
+  
