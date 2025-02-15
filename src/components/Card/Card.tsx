@@ -7,20 +7,16 @@ export default function Card({
   children,
   description,
   photo,
-  mirrorphoto,
+  backphoto,
   twlink = "unknown",
   lklink = "unknown",
   ghlink = "unknown"
 }) {
-
   const MostrarBoton = (boton) => boton !== "unknown";
 
   return (
     <div className={styles.card}>
-      <div
-        className={styles.inner}
-        style={{ backgroundImage: `url(${mirrorphoto})` }}
-      >
+      <div className={styles.inner}>
         <div className={styles.front}>
           <div className={styles.photoContainer}>
             <img src={photo} alt="Foto de perfil" />
@@ -30,23 +26,28 @@ export default function Card({
             <p className={styles.DescriptionText}>{description}</p>
           </div>
         </div>
-        <div className={styles.back}>
-          <div className='row'>
-            {MostrarBoton(ghlink) && 
-              <a href={ghlink} target="_blank" rel="noopener noreferrer">
-                <img src={ghLogo} alt="GitHub" className={styles.icon} />
-              </a>
-            }
-            {MostrarBoton(lklink) && 
-              <a href={lklink} target="_blank" rel="noopener noreferrer">
-                <img src={lkLogo} alt="LinkedIn" className={styles.icon} />
-              </a>
-            }
-            {MostrarBoton(twlink) && 
+        <div
+          className={styles.back}
+          style={{ backgroundImage: `url(${backphoto})` }}
+        >
+          <div className={styles.iconContainer}>
+          {MostrarBoton(twlink) && (
               <a href={twlink} target="_blank" rel="noopener noreferrer">
                 <img src={twLogo} alt="Twitter" className={styles.icon} />
               </a>
-            }
+            )}
+ 
+            {MostrarBoton(lklink) && (
+              <a href={lklink} target="_blank" rel="noopener noreferrer">
+                <img src={lkLogo} alt="LinkedIn" className={styles.icon} />
+              </a>
+            )}
+                       {MostrarBoton(ghlink) && (
+              <a href={ghlink} target="_blank" rel="noopener noreferrer">
+                <img src={ghLogo} alt="GitHub" className={styles.icon} />
+              </a>
+            )}
+
           </div>
         </div>
       </div>

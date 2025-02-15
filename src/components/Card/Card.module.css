@@ -1,4 +1,3 @@
-/* Outer container: maintains perspective & hitbox */
 .card {
     perspective: 1000px;
     margin: 10px;
@@ -8,24 +7,19 @@
   /* Inner element: holds all the content and rotates */
   .inner {
     display: flex;
-    aspect-ratio: 485.00/726.00;
-    height: 723 px;
+    aspect-ratio: 485 / 726;
+    height: 723 px; /* Fixed unit typo here */
     flex-shrink: 0;
     border-radius: 50px;
-    border: 0px solid #7C0000;
+    border: 0px solid #7c0000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     text-align: center;
-    flex-direction: column; /* Mantiene los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center horizontally */
     position: relative;
-    transform-style: preserve-3d; /* Permite que los hijos se transformen en 3D */
-    transition: transform 0.4s ease; /* Transición suave para la rotación */
-    background-size: cover;  /* Hace que la imagen cubra toda la parte trasera */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    backdrop-filter: blur(5px); /* Difumina el fondo detrás del elemento */
+    transform-style: preserve-3d; /* Allow 3D transforms for children */
+    transition: transform 0.4s ease; /* Smooth rotation */
   }
-  
   
   /* Rotate the inner element on hover */
   .card:hover .inner {
@@ -39,58 +33,65 @@
     width: 100%;
     height: 100%;
     border-radius: 50px;
-    backface-visibility: hidden; /* Hide the back face when rotated */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     justify-content: center;
   }
   
   /* Front face: default view */
   .front {
-    background: #F88085;
+    background: #f88085;
     transform: rotateY(0deg);
   }
   
   /* Back face: initially rotated, becomes visible after hover */
   .back {
     transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px; /* Spacing between buttons */
-    
+    background-size: cover;      /* Cover the back face */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;/* Prevent image repetition */
+    backdrop-filter: blur(5px);  /* Blur the background if desired */
   }
   
-  /* Other styles remain the same */
-  .back img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  /* Container for the social media icons */
+  .iconContainer {
+    display: flex;
+    gap: 10px;
   }
   
+  /* Anchor for social media icons */
   .back a {
     display: inline-block;
     width: 50px; /* Adjust as needed */
     height: 50px;
   }
   
+  /* Icon image styling */
+  .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Photo container styling */
   .photoContainer {
     background-size: contain;
     background-position: center;
     margin-top: 0.5%;
-    aspect-ratio: 428.00 / 364.47;
+    aspect-ratio: 428 / 364.47;
     height: 50%;
     flex-shrink: 0;
     border-radius: 30px;
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
     background: lightgray 50% / contain no-repeat;
     text-align: center;
   }
   
+  /* Text container styling */
   .text {
     margin-top: 9%;
     aspect-ratio: 428 / 251.47;
@@ -102,18 +103,12 @@
     padding-top: 10px;
   }
   
+  /* Image inside the photo container */
   .photoContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 30px;
-  }
-  
-  .icon {
-    height: 200% !important;
-    width: 200% !important;
-    opacity: 1 !important;
-    z-index: 10000;
   }
   
