@@ -5,14 +5,13 @@ import Footer from './components/Footer/Footer'
 import Info from './components/Info/Info'
 import Map from './components/Map/Map'
 import Timetable from './components/Timetable/Timetable'
+import Past from './components/Past/Past'
 
 function App() {
   return (
-    <div className="appContainer">
-      <Navbar />
-      <Header />
-      <Info/>
-    </div>
+    <>
+      <Past />
+    </>
   )
 }
 
