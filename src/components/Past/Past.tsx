@@ -7,6 +7,12 @@ import imagen4 from  '../../sprites/Past/2021.png'
 export default function Past() {
   return (
     <>
+    <div className= {styles.text}>
+      <a>¿Estuviste con nosotr@s en ediciones pasadas?</a>
+    </div>
+    <div className={styles.text1}>
+      <a>Échale un vistazo a todos nuestros eventos anteriores</a>
+    </div>
       <div className={styles.fondo}>
       <div className={styles.grid} >
         <div className={styles.map}>

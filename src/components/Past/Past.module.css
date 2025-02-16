@@ -1,16 +1,39 @@
 .fondo {
-    max-width: 90vw;
+    max-width: 80vw;
     padding: 4vw;
     border-radius: 2vw;
     background: rgba(217, 217, 217, 0.30); 
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
     margin: 0 auto;
+    margin-bottom: 3vw;
+  }
+  
+  .text {
+    color: #fff;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: calc(3vw + 4vh - 4vmin);
+    margin-top: 5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .text1 {
+    color: #fff;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: calc(1.75vw + 3vh - 3vmin);
+    margin-top: 0.1vw;
+    margin-bottom: 3vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 3vw;  
     border-radius: 2vw;
     overflow: hidden; 
@@ -33,5 +56,49 @@
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 2vw;
+  }  
+  /* Dispositivos pequeños (Móviles y Tablets en vertical) */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 5vw;
+    }
+  
+    .fondo {
+      width: 90vw;
+      padding: 3vw;
+    }
+  
+    .text {
+      font-size: calc(4vw + 2vh - 2vmin);
+    }
+  
+    .text1 {
+      font-size: calc(2vw + 2vh - 2vmin);
+    }
+  }
+  
+  /* Dispositivos medianos (Tablets en horizontal) */
+  @media (min-width: 769px) and (max-width: 1439x) {
+    .grid {
+      grid-template-columns: 1fr !important;
+      gap: 4vw;
+    }
+  
+    .fondo {
+      width: 85vw;
+    }
+  }
+  
+  /* Dispositivos grandes (Desktops) */
+  @media (min-width: 1440px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3vw;
+    }
+  
+    .fondo {
+      width: 80vw;
+    }
   }
   
