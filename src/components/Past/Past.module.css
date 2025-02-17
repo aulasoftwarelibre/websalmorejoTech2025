@@ -79,7 +79,7 @@
   }
   
   /* Dispositivos medianos (Tablets en horizontal) */
-  @media (min-width: 769px) and (max-width: 1439x) {
+  @media (min-width: 769px) and (max-width: 991px) {
     .grid {
       grid-template-columns: 1fr !important;
       gap: 4vw;
@@ -91,7 +91,7 @@
   }
   
   /* Dispositivos grandes (Desktops) */
-  @media (min-width: 1440px) {
+  @media (min-width: 992px) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 3vw;
