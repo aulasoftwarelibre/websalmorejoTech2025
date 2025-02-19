@@ -3,6 +3,9 @@
   overflow: hidden;
   background: rgb(242, 161, 83);
   background: linear-gradient(184deg, rgba(243, 167, 88, 1) 1%, rgba(240, 111, 48, 1) 30%, rgba(244, 57, 79, 1) 100%);
+   /* background: url('/src/sprites/svgBody(1).svg') center/cover no-repeat; */
+   border-top-left-radius: 99% 1vw;
+   border-top-right-radius: 99% 1vw;
 }
 
 .container {

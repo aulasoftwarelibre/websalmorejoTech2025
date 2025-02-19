@@ -1,0 +1,66 @@
+
+.moleculas {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 1;
+}
+
+.parallaxContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+
+.parallax {
+  will-change: transform;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  transform: translateZ(-2px);
+}
+
+.bg1 {
+  background-image: url('/src/sprites/moleculas/fondo-salmorejotech-svg(1).svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5vw; 
+  transform: translateZ(-2px) translateY(calc(100vh + 20vh)) scale(1.5); 
+  width: clamp(30vw, 50vw, 70vw); 
+  height: auto;
+  max-height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+  .bg1 {
+    transform: translateZ(-2px) translateY(100vh) scale(1);
+    left: 5vw; /* Adjust positioning for smaller screens */
+    width: 60vw;
+  }
+}
+
+.bg2 {
+  background-image: url('/src/sprites/moleculas/fondo-salmorejotech-svg(1).svg');
+  background-size: cover;
+  left: 80vw;
+  transform: translateZ(-200px) scale(1.5);
+}
+
+.bg3 {
+  background-size: cover;
+  position: absolute;
+  transform: translateX(5vw) translateY(-5vh) scale(1);
+  width: 230px;
+}
+
+.bg4 {
+  background-size: cover;
+  position: absolute;
+  transform: translateX(80vw) translateY(-4vh) rotate(50deg) scale(1);
+  width: 230px;
+}

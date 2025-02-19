@@ -66,7 +66,7 @@ a{
 
 .movedPingu {
   transform: translateY(-60px);
-  transform: translate(-50px, 100px);
+  transform: translate(468px, 13px);
 }
 /**
 @media (min-width: 1160px) {
@@ -187,7 +187,7 @@ a{
     right: 20%;
     width: 85%;
     height: auto;
-    width: 160%;
+    width: 100%;
   }
 
   .moved3dtomato {
@@ -414,7 +414,7 @@ a{
   }
 
   .movedPingu {
-    transform: translate3d(15px, 70px, -100px);
+    transform: translate3d(250px, 100px, -100px);
   }
 }
 

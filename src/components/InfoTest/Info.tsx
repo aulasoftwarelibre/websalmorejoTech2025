@@ -12,12 +12,13 @@ import img1 from '../../sprites/pics/1-min.jpg'
 import img2 from '../../sprites/pics/8-min.jpg'
 import Map from '../Map/Map'
 import Timetable from '../Timetable/Timetable'
+import { Moleculas } from '../moleculas'
 
 export default function Info() {
   return (
     <div className={styles.fondo1} id="info">
-      <br />
       <div className="row">
+      <Moleculas/>
         <div className="col-12">
           <div className="row py-5">
             <p className={styles.mainText}>
