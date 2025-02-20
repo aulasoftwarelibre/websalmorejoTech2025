@@ -12,37 +12,19 @@ import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
 
+  const getMaxScrollY = () => {
+    return document.documentElement.scrollHeight - window.innerHeight;
+  };
+
     const [scroll, setScroll] = useState(0);
     
     useEffect(() => {
-      let newScroll;
-      if (window.innerWidth / window.innerHeight > 1) {
-        newScroll = 450;
-      } else if (window.innerWidth / window.innerHeight > 0.8) {
-        newScroll = 200;
-      } else if (window.innerWidth / window.innerHeight > 0.6) {
-        newScroll = 80;
-      } else if (window.innerWidth / window.innerHeight > 0.5) {
-        newScroll = 250;
-      } else {
-        newScroll = 135;
-      }
-      setScroll(newScroll);
+
+      setScroll(getMaxScrollY()-getMaxScrollY()*0.05);
   
       const handleResize = () => {
-        let updatedScroll;
-        if (window.innerWidth / window.innerHeight > 1) {
-          updatedScroll = 450;
-        } else if (window.innerWidth / window.innerHeight > 0.8) {
-          updatedScroll = 200;
-        } else if (window.innerWidth / window.innerHeight > 0.6) {
-          updatedScroll = 80;
-        } else if (window.innerWidth / window.innerHeight > 0.5) {
-          updatedScroll = 250;
-        } else {
-          updatedScroll = 135;
-        }
-        setScroll(updatedScroll);
+
+        setScroll(getMaxScrollY()-getMaxScrollY()*0.05);
       };
 
       window.addEventListener('resize', handleResize);
@@ -72,7 +54,6 @@ export default function Footer() {
         window.removeEventListener('scroll', handleScroll);
       };
     }, [scroll]); // Dependencia de `scroll` para que se actualice correctamente
-  
   return (
     <div className={styles.fondo1} id="footer">
       <div className={`${styles.footerStr} row`}>
