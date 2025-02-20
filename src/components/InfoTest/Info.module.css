@@ -3,7 +3,10 @@
   overflow: hidden;
   background: rgb(242, 161, 83);
   background: linear-gradient(184deg, rgba(243, 167, 88, 1) 1%, rgba(240, 111, 48, 1) 30%, rgba(244, 57, 79, 1) 100%);
-  background: url('/src/sprites/fondoMasEstirado.svg') center/cover no-repeat;
+}
+
+.fondo2 {
+  background: url('/src/sprites/tomatina.svg') center/cover no-repeat;
 }
 
 .container {
@@ -21,9 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Centrado horizontal */
   align-items: center;
-  /* Centrado vertical */
   text-align: center;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.15);
