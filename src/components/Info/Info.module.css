@@ -9,7 +9,7 @@
     -80vh,
     -80rem
   ) !important; /* Increased margin using responsive units */
-  
+  height: 100% !important;
   width: calc(400vw + 500vh - 400vmin);
   display: flex;
   max-width: 100%;
