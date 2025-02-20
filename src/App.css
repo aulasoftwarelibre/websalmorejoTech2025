@@ -1,5 +1,10 @@
 body {
   max-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.appContainer{
   background: linear-gradient(
     180deg,
     #5811ff -88.45%,
@@ -7,6 +12,4 @@ body {
     #ef641d 46.99%,
     #f3a758 100%
   );
-  max-width: 100%;
-  overflow-x: hidden;
 }
