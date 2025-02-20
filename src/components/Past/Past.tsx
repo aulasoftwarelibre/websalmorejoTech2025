@@ -3,10 +3,14 @@ import imagen1 from  '../../sprites/Past/2024.png'
 import imagen2 from  '../../sprites/Past/2023.png'
 import imagen3 from  '../../sprites/Past/2022.png'
 import imagen4 from  '../../sprites/Past/2021.png'
+import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 export default function Past() {
   return (
-    <>
+    <div className={styles.gradient}>
+    <Navbar/>
+    <div className={styles.fondo1}>
     <div className= {styles.text}>
       <a>¿Estuviste con nosotr@s en ediciones pasadas?</a>
     </div>
@@ -29,7 +33,9 @@ export default function Past() {
         </div>
       </div>
       </div>
-    </>
+    </div>
+    <Footer/>
+    </div>
   )
 }
 

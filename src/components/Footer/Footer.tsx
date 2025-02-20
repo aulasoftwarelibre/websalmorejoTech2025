@@ -216,7 +216,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={`row pb-3`}>
-        <h4>© 2024 Aula Software Libre</h4>
+        <h4>© 2025 Aula Software Libre</h4>
       </div>
     </div>
   )

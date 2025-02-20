@@ -3,6 +3,7 @@ import styles from './Navbar.module.css'
 import isotipoBlanco from '../../sprites/isotipo-blanco.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -14,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.navback}`}>
       <div className="container py-md-2 py-sm-1 px-4">
-        <a className="navbar-brand">
+        <a className="navbar-brand" href="/#Inicio">
           <img
             src={isotipoBlanco}
             className={`img-fluid ${styles.icon} `}
@@ -41,12 +42,12 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a
-              className={`nav-link ${styles.boldText} `}
-              href="https://salmorejo.tech/2024/"
+            <Link
+              className={`nav-link ${styles.boldText}`}
+              to="/2025/past" 
             >
               Otras ediciones
-            </a>
+            </Link>
           </li>
           <li className="nav-item px-4">
             <a
