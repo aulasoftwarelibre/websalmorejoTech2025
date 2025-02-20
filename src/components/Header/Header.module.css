@@ -310,14 +310,14 @@ a{
     position: relative;
     bottom: 25%;
     right: 20%;
-    width: 85%;
+    width: 100%;
     height: auto;
     transition: transform 1s ease-out;
     transform: translate3d(0px);
   }
 
   .movedPingu {
-    transform: translate(100px, -100px) !important;
+    transform: translate(300px, 20px) !important;
   }
   
   
@@ -363,7 +363,7 @@ a{
 
   .penguin {
     position: relative;
-    width: 100%;
+    width: 116%;
     height: auto;
     right: 20%;
     bottom: 25%;
@@ -414,7 +414,7 @@ a{
   }
 
   .movedPingu {
-    transform: translate3d(250px, 100px, -100px);
+    transform: translate3d(210px, 21px, -100px);
   }
 }
 
