@@ -180,6 +180,9 @@ export default function Header() {
 
         <div
           className={`position-relative text-center ${styles.entradaContainer}`}
+          style={{
+            zIndex: 2000,
+          }} /* Asegúrate de que el contenedor tenga un z-index alto */
         >
           <div
             className={`${styles.normalText} ${isMovedText ? styles.movedText : ''}`}
@@ -190,7 +193,13 @@ export default function Header() {
               </a>
             </p>
           </div>
-          <div className="row justify-content-center align-items-center">
+          <div
+            className="row justify-content-center align-items-center"
+            style={{
+              marginTop: 'calc(-20vw - 15vh + 16vmin)',
+              marginLeft: 'calc(-5vw - 5vh + 2vmin)',
+            }}
+          >
             <div className="col-3 text-end">
               <img
                 src={trigo}

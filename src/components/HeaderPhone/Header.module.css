@@ -19,20 +19,12 @@ a {
 .ajo {
   transition: transform 1s ease-out;
   transform: translate3d(0px);
+  z-index: -1; /* Asegúrate de que el z-index sea menor que el del botón */
 }
 
 .movedRight {
   /*movimiento del ajo*/
   transform: translate3d(160px, -102px, -100px);
-}
-
-.normalButton {
-  transition: transform 1s ease-out;
-  transform: translateY(0px);
-}
-
-.movedButton {
-  transform: translateY(-100px);
 }
 
 .normalText,
@@ -70,6 +62,7 @@ a {
 .penguin {
   transition: transform 1s ease-out;
   transform: translate3d(0px);
+  z-index: -1; /* Asegúrate de que el z-index sea menor que el del botón */
 }
 
 .movedPingu {
@@ -106,9 +99,7 @@ a {
   text-transform: uppercase;
   font-size: calc(3vw + 4vh - 4vmin);
   transition: 0.3s;
-  z-index: 1;
-  font-family: inherit;
-  color: #fff;
+  z-index: 2000; /* Aumenta el z-index para que esté por encima de otros elementos */
   padding-top: calc(2vw + 3vh - 6.5vmin);
   padding-bottom: calc(2vw + 3vh - 6.5vmin);
   padding-left: calc(5vw + 10vh - 8vmin);
@@ -564,7 +555,7 @@ a {
   .ajo {
     position: relative;
     right: 50%;
-    bottom: 30%;
+    bottom: 10%;
     width: 160%;
     height: auto;
   }
