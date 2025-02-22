@@ -2,9 +2,8 @@
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-
 }
-a{
+a {
   text-decoration: none !important;
 }
 
@@ -25,6 +24,15 @@ a{
 .movedRight {
   /*movimiento del ajo*/
   transform: translate3d(160px, -102px, -100px);
+}
+
+.normalButton {
+  transition: transform 1s ease-out;
+  transform: translateY(0px);
+}
+
+.movedButton {
+  transform: translateY(-100px);
 }
 
 .normalText,
@@ -85,26 +93,26 @@ a{
   display: block;
   align-items: center;
   justify-content: center;
-  border-radius: 80px;
+  border-radius: calc(10vw + 10vh - 8vmin);
   color: #fff;
   font-family: 'Oswald', sans-serif;
-  font-weight: 350;
+  font-weight: 400;
   line-height: normal;
-  width: 50vh;
-  max-width: 20vw;
-  max-height: 10vh;
   background: #e35843;
-  height: 10vh;
-  border: 5px solid #fff;
+  border: calc(1vw + 1vh - 2vmin) solid #fff;
   position: relative;
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: calc(3vw + 4vh - 4vmin);
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
   color: #fff;
+  padding-top: calc(2vw + 3vh - 6.5vmin);
+  padding-bottom: calc(2vw + 3vh - 6.5vmin);
+  padding-left: calc(5vw + 10vh - 8vmin);
+  padding-right: calc(5vw + 10vh - 8vmin);
 }
 
 .buttonInicio::before {
@@ -319,19 +327,13 @@ a{
   .movedPingu {
     transform: translate(300px, 20px) !important;
   }
-  
-  
+
   .movedWifi {
     transform: translateX(200px);
   }
 }
 
 @media (max-width: 1400px) and (min-width: 768px) {
-  .buttonInicio {
-    max-width: 45vw;
-    max-height: 20vh;
-  }
-
   .trigo {
     position: relative;
     bottom: 80%;
@@ -419,9 +421,6 @@ a{
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
-  .buttonInicio {
-    max-width: 50vw;
-  }
   .trigo {
     position: relative;
     bottom: 80%;
@@ -522,11 +521,6 @@ a{
 }
 
 @media (max-width: 575px) {
-  .buttonInicio {
-    width: 40vh;
-    max-width: 70vw;
-  }
-
   .logo {
     margin-top: 0%;
     padding-left: 3%;

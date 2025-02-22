@@ -11,49 +11,45 @@ import mail from '../../sprites/featherIcons/mail.svg'
 import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
-
   const getMaxScrollY = () => {
-    return document.documentElement.scrollHeight - window.innerHeight;
-  };
+    return document.documentElement.scrollHeight - window.innerHeight
+  }
 
-    const [scroll, setScroll] = useState(0);
-    
-    useEffect(() => {
+  const [scroll, setScroll] = useState(0)
 
-      setScroll(getMaxScrollY()-getMaxScrollY()*0.05);
-  
-      const handleResize = () => {
+  useEffect(() => {
+    setScroll(getMaxScrollY() - getMaxScrollY() * 0.04)
 
-        setScroll(getMaxScrollY()-getMaxScrollY()*0.05);
-      };
+    const handleResize = () => {
+      setScroll(getMaxScrollY() - getMaxScrollY() * 0.04)
+    }
 
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
-    const [isMoved, setIsMoved] = useState(false);
-  
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-  
-      if (scrollPosition > scroll) {
-        setIsMoved(true);
-      } else {
-        setIsMoved(false);
-      }
-    };
-    
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [scroll]); // Dependencia de `scroll` para que se actualice correctamente
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const [isMoved, setIsMoved] = useState(false)
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY
+
+    if (scrollPosition > scroll) {
+      setIsMoved(true)
+    } else {
+      setIsMoved(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [scroll]) // Dependencia de `scroll` para que se actualice correctamente
   return (
     <div className={styles.fondo1} id="footer">
       <div className={`${styles.footerStr} row`}>
