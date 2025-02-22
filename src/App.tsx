@@ -6,20 +6,19 @@ import Map from './components/Map/Map'
 import Timetable from './components/Timetable/Timetable'
 import Info from './components/InfoTest/Info'
 import { SponsorProps } from './components/Sponsors'
-import sponsors from './data/sponsors.json';
-import { SponsorsGrid } from './components/Sponsors/grid';
-
+import sponsors from './data/sponsors.json'
+import { SponsorsGrid } from './components/Sponsors/grid'
 
 function App() {
   return (
     <>
-    <div className="appContainer">
-      <Navbar />
-      <Header />
-    </div>
-      <Info/>
-      <SponsorsGrid sponsors={sponsors as SponsorProps[]}/>
-      <Footer/>
+      <div className="appContainer">
+        <Navbar />
+        <Header />
+      </div>
+      <Info />
+      <SponsorsGrid sponsors={sponsors as SponsorProps[]} />
+      <Footer />
     </>
   )
 }

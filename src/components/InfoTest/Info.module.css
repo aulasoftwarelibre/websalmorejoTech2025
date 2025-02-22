@@ -1,12 +1,17 @@
 .fondo1 {
   /* background: url('../../sprites/fondoMasEstirado.svg') center/cover no-repeat; */
   overflow: hidden;
-  background: rgb(242, 161, 83);
-  background: linear-gradient(184deg, rgba(243, 167, 88, 1) 1%, rgba(240, 111, 48, 1) 30%, rgba(244, 57, 79, 1) 100%);
+  background: #f3a758;
+  background: linear-gradient(
+    184deg,
+    #f3a758 5%,
+    rgba(240, 111, 48, 1) 30%,
+    rgba(244, 57, 79, 1) 100%
+  );
 }
 
 .fondo2 {
-  background: url('/src/sprites/tomatina.svg') center/cover no-repeat;
+  background: url('/src/sprites/tomatina.svg') top/cover no-repeat;
 }
 
 .container {
@@ -41,7 +46,6 @@
   max-width: 100%;
   height: auto;
 }
-
 
 .carouselPart {
   margin-top: 8vh !important;
@@ -163,7 +167,6 @@
   border: 0;
 }
 
-
 .ticket:hover {
   transition: transform 0.5s ease-in-out;
   transform: rotate(360deg) scale(1.5);
@@ -183,7 +186,6 @@
 .fondoblanco {
   background: url('../../sprites/blanco.svg') center/cover no-repeat;
   height: 50vh;
-
 }
 
 @media (max-width: 575.98px) {

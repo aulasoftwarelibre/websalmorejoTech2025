@@ -15,12 +15,10 @@ import Timetable from '../Timetable/Timetable'
 import { Moleculas } from '../moleculas'
 import TomatoParallax from '../TomatoParallax'
 
-
-
 export default function Info() {
   return (
     <div className={styles.fondo1} id="info">
-      <div className={styles.fondo2} >
+      <div className={styles.fondo2}>
         <div className="row">
           <div className="col-12">
             <div className="row py-5">
@@ -87,8 +85,8 @@ export default function Info() {
                         provincia, con grandes ponentes, networking y productos
                         típicos de Córdoba. Coincide con Las Cruces de Mayo y es
                         una gran oportunidad para visitar los Patios sin tanta
-                        afluencia. Gracias a patrocinadores y al Aula de Software
-                        Libre por hacerlo posible.
+                        afluencia. Gracias a patrocinadores y al Aula de
+                        Software Libre por hacerlo posible.
                       </p>
                     </div>
                   </div>
@@ -129,7 +127,7 @@ export default function Info() {
             <br />
           </div>
           <Map />
-          <div className='container'>
+          <div className="container">
             <Timetable />
           </div>
         </div>
