@@ -119,10 +119,7 @@
   .DescriptionText{
     font-family: Oswald;
     color: white;
-    font-size: 22px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    font-size: 125%;
   }
   
 
@@ -130,6 +127,6 @@
     margin-top: 1%;
     font-family: Oswald;
     color: white;
-    font-size: 32px;
+    font-size: 150%;
 
   }

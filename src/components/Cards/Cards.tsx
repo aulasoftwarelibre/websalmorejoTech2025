@@ -66,10 +66,10 @@ export default function Cards() {
                         <Card description="Estudiante de 2°Ingeniería informática UCO" photo={Cañete} backphoto={CañeteOP}> Antonio Cañete lopez</Card>
                     </div>
                     <div className="col-md-4">
-                        <Card description="Coordino el SalmorejoTech 2025, y en mi tiempo libre estudio Ingeniería Informática"  photo={Belen} backphoto={BelenOP}>Belén María Montes Caro</Card>
+                        <Card description="Coordino el SalmorejoTech 2025, y en mi tiempo libre estudio Ingeniería Informática"  photo={Belen} backphoto={BelenOP} twlink="https://x.com/belenmmontes" ghlink='https://github.com/belenmmc' lklink='https://www.linkedin.com/in/bel%C3%A9n-mar%C3%ADa-montes-caro-128929294/'>Belén María Montes Caro</Card>
                     </div>
                     <div className="col-md-4">
-                        <Card description="✍️ Promoviendo el Software Libre en Europa" twlink="https://x.com/belenmmontes" ghlink='https://github.com/belenmmc' lklink='www.linkedin.com/in/belén-maría-montes-caro-128929294' photo={Sofia} backphoto={SofiaOP}>Sofía Aritz Albors Escobés</Card>
+                        <Card description="✍️ Promoviendo el Software Libre en Europa"  photo={Sofia} backphoto={SofiaOP}>Sofía Aritz Albors Escobés</Card>
                     </div>
                 </div>
             </div>
@@ -77,13 +77,13 @@ export default function Cards() {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-4">
-                        <Card description="Estudiante de ingenieria informatica de la Uco" photo={DavidMart} backphoto={DavidMartOP} lklink='www.linkedin.com/in/david-martinez-76b284352' ghlink='https://github.com/darkghost078'> David Martínez Molina </Card>
+                        <Card description="Estudiante de ingenieria informatica de la Uco" photo={DavidMart} backphoto={DavidMartOP} lklink='https://www.linkedin.com/in/david-martinez-76b284352/' ghlink='https://github.com/darkghost078'> David Martínez Molina </Card>
                     </div>
                     <div className="col-md-4">
                         <Card description="Estudiante de 2° de Ingeniería informática 😄" photo={Dario} backphoto={DarioOP} twlink="https://x.com/000Volk000?t=JzjQST-fwPFT21_nVzy9kA&s=09" lklink='https://www.linkedin.com/in/dar%C3%ADo-mart%C3%ADnez-kostyuk-931994330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' ghlink='https://github.com/000Volk000'> Dario Martínez Kostyuk</Card>
                     </div>
                     <div className="col-md-4">
-                        <Card description="Estudiante de informática, Delegado de relaciones externas del aula e interesado en aprender y mejorar " photo={Tefry} backphoto={TefryOP} lklink='https://www.linkedin.com/in/dar%C3%ADo-mart%C3%ADnez-kostyuk-931994330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'> Manuel Reyes Serrano (Tefry)</Card>
+                        <Card description="Estudiante de informática, Delegado de relaciones externas del aula e interesado en aprender y mejorar " photo={Tefry} backphoto={TefryOP} lklink='https://www.linkedin.com/in/manuel-reyes-a15283352/'> Manuel Reyes Serrano (Tefry)</Card>
                     </div>
                     <div className="col-md-4">
                         <Card description="Estudiante de 2° de ingeniería informática con muchas ganas de aprender." photo={Juanan} backphoto={JuananOP} twlink="https://x.com/__juaneljulaint" lklink='https://www.linkedin.com/in/juan-mellado-02056a352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' ghlink='https://github.com/butifarraprogramadora3000'> Juan Antonio Mellado Arenas</Card>
@@ -100,10 +100,10 @@ export default function Cards() {
                             if(café === true) { productividad++; } else {error('Requiere más café');" photo={AntonioJose} backphoto={AntonioJoseOP} lklink='https://www.linkedin.com/in/antonio-jos%C3%A9-serrano-maestre-6322a9352/' > Antonio José Serrano Maestre  </Card>
                         </div>
                         <div className="col-md-4">
-                            <Card description="2°Ingeniería Informática Grupo diseño" photo={AntonioMerlo} backphoto={AntonioMerloOP} lklink='www.linkedin.com/in/antonio-jesús-merlo-morales-28ba162a8' > Antonio Jesús Merlo Morales  </Card>
+                            <Card description="2°Ingeniería Informática Grupo diseño" photo={AntonioMerlo} backphoto={AntonioMerloOP} lklink='https://www.linkedin.com/in/antonio-jes%C3%BAs-merlo-morales-28ba162a8/' > Antonio Jesús Merlo Morales  </Card>
                         </div>
                         <div className="col-md-4">
-                            <Card description="Estudiante de ingeniería informática amante del arte, un poco 'The best of both worlds' :)" photo={Elena} backphoto={ElenaOP} lklink='www.linkedin.com/in/elena-molero-padilla-9213432b7' ghlink='https://github.com/elenamolero' > Elena Molero Padilla</Card>
+                            <Card description="Estudiante de ingeniería informática amante del arte, un poco 'The best of both worlds' :)" photo={Elena} backphoto={ElenaOP} lklink='https://www.linkedin.com/in/elena-molero-padilla-9213432b7/' ghlink='https://github.com/elenamolero' > Elena Molero Padilla</Card>
                         </div>
                     </div>
                 </div>
@@ -131,10 +131,10 @@ export default function Cards() {
                             <Card description="Estudiante de 2 curso de ingeniería informática por la UCO" photo={Pablo} backphoto={PabloOP}  ghlink='https://github.com/PMMS22' lklink='https://www.linkedin.com/in/pablo-miguel-martín-segovia-1ab9001b9/'> Pablo Miguel Martín Segovia  </Card>
                         </div>
                         <div className="col-md-4">
-                            <Card description="Estudiante de Ing. Informática en la UCO, miembro del ASL" photo={Alejandro} backphoto={AlejandroOP}  ghlink='https://github.com/alejandrombe' lklink='www.linkedin.com/in/alejandromartosbellido'> Alejandro Martos Bellido </Card>
+                            <Card description="Estudiante de Ing. Informática en la UCO, miembro del ASL" photo={Alejandro} backphoto={AlejandroOP}  ghlink='https://github.com/alejandrombe' lklink='https://www.linkedin.com/in/alejandromartosbellido/'> Alejandro Martos Bellido </Card>
                         </div>
                         <div className="col-md-4">
-                            <Card description="Estudiante de ingeniería informática en la UCO. Utilizaré un algoritmo de búsqueda O(1) para encontrar lo antes posible tu corazón." photo={Sergio} backphoto={SergioOP}  ghlink='https://github.com/Serpal64' lklink='www.linkedin.com/in/sergio-palacios-lópez-695736352'> Sergio Palacios López </Card>
+                            <Card description="Estudiante de ingeniería informática en la UCO. Utilizaré un algoritmo de búsqueda O(1) para encontrar lo antes posible tu corazón." photo={Sergio} backphoto={SergioOP}  ghlink='https://github.com/Serpal64' lklink='https://www.linkedin.com/in/sergio-palacios-l%C3%B3pez-695736352/'> Sergio Palacios López </Card>
                         </div>
                     </div>
                 </div>
