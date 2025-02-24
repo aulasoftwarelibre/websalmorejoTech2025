@@ -12,16 +12,17 @@ import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
   const getMaxScrollY = () => {
-    return document.documentElement.scrollHeight - window.innerHeight
+    return document.body.scrollHeight
   }
 
   const [scroll, setScroll] = useState(0)
 
   useEffect(() => {
-    setScroll(getMaxScrollY() - getMaxScrollY() * 0.04)
+    setScroll(getMaxScrollY()*0.995)
+    console.log(getMaxScrollY())
 
     const handleResize = () => {
-      setScroll(getMaxScrollY() - getMaxScrollY() * 0.04)
+      setScroll(getMaxScrollY()*0.995)
     }
 
     window.addEventListener('resize', handleResize)
