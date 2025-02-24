@@ -21,7 +21,7 @@ export default function Card({
           <div className={styles.photoContainer}>
             <img src={photo} alt="Foto de perfil" />
           </div>
-          <div className={styles.text}>
+          <div className={styles.textcontainer}>
             <h5 className={styles.NameText}>{children}</h5>
             <p className={styles.DescriptionText}>{description}</p>
           </div>
@@ -42,7 +42,7 @@ export default function Card({
                 <img src={lkLogo} alt="LinkedIn" className={styles.icon} />
               </a>
             )}
-                       {MostrarBoton(ghlink) && (
+            {MostrarBoton(ghlink) && (
               <a href={ghlink} target="_blank" rel="noopener noreferrer">
                 <img src={ghLogo} alt="GitHub" className={styles.icon} />
               </a>
