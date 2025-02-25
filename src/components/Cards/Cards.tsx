@@ -99,9 +99,6 @@ export default function Cards() {
                 description="Estudiante de Ingeniería Informática en la UCO"
                 photo={Cuco}
                 backphoto={CucoOP}
-                twlink="https://x.com/belenmmontes"
-                ghlink="https://github.com/belenmmc"
-                lklink="https://www.linkedin.com/in/bel%C3%A9n-mar%C3%ADa-montes-caro-128929294/"
               >
                 Javier León Torrecilla
               </Card>
