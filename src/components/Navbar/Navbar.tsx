@@ -58,8 +58,8 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a className={`nav-link ${styles.boldText} `} href="#footer">
-              Contacto
+            <a className={`nav-link ${styles.boldText} `} href="https://www.eventbrite.es/e/entradas-salmorejotech-2025-1252909158019">
+              Entradas
             </a>
           </li>
         </ul>

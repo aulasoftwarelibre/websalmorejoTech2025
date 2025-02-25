@@ -134,27 +134,19 @@
 
 @media (max-width: 600px) {
   .modalContent {
-    background: linear-gradient(
-      90deg,
-      rgba(246, 69, 26, 1) 0%,
-      rgba(206, 41, 96, 1) 100%
-    );
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
+    background: #FBCFC1;
   }
 }
 
 @media (min-width: 600px) {
   .modalContent {
-    background: linear-gradient(
-      90deg,
-      rgba(246, 69, 26, 1) 0%,
-      rgba(206, 41, 96, 1) 100%
-    );
+    background: #FBCFC1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -167,11 +159,7 @@
 
 @media (max-width: 600px) {
   .modalContentSingle {
-    background: linear-gradient(
-      90deg,
-      rgb(204, 28, 75) 0%,
-      rgb(160, 2, 55) 100%
-    );
+    background: #FBCFC1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -183,11 +171,7 @@
 
 @media (min-width: 600px) {
   .modalContentSingle {
-    background: linear-gradient(
-      90deg,
-      rgb(204, 28, 75) 0%,
-      rgb(160, 2, 55) 100%
-    );
+    background: #FBCFC1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -200,11 +184,7 @@
 
 @media (max-width: 600px) {
   .modalContentSingleTalleres {
-    background: linear-gradient(
-      90deg,
-      rgb(204, 28, 75) 0%,
-      rgb(160, 2, 55) 100%
-    );
+    background: #FBCFC1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -216,11 +196,7 @@
 
 @media (min-width: 600px) {
   .modalContentSingleTalleres {
-    background: linear-gradient(
-      90deg,
-      rgb(204, 28, 75) 0%,
-      rgb(160, 2, 55) 100%
-    );
+    background: #FBCFC1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;

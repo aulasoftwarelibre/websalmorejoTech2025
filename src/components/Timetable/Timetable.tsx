@@ -129,13 +129,13 @@ const DoubleCard: React.FC<{
               <div className="col-lg-5 col-md-12 py-lg-4">
                 <img
                   src={props.image}
-                  className="img-fluid"
+                  className={`img-fluid ${styles.singleImg}`}
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '50%' }}
                 />
                 <img
                   src={props.image2}
-                  className="img-fluid"
+                  className={`img-fluid ${styles.singleImg}`}
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '50%' }}
                 />
@@ -210,7 +210,7 @@ const SingleCardJose: React.FC<{
               <div className="col-lg-5 col-md-12 py-lg-4">
                 <img
                   src={props.image}
-                  className="img-fluid"
+                  className={`img-fluid ${styles.singleImg}`}
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '60%' }}
                 />
@@ -285,7 +285,7 @@ const SingleCard: React.FC<{
               <div className="col-lg-5 col-md-12 py-lg-4">
                 <img
                   src={props.image}
-                  className="img-fluid"
+                  className={`img-fluid ${styles.singleImg}`}
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
@@ -509,7 +509,7 @@ const ScheduleCard: React.FC<{
               <div className="col-lg-5 col-md-12 py-lg-4">
                 <img
                   src={props.image}
-                  className="img-fluid"
+                  className={`img-fluid ${styles.singleImg}`}
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '50%' }}
                 />

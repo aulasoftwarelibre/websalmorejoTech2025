@@ -188,7 +188,7 @@ export default function Header() {
             className={`${styles.normalText} ${isMovedText ? styles.movedText : ''}`}
           >
             <p className={`${styles.logoContainer}`}>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
+              <a href="https://www.eventbrite.es/e/entradas-salmorejotech-2025-1252909158019">
                 <button className={`${styles.buttonInicio}`}>Entradas</button>
               </a>
             </p>
