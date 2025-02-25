@@ -72,15 +72,6 @@ export default function Cards() {
             </div>
             <div className="col-md-4">
               <Card
-                description="✍️ Promoviendo el Software Libre en Europa"
-                photo={Sofia}
-                backphoto={SofiaOP}
-              >
-                Sofía Aritz Albors Escobés
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card
                 description="Estudiando informática en la UCO"
                 photo={CarlosTorres}
                 backphoto={CarlosTorresOP}
@@ -99,16 +90,6 @@ export default function Cards() {
               >
                 {' '}
                 David Sánchez Palomino{' '}
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card
-                description="Estudiante de ingeniería informática de la UCO"
-                photo={Roxana}
-                backphoto={RoxanaOP}
-              >
-                {' '}
-                Roxana Ortiz Mellado
               </Card>
             </div>
           </div>
@@ -248,6 +229,16 @@ export default function Cards() {
                   Minghan Wang{' '}
                 </Card>
               </div>
+              <div className="col-md-4">
+                <Card
+                  description="Estudiante de ingeniería informática de la UCO"
+                  photo={Roxana}
+                  backphoto={RoxanaOP}
+                >
+                  {' '}
+                  Roxana Ortiz Mellado
+                </Card>
+              </div>
             </div>
           </div>
         </div>
@@ -288,6 +279,15 @@ export default function Cards() {
               >
                 {' '}
                 Sergio Palacios López{' '}
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card
+                description="✍️ Promoviendo el Software Libre en Europa"
+                photo={Sofia}
+                backphoto={SofiaOP}
+              >
+                Sofía Aritz Albors Escobés
               </Card>
             </div>
             <div className="col-md-4">

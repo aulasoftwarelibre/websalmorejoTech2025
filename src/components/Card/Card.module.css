@@ -1,132 +1,128 @@
 .card {
-    perspective: 1000px;
-    margin: 10px;
-    /* Optionally, set a fixed width/height if needed */
-  }
-  
-  /* Inner element: holds all the content and rotates */
-  .inner {
-    display: flex;
-    aspect-ratio: 485 / 726;
-    height: 723 px; /* Fixed unit typo here */
-    flex-shrink: 0;
-    border-radius: 50px;
-    border: 0px solid #7c0000;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    flex-direction: column; /* Arrange elements in a column */
-    align-items: center; /* Center horizontally */
-    position: relative;
-    transform-style: preserve-3d; /* Allow 3D transforms for children */
-    transition: transform 0.4s ease; /* Smooth rotation */
-  }
-  
-  /* Rotate the inner element on hover */
-  .card:hover .inner {
-    transform: rotateY(-180deg);
-  }
-  
-  /* Both faces: positioned absolutely */
-  .front,
-  .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Front face: default view */
-  .front {
-    background: #f88085;
-    transform: rotateY(0deg);
-  }
-  
-  /* Back face: initially rotated, becomes visible after hover */
-  .back {
-    transform: rotateY(180deg);
-    gap: 10px; /* Spacing between buttons */
-    background-size: cover;      /* Cover the back face */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat;/* Prevent image repetition */
-    backdrop-filter: blur(5px);  /* Blur the background if desired */
-    opacity: 0.8;
-  }
-  
-  /* Container for the social media icons */
-  .iconContainer {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Anchor for social media icons */
-  .back a {
-    display: inline-block;
-    width: 50px; /* Adjust as needed */
-    height: 50px;
-    opacity: 1 !important;
-  }
-  
-  /* Icon image styling */
-  .icon {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  /* Photo container styling */
-  .photoContainer {
-    background-size: contain;
-    background-position: center;
-    margin-top: 0.5%;
-    aspect-ratio: 428 / 364.47;
-    height: 50%;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 5px solid #fff;
-    background: lightgray 50% / contain no-repeat;
-    text-align: center;
-  }
-  
-  /* Text container styling */
-  .textcontainer {
-    margin-top: 9%;
-    aspect-ratio: 428 / 251.47;
-    height: 34%;
-    border-radius: 30px;
-    opacity: 0.9;
-    background: rgba(243, 46, 70, 0.96);
-    text-align: center;
-    padding-top: 10px;
+  perspective: 1000px;
+  margin: 10px;
+  /* Optionally, set a fixed width/height if needed */
+}
 
-  }
-  
-  /* Image inside the photo container */
-  .photoContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 30px;
-  }
+/* Inner element: holds all the content and rotates */
+.inner {
+  display: flex;
+  aspect-ratio: 485 / 726;
+  height: 723 px; /* Fixed unit typo here */
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 0px solid #7c0000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  flex-direction: column; /* Arrange elements in a column */
+  align-items: center; /* Center horizontally */
+  position: relative;
+  transform-style: preserve-3d; /* Allow 3D transforms for children */
+  transition: transform 0.4s ease; /* Smooth rotation */
+}
 
+/* Rotate the inner element on hover */
+.card:hover .inner {
+  transform: rotateY(-180deg);
+}
 
-  .DescriptionText{
-    font-family: Oswald;
-    color: white;
-    font-size: 125%;
-  }
-  
+/* Both faces: positioned absolutely */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .NameText{
-    margin-top: 1%;
-    font-family: Oswald;
-    color: white;
-    font-size: 150%;
+/* Front face: default view */
+.front {
+  background: #f88085;
+  transform: rotateY(0deg);
+}
 
-  }
+/* Back face: initially rotated, becomes visible after hover */
+.back {
+  transform: rotateY(180deg);
+  gap: 10px; /* Spacing between buttons */
+  background-size: cover; /* Cover the back face */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  backdrop-filter: blur(5px); /* Blur the background if desired */
+  opacity: 0.8;
+}
+
+/* Container for the social media icons */
+.iconContainer {
+  display: flex;
+  gap: 10px;
+}
+
+/* Anchor for social media icons */
+.back a {
+  display: inline-block;
+  width: 50px; /* Adjust as needed */
+  height: 50px;
+  opacity: 1 !important;
+}
+
+/* Icon image styling */
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Photo container styling */
+.photoContainer {
+  background-size: contain;
+  background-position: center;
+  margin-top: 0.5%;
+  aspect-ratio: 428 / 364.47;
+  height: 50%;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  background: lightgray 50% / contain no-repeat;
+  text-align: center;
+}
+
+/* Text container styling */
+.textcontainer {
+  margin-top: 9%;
+  aspect-ratio: 428 / 251.47;
+  height: 34%;
+  border-radius: 30px;
+  opacity: 0.9;
+  background: rgba(243, 46, 70, 0.96);
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Image inside the photo container */
+.photoContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.DescriptionText {
+  font-family: Oswald;
+  color: white;
+  font-size: 125%;
+}
+
+.NameText {
+  margin-top: 1%;
+  font-family: Oswald;
+  color: white;
+  font-size: 150%;
+}
