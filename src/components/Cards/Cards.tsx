@@ -19,6 +19,7 @@ import Alvaro from '../../sprites/PeoplePhotos/front/alvaro serrano.jpg'
 import Pablo from '../../sprites/PeoplePhotos/front/PMMS.jpg'
 import Alejandro from '../../sprites/PeoplePhotos/front/Alejandro Martos Bellido.jpg'
 import Sergio from '../../sprites/PeoplePhotos/front/Sergio Palacios López.jpg'
+import Cuco from '../../sprites/PeoplePhotos/front/Cuco.jpeg'
 
 import DavidMartOP from '../../sprites/PeoplePhotos/back/OPDavid Martinez Molina.jpeg'
 import CarlosTorresOP from '../../sprites/PeoplePhotos/back/OPCarlos Torres Jiménez.jpg'
@@ -39,6 +40,7 @@ import AlvaroOP from '../../sprites/PeoplePhotos/back/OPalvaro serrano.jpg'
 import PabloOP from '../../sprites/PeoplePhotos/back/OPPMMS.jpg'
 import AlejandroOP from '../../sprites/PeoplePhotos/back/OPAlejandro Martos Bellido.jpg'
 import SergioOP from '../../sprites/PeoplePhotos/back/OPSergio Palacios López.jpg'
+import CucoOP from '../../sprites/PeoplePhotos/back/OPCuco.jpeg'
 
 export default function Cards() {
   return (
@@ -90,6 +92,18 @@ export default function Cards() {
               >
                 {' '}
                 David Sánchez Palomino{' '}
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card
+                description="Estudiante de Ingeniería Informática en la UCO"
+                photo={Cuco}
+                backphoto={CucoOP}
+                twlink="https://x.com/belenmmontes"
+                ghlink="https://github.com/belenmmc"
+                lklink="https://www.linkedin.com/in/bel%C3%A9n-mar%C3%ADa-montes-caro-128929294/"
+              >
+                Javier León Torrecilla
               </Card>
             </div>
           </div>

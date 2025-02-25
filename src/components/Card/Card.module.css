@@ -117,7 +117,7 @@
 .DescriptionText {
   font-family: Oswald;
   color: white;
-  font-size: 125%;
+  font-size: auto;
 }
 
 .NameText {
