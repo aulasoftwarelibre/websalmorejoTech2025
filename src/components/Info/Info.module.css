@@ -4,42 +4,98 @@
   color: white;
   height: 100%;
   flex-shrink: 0;
-  padding-top: 15rem !important;
+  margin-top: clamp(
+    -35rem,
+    -80vh,
+    -80rem
+  ) !important; /* Increased margin using responsive units */
+  height: 100% !important;
+  width: calc(400vw + 500vh - 400vmin);
+  display: flex;
   max-width: 100%;
   overflow-x: hidden;
-  margin-top: -300px !important;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  min-height: 100vh; /* Ensure the container takes the full viewport height */
-  padding: 20px; /* Add some padding */
+  align-items: center; /* Centrado horizontal */
+  justify-content: flex-start; /* Centrado vertical */
+  min-height: auto; /* Asegura que el contenedor ocupe toda la altura del viewport */
+  box-sizing: border-box;
+}
+
+@media(min-width: 1900px){
+  .fondo1 {
+    margin-top: clamp(
+      -70rem,
+      -80vh,
+      -80rem
+    ) !important; /* Increased margin using responsive units */
+  }
+}
+
+@media(min-width: 1400px) and (max-width: 1900px){
+  .fondo1 {
+    margin-top: clamp(
+      -50rem,
+      -80vh,
+      -80rem
+    ) !important; /* Increased margin using responsive units */
+  }
+}
+
+@media(min-width: 1200px) and (max-width: 1400px){
+  .fondo1 {
+    margin-top: clamp(
+      -45rem,
+      -80vh,
+      -80rem
+    ) !important; /* Increased margin using responsive units */
+  }
+}
+
+@media(min-width: 1000px) and (max-width: 1200px){
+  .fondo1 {
+    margin-top: clamp(
+      -40rem,
+      -80vh,
+      -80rem
+    ) !important; /* Increased margin using responsive units */
+  }
+}
+
+.footerStr {
+  margin: auto;
 }
 
 .mainText {
   color: #fff;
   text-align: center;
   font-family: Oswald;
-  margin-top: 50px !important;
-  font-size: clamp(2rem, 10vw, 5rem); /* Responsive font size */
+  margin-top: 74vh !important;
+  font-size: calc(3vw + 4vh - 3vmin);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.container {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add padding for smaller screens */
+@media (max-width: 768px){
+  .mainText{
+    font-size:8vw;
+  }
 }
 
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem !important;
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 0 20px; /* Agrega padding para pantallas pequeñas */
+}
 
 .iconBackground {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
   text-align: center;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.15);
@@ -47,18 +103,35 @@
   backdrop-filter: blur(10px);
   width: 100%;
   max-width: 2000px;
-  margin: 0 auto; /* Ensure centering */
-  padding: 80px;
+  margin: 2rem auto;
+  padding: 2rem !important; /* Reduced from 80px */
 }
 
 @media (max-width: 768px) {
   .iconBackground {
     width: 100%;
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 1.5rem !important; /* Reduce padding para pantallas pequeñas */
+  }
+  
+  .footerStr {
+    margin-top: 10rem !important; 
   }
 
+
   .textIcons {
-    font-size: 30px; /* Adjust font size for smaller screens */
+    font-size: 1.5rem !important;
+  }
+
+  .swiper-slide {
+    padding: 0 10px;
+  }
+
+  .fondo1 {
+    margin-top: 10rem; /* Larger fixed margin for mobile */
+    padding: 2rem 1rem !important;
+  }
+  .mainText {
+    margin-top: 20rem !important; /* Reduce excessive top spacing */
   }
 
   .container {
@@ -68,47 +141,78 @@
   }
 }
 
-
-
-
 .ticket {
   max-width: 100%;
   height: auto;
 }
 
-
-
-/* Media query for phones */
+/* Media query para teléfonos */
 @media (max-width: 768px) {
   .container {
-    padding: 0 10px; /* Reduce padding for smaller screens */
+    padding: 0 10px; /* Reduce padding para pantallas pequeñas */
   }
 
   .iconBackground {
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 20px; /* Reduce padding para pantallas pequeñas */
   }
 
   .textIcons {
-    font-size: 30px; /* Adjust font size for smaller screens */
+    font-size: 30px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
   }
 }
 
-.textoCarrousel{
-  color: #FFF;
+
+/* Se aumenta el padding para que haya más espacio entre el texto y el borde */
+.textoCarrousel {
+  color: #fff;
   text-align: justify;
-  leading-trim: both;
-  text-edge: cap;
   font-family: Oswald;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  letter-spacing: 2px;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  padding: 1.5rem;
+  line-height: 1.8; /* Aumenta el espacio entre líneas */
+  max-width: 400px; /* Reduce el ancho para que el texto se corte antes */
+  margin: auto;
 }
 
-.backgroundTextoCarrousel{
-border-radius: 40px;
-background: rgba(255, 255, 255, 0.10);
-max-width: 700px;
-backdrop-filter: blur(5px);
+.backgroundTextoCarrousel {
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: clamp(35rem, 20vw, 1.5rem);
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* Se remueve height: 100% para que el fondo se adapte al contenido */
+}
+
+.imageCarousel {
+  max-width: 200% !important;
+  width: 200%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: auto;
+  border: white 1px solid;
+}
+
+@media (max-width: 768px) {
+  .textoCarrousel {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .imageCarousel {
+    height: 200px;
+  }
+}
+
+.carouselPart {
+  margin-top: 8vh !important; /* Use viewport units for vertical spacing */
+}
+
+.fondoblanco {
+  background: url('../../sprites/blanco.svg') center/cover no-repeat;
+  height: 50vh;
+
 }

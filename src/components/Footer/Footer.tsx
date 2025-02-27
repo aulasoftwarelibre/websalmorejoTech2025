@@ -11,68 +11,46 @@ import mail from '../../sprites/featherIcons/mail.svg'
 import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
+  const getMaxScrollY = () => {
+    return document.body.scrollHeight
+  }
 
-    const [scroll, setScroll] = useState(0);
-    
-    useEffect(() => {
-      let newScroll;
-      if (window.innerWidth / window.innerHeight > 1) {
-        newScroll = 450;
-      } else if (window.innerWidth / window.innerHeight > 0.8) {
-        newScroll = 200;
-      } else if (window.innerWidth / window.innerHeight > 0.6) {
-        newScroll = 80;
-      } else if (window.innerWidth / window.innerHeight > 0.5) {
-        newScroll = 250;
-      } else {
-        newScroll = 135;
-      }
-      setScroll(newScroll);
-  
-      const handleResize = () => {
-        let updatedScroll;
-        if (window.innerWidth / window.innerHeight > 1) {
-          updatedScroll = 450;
-        } else if (window.innerWidth / window.innerHeight > 0.8) {
-          updatedScroll = 200;
-        } else if (window.innerWidth / window.innerHeight > 0.6) {
-          updatedScroll = 80;
-        } else if (window.innerWidth / window.innerHeight > 0.5) {
-          updatedScroll = 250;
-        } else {
-          updatedScroll = 135;
-        }
-        setScroll(updatedScroll);
-      };
+  const [scroll, setScroll] = useState(0)
 
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
-    const [isMoved, setIsMoved] = useState(false);
-  
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-  
-      if (scrollPosition > scroll) {
-        setIsMoved(true);
-      } else {
-        setIsMoved(false);
-      }
-    };
-    
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [scroll]); // Dependencia de `scroll` para que se actualice correctamente
-  
+  useEffect(() => {
+    setScroll(getMaxScrollY()*0.995)
+    console.log(getMaxScrollY())
+
+    const handleResize = () => {
+      setScroll(getMaxScrollY()*0.995)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const [isMoved, setIsMoved] = useState(false)
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY
+
+    if (scrollPosition > scroll) {
+      setIsMoved(true)
+    } else {
+      setIsMoved(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [scroll]) // Dependencia de `scroll` para que se actualice correctamente
   return (
     <div className={styles.fondo1} id="footer">
       <div className={`${styles.footerStr} row`}>
@@ -216,7 +194,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={`row pb-3`}>
-        <h4>© 2024 Aula Software Libre</h4>
+        <h4>© 2025 Aula Software Libre</h4>
       </div>
     </div>
   )
