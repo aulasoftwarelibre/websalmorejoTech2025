@@ -20,6 +20,7 @@ import Pablo from '../../sprites/PeoplePhotos/front/PMMS.jpg'
 import Alejandro from '../../sprites/PeoplePhotos/front/Alejandro Martos Bellido.jpg'
 import Sergio from '../../sprites/PeoplePhotos/front/Sergio Palacios López.jpg'
 import Cuco from '../../sprites/PeoplePhotos/front/Cuco.jpeg'
+import Arturo from '../../sprites/PeoplePhotos/front/Arturo.jpg'
 
 import DavidMartOP from '../../sprites/PeoplePhotos/back/OPDavid Martinez Molina.jpeg'
 import CarlosTorresOP from '../../sprites/PeoplePhotos/back/OPCarlos Torres Jiménez.jpg'
@@ -41,6 +42,7 @@ import PabloOP from '../../sprites/PeoplePhotos/back/OPPMMS.jpg'
 import AlejandroOP from '../../sprites/PeoplePhotos/back/OPAlejandro Martos Bellido.jpg'
 import SergioOP from '../../sprites/PeoplePhotos/back/OPSergio Palacios López.jpg'
 import CucoOP from '../../sprites/PeoplePhotos/back/OPCuco.jpeg'
+import ArturoOP from '../../sprites/PeoplePhotos/back/OPArturo.png'
 
 export default function Cards() {
   return (
@@ -110,12 +112,12 @@ export default function Cards() {
           <div className="row justify-content-center">
             <div className="col-md-4">
               <Card
-                description=""
-                photo={Juanan}
-                backphoto={JuananOP}
-                twlink="https://x.com/__juaneljulaint"
-                lklink="https://www.linkedin.com/in/juan-mellado-02056a352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                ghlink="https://github.com/butifarraprogramadora3000"
+                description="Estudiante de 4º de ingeniería informática y fanático del cacharreo"
+                photo={Arturo}
+                backphoto={ArturoOP}
+                twlink="https://x.com/ARVIPE_01?t=T_ewGHnc8Ml2dm6G60lObA&s=09"
+                lklink="https://www.linkedin.com/in/arturo-vicente-p%C3%A9rez-3b0349195/"
+                ghlink="https://github.com/ARVIPE"
               >
                 {' '}
                 Arturo Vicente Perez
