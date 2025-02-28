@@ -3,8 +3,8 @@ import imagen1 from '../../sprites/Past/2024.png'
 import imagen2 from '../../sprites/Past/2023.png'
 import imagen3 from '../../sprites/Past/2022.png'
 import imagen4 from '../../sprites/Past/2021.png'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../FooterPast/Footer'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/FooterPast/Footer'
 
 export default function Past() {
   return (
