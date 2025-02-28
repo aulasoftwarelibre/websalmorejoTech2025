@@ -5,12 +5,21 @@
     "imageUrl": "/2025/sponsors/audiense.svg",
     "href": "https://es.audiense.com/"
   },
+
   {
-    "name": "Vant",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/vant.png",
-    "href": "https://www.vantpc.es/"
+    "name": "Rti",
+    "type": "CHERRY",
+    "imageUrl": "/2025/sponsors/rti.png",
+    "href": "https://www.rti.com/en/"
   },
+
+  {
+    "name": "Sticker Mule",
+    "type": "CHERRY",
+    "imageUrl": "/2025/sponsors/stickermule.png",
+    "href": "https://www.stickermule.com/es?utm_source=google&utm_medium=cpc&src=GOOG&cid=425673967&gad_source=1&gclid=Cj0KCQiA2oW-BhC2ARIsADSIAWqJi5v7xarXLOi_gUutGlbzsRmcW2tBjfaoYF5GtJxRfPFipccBxuwaAkW2EALw_wcB"
+  },
+
   {
     "name": "Cátedra Eprinsa",
     "type": "PERA",
@@ -18,117 +27,17 @@
     "href": "https://www.linkedin.com/in/c%C3%A1tedra-eprinsa-uco-transformaci%C3%B3n-digital-51333a217/"
   },
   {
-    "name": "Escuela Politécnica Superior de Cordoba",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/epsc.svg",
-    "href": "https://www.uco.es/eps/es/"
-  },
-  {
-    "name": "Sngular",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/SNGULAR.svg",
-    "href": "https://www.sngular.com/"
-  },
-  {
-    "name": "Genially",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/genially.svg",
-    "href": "https://genial.ly/"
-  },
-  {
-    "name": "Rabanales 21",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/rab21.svg",
-    "href": "https://rabanales21.com/"
-  },
-  {
-    "name": "NTT Data",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/nttdata.svg",
-    "href": "https://es.nttdata.com/"
-  },
-  {
-    "name": "Consejo Social UCO",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/consejo-social.png",
-    "href": "http://www.uco.es/organizacion/consejosocial/index.php/es/"
-  },
-  {
-    "name": "Universidad de Cordoba",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/uco.png",
-    "href": "http://www.uco.es/"
-  },
-  {
-    "name": "Ayuntamiento de Cordoba",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/ayto_cordoba.png",
-    "href": "http://www.uco.es/"
-  },
-  {
-    "name": "Freepik",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/freepik.jpg",
-    "href": "https://www.freepik.es/"
-  },
-  {
-    "name": "InditexTech",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/inditextech.jpg",
-    "href": "https://www.inditex.com/itxcomweb/es/home"
-  },
-  {
-    "name": "Estrella Galicia",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/estrella-galicia.png",
-    "href": "https://estrellagalicia.es/"
-  },
-  {
-    "name": "Codely",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/codely.png",
-    "href": "https://codely.com/"
-  },
-  {
-    "name": "OmniAccess",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/omniaccess.png",
-    "href": "https://www.omniaccess.com/"
-  },
-  {
     "name": "Atmira",
     "type": "CHERRY",
     "imageUrl": "/2025/sponsors/atmira.png",
     "href": "https://www.atmira.com/"
   },
+
   {
-    "name": "ManFred",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/manfred.png",
-    "href": "https://www.getmanfred.com/"
-  },
-  {
-    "name": "LeanMind",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/leanmind.svg",
-    "href": "https://leanmind.es/"
-  },
-  {
-    "name": "Coca-Cola",
+    "name": "Codely",
     "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/coca-cola.png",
-    "href": "https://www.cocacolaep.com/es/"
-  },
-  {
-    "name": "Mercado Victoria",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/mv.png",
-    "href": "https://www.mercadovictoria.com/"
-  },
-  {
-    "name": "Aprodeweb",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/aprodeweb.svg",
-    "href": "https://github.com/aprodeweb"
+    "imageUrl": "/2025/sponsors/codely.png",
+    "href": "https://codely.com/"
   }
+  
 ]
