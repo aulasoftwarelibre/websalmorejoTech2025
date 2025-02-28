@@ -43,25 +43,40 @@
 
 /* Front face: default view */
 .front {
-  background: #f88085;
+  background: #ffc7c9a4;
   transform: rotateY(0deg);
+  backdrop-filter: blur(3px); 
 }
+
 
 /* Back face: initially rotated, becomes visible after hover */
 .back {
+  position: relative; 
   transform: rotateY(180deg);
-  gap: 10px; /* Spacing between buttons */
-  background-size: cover; /* Cover the back face */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  backdrop-filter: blur(5px); /* Blur the background if desired */
-  opacity: 0.8;
+  gap: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
 }
+
+.back::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.24); 
+  border-radius: 50px;
+  z-index: 0; 
+}
+
 
 /* Container for the social media icons */
 .iconContainer {
-  display: flex;
-  gap: 10px;
+  position: relative; 
+  z-index: 1; 
 }
 
 /* Anchor for social media icons */
@@ -89,18 +104,20 @@
   flex-shrink: 0;
   border-radius: 30px;
   border: 5px solid #fff;
-  background: lightgray 50% / contain no-repeat;
+  background: lightgray 100% / contain no-repeat;
   text-align: center;
 }
 
 /* Text container styling */
 .textcontainer {
   margin-top: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
   aspect-ratio: 428 / 251.47;
   height: 34%;
   border-radius: 30px;
   opacity: 0.9;
-  background: rgba(243, 46, 70, 0.96);
+  background: rgba(255, 255, 255, 0.74);
   text-align: center;
   padding-top: 10px;
 }
@@ -116,13 +133,13 @@
 
 .DescriptionText {
   font-family: Oswald;
-  color: white;
+  color: #A8041A;
   font-size: auto;
 }
 
 .NameText {
   margin-top: 1%;
   font-family: Oswald;
-  color: white;
+  color: #A8041A;
   font-size: 150%;
 }
