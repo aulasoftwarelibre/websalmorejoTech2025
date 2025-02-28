@@ -19,7 +19,7 @@
 }
 
 .schedule {
-  color: #8a153c;
+  color: #A8041A;
   text-align: center;
   font-weight: bold;
 }
@@ -50,7 +50,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia el estilo de la sombra al pasar el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   transform: scale(1.05);
 }
 
@@ -99,22 +99,22 @@
 }
 
 .cardEmpty:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia el estilo de la sombra al pasar el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   transform: scale(1.05);
 }
 
 .cardEmptySingle:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia el estilo de la sombra al pasar el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   transform: scale(1.05);
 }
 
 .cardEmptyComida:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia el estilo de la sombra al pasar el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   transform: scale(1.05);
 }
 
 .cardEmptyFirst:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia el estilo de la sombra al pasar el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   transform: scale(1.05);
 }
 
@@ -141,6 +141,7 @@
     transform-origin: center;
     opacity: 0;
     background: #fbcfc1;
+    color: #A8041A !important;
   }
 }
 
@@ -154,6 +155,7 @@
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
+    color: #A8041A !important;
   }
 }
 
@@ -166,6 +168,7 @@
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
+    color: #A8041A !important;
   }
 }
 
@@ -179,6 +182,7 @@
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
+    color: #A8041A !important;
   }
 }
 
@@ -191,6 +195,7 @@
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
+    color: #A8041A !important;
   }
 }
 
