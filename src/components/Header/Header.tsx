@@ -10,8 +10,6 @@ import wifi from '../../sprites/wifi.svg'
 import { useEffect, useState } from 'react'
 
 export default function Header() {
-
-
   const [isMoved, setIsMoved] = useState(false)
   const [isMovedTomato, setIsMovedTomato] = useState(false)
   const [isMovedText, setIsMovedText] = useState(false)
@@ -23,33 +21,27 @@ export default function Header() {
   let TextScroll: number
   let TopScroll: number //Scroll Especifico para Tablet
 
-  if (window.innerWidth/window.innerHeight> 1 ) {
+  if (window.innerWidth / window.innerHeight > 1) {
     scroll = 400
-    TextScroll=400
-    TopScroll= 425
-
-  }  
-  else if (window.innerWidth/window.innerHeight> 0.8 ) {
+    TextScroll = 400
+    TopScroll = 425
+  } else if (window.innerWidth / window.innerHeight > 0.8) {
     scroll = 150
-    TextScroll=100
-    TopScroll= 100
-  }  
-  else if (window.innerWidth/window.innerHeight> 0.6 ) {
+    TextScroll = 100
+    TopScroll = 100
+  } else if (window.innerWidth / window.innerHeight > 0.6) {
     scroll = 50
-    TextScroll=75
-    TopScroll= 75
-  }  
-  else if(window.innerWidth/window.innerHeight> 0.5 ) {
+    TextScroll = 75
+    TopScroll = 75
+  } else if (window.innerWidth / window.innerHeight > 0.5) {
     scroll = 200
-    TextScroll=150
-    TopScroll= 175
+    TextScroll = 150
+    TopScroll = 175
+  } else {
+    scroll = 85
+    TextScroll = 60
+    TopScroll = 60
   }
-  else{
-  scroll = 85
-  TextScroll=60
-  TopScroll= 60
-  }
-
 
   const handleWheatScroll = () => {
     const scrollPosition = window.scrollY
@@ -112,7 +104,6 @@ export default function Header() {
   }
 
   useEffect(() => {
-    
     window.addEventListener('scroll', handleScroll)
     window.addEventListener('scroll', handleTomatoScroll)
     window.addEventListener('scroll', handleTextScroll)
@@ -161,13 +152,13 @@ export default function Header() {
             </div>
           </div>
         </div>
-        
+
         <div
           className={`pt-4 ${styles.normalText} ${isMovedText ? styles.movedText : ''}`}
         >
-        <div className={styles.logoContainer}>
-          <img src={logo} className={`${styles.logo} img-fluid`} alt="logo" />
-        </div>
+          <div className={styles.logoContainer}>
+            <img src={logo} className={`${styles.logo} img-fluid`} alt="logo" />
+          </div>
           <p className={`${styles.logoContainer}`}>
             <FontAwesomeIcon
               icon={faCalendar}
@@ -189,9 +180,7 @@ export default function Header() {
         <div className="pt-4">
           <p className={`${styles.logoContainer}`}>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
-            <button className={`${styles.buttonInicio}`}>
-              Call4Papers
-            </button>
+              <button className={`${styles.buttonInicio}`}>Call4Papers</button>
             </a>
           </p>
         </div>

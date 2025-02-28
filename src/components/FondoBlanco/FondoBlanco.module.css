@@ -1,6 +1,5 @@
 .fondoblanco {
-    background: url('../../sprites/blanco.svg') center/cover no-repeat;
-    height: 80vh;
-    width: 120%;
-  
-  }
+  background: url('../../sprites/blanco.svg') center/cover no-repeat;
+  height: 80vh;
+  width: 120%;
+}

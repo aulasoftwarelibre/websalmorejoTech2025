@@ -19,18 +19,16 @@
 /* For medium screens */
 @media (max-width: 1024px) {
   .container {
-    margin-bottom: 40vw;  /* Adjust margin for medium screens */
+    margin-bottom: 40vw; /* Adjust margin for medium screens */
   }
 }
-
 
 /* For very small screens */
 @media (max-width: 768px) {
   .container {
-    margin-bottom: 50vw;  /* Adjust margin for extra small screens */
+    margin-bottom: 50vw; /* Adjust margin for extra small screens */
   }
 }
-
 
 .sponsor {
   width: 10rem;

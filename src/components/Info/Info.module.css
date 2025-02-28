@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-@media(min-width: 1900px){
+@media (min-width: 1900px) {
   .fondo1 {
     margin-top: clamp(
       -70rem,
@@ -32,7 +32,7 @@
   }
 }
 
-@media(min-width: 1400px) and (max-width: 1900px){
+@media (min-width: 1400px) and (max-width: 1900px) {
   .fondo1 {
     margin-top: clamp(
       -50rem,
@@ -42,7 +42,7 @@
   }
 }
 
-@media(min-width: 1200px) and (max-width: 1400px){
+@media (min-width: 1200px) and (max-width: 1400px) {
   .fondo1 {
     margin-top: clamp(
       -45rem,
@@ -52,7 +52,7 @@
   }
 }
 
-@media(min-width: 1000px) and (max-width: 1200px){
+@media (min-width: 1000px) and (max-width: 1200px) {
   .fondo1 {
     margin-top: clamp(
       -40rem,
@@ -77,9 +77,9 @@
   line-height: normal;
 }
 
-@media (max-width: 768px){
-  .mainText{
-    font-size:8vw;
+@media (max-width: 768px) {
+  .mainText {
+    font-size: 8vw;
   }
 }
 
@@ -112,11 +112,10 @@
     width: 100%;
     padding: 1.5rem !important; /* Reduce padding para pantallas pequeñas */
   }
-  
-  .footerStr {
-    margin-top: 10rem !important; 
-  }
 
+  .footerStr {
+    margin-top: 10rem !important;
+  }
 
   .textIcons {
     font-size: 1.5rem !important;
@@ -160,7 +159,6 @@
     font-size: 30px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
   }
 }
-
 
 /* Se aumenta el padding para que haya más espacio entre el texto y el borde */
 .textoCarrousel {
@@ -214,5 +212,4 @@
 .fondoblanco {
   background: url('../../sprites/blanco.svg') center/cover no-repeat;
   height: 50vh;
-
 }

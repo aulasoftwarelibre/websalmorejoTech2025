@@ -8,8 +8,16 @@ export const Moleculas = () => {
       {/* <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg2}`}></div>
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg2}`}></div> */}
       <div>
-        <img  className={`${styles.moleculas} ${styles.parallax} ${styles.bg3}`} src={tomatito} alt="Parallax Element" />
-        <img  className={`${styles.moleculas} ${styles.parallax} ${styles.bg4}`} src={tomatito} alt="Parallax Element" />
+        <img
+          className={`${styles.moleculas} ${styles.parallax} ${styles.bg3}`}
+          src={tomatito}
+          alt="Parallax Element"
+        />
+        <img
+          className={`${styles.moleculas} ${styles.parallax} ${styles.bg4}`}
+          src={tomatito}
+          alt="Parallax Element"
+        />
       </div>
       {/* <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg6}`}></div>
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg7}`}></div>

@@ -140,13 +140,13 @@
     animation: zoomIn 0.5s ease forwards;
     transform-origin: center;
     opacity: 0;
-    background: #FBCFC1;
+    background: #fbcfc1;
   }
 }
 
 @media (min-width: 600px) {
   .modalContent {
-    background: #FBCFC1;
+    background: #fbcfc1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -159,7 +159,7 @@
 
 @media (max-width: 600px) {
   .modalContentSingle {
-    background: #FBCFC1;
+    background: #fbcfc1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -171,7 +171,7 @@
 
 @media (min-width: 600px) {
   .modalContentSingle {
-    background: #FBCFC1;
+    background: #fbcfc1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -184,7 +184,7 @@
 
 @media (max-width: 600px) {
   .modalContentSingleTalleres {
-    background: #FBCFC1;
+    background: #fbcfc1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;
@@ -196,7 +196,7 @@
 
 @media (min-width: 600px) {
   .modalContentSingleTalleres {
-    background: #FBCFC1;
+    background: #fbcfc1;
     margin: 8% auto;
     padding: 20px;
     border-radius: 10px;

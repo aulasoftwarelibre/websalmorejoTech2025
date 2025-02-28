@@ -12,4 +12,4 @@ Creación de la Web del SalmorejoTech de 2025. 🍅
 
 Este proyecto ha sido creado por:
 
--   [Aula de Software Libre](https://github.com/aulasoftwarelibre)
+- [Aula de Software Libre](https://github.com/aulasoftwarelibre)

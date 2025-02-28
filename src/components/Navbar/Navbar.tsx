@@ -42,10 +42,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <Link
-              className={`nav-link ${styles.boldText}`}
-              to="/2025/past" 
-            >
+            <Link className={`nav-link ${styles.boldText}`} to="/2025/past">
               Otras ediciones
             </Link>
           </li>
@@ -58,7 +55,10 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a className={`nav-link ${styles.boldText} `} href="https://www.eventbrite.es/e/entradas-salmorejotech-2025-1252909158019">
+            <a
+              className={`nav-link ${styles.boldText} `}
+              href="https://www.eventbrite.es/e/entradas-salmorejotech-2025-1252909158019"
+            >
               Entradas
             </a>
           </li>

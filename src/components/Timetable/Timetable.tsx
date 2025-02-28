@@ -616,7 +616,7 @@ const Schedule: React.FC = () => {
           descripcion="Tech Lead de Vercel"
           descripcionCharla="Vengo a hablar de React, server components, streaming, suspense y server actions, contando un poco de dónde venimos."
         />
-        
+
         <ScheduleCard
           title="NO TODO EL CAMPO ES 'GREEN'. CÓMO LIDIAR CON LEGACY CODE"
           author="Concha Asensio"

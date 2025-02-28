@@ -18,11 +18,11 @@ export default function Footer() {
   const [scroll, setScroll] = useState(0)
 
   useEffect(() => {
-    setScroll(getMaxScrollY()*0.995)
+    setScroll(getMaxScrollY() * 0.995)
     console.log(getMaxScrollY())
 
     const handleResize = () => {
-      setScroll(getMaxScrollY()*0.995)
+      setScroll(getMaxScrollY() * 0.995)
     }
 
     window.addEventListener('resize', handleResize)

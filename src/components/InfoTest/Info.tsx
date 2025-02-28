@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Autoplay } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import styles from './Info.module.css'
@@ -12,8 +12,7 @@ import img1 from '../../sprites/pics/1-min.jpg'
 import img2 from '../../sprites/pics/8-min.jpg'
 import Map from '../Map/Map'
 import Timetable from '../Timetable/Timetable'
-import { Moleculas } from '../moleculas'
-import TomatoParallax from '../TomatoParallax'
+import Cards from '../Cards/Cards'
 
 export default function Info() {
   return (
@@ -129,6 +128,9 @@ export default function Info() {
           <Map />
           <div className="container">
             <Timetable />
+          </div>
+          <div className="container mt-5">
+            <Cards />
           </div>
         </div>
         <div className={styles.fondoblanco}>
