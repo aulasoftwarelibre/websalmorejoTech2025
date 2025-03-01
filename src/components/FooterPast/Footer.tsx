@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useLayoutEffect } from 'react'
+import { useState, useLayoutEffect } from 'react'
 import styles from './Footer.module.css'
 import logo from '../../sprites/logoAula.png'
 import facebook from '../../sprites/featherIcons/facebook.svg'
