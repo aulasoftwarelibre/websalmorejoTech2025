@@ -162,7 +162,7 @@
   .DescriptionText {
     font-family: Oswald;
     color: #A8041A;
-    font-size: clamp(14px, 0.9svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
+    font-size: clamp(14px, 18svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
     text-align: center;
     overflow-wrap: break-word; /* Permite saltos de línea en palabras largas */
     word-break: break-word; /* Rompe palabras largas si es necesario */
