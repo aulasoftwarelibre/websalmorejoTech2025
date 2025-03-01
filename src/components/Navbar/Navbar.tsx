@@ -42,7 +42,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <Link className={`nav-link ${styles.boldText}`} to="/2025/past">
+            <Link className={`nav-link ${styles.boldText}`}  to="/2025/past">
               Otras ediciones
             </Link>
           </li>
