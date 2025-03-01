@@ -219,7 +219,7 @@ export default function Cards() {
             <div className="row justify-content-center">
               <div className="col-md-5 col-lg-4">
                 <Card
-                  description="2ndo de Ingeniería Informática en la UCO
+                  description="2º de Ing. Informática en la UCO
                                 Subdelegado de las relaciones externas del Aula de Software Libre
                                 Distribuidor oficial de memes del Salmorejo"
                   photo={Jaime}
