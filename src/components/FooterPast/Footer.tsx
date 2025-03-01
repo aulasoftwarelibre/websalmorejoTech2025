@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+
+import { useState, useEffect, useLayoutEffect } from 'react'
 import styles from './Footer.module.css'
 import logo from '../../sprites/logoAula.png'
 import facebook from '../../sprites/featherIcons/facebook.svg'
@@ -10,47 +11,37 @@ import linkedln from '../../sprites/featherIcons/linkedin.svg'
 import mail from '../../sprites/featherIcons/mail.svg'
 import map from '../../sprites/featherIcons/map.svg'
 
+
 export default function Footer() {
-  const getMaxScrollY = () => {
-    return document.body.scrollHeight
-  }
+  const getMaxScrollY = () => document.body.scrollHeight - window.innerHeight;
 
-  const [scroll, setScroll] = useState(0)
+  const [scrollThreshold, setScrollThreshold] = useState(() => getMaxScrollY() * 0.5);
+  const [isMoved, setIsMoved] = useState(false);
 
-  useEffect(() => {
-    setScroll(getMaxScrollY() * 0.5)
-    console.log(getMaxScrollY())
-
-    const handleResize = () => {
-      setScroll(getMaxScrollY() * 0.5)
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
-
-  const [isMoved, setIsMoved] = useState(false)
-
+ 
   const handleScroll = () => {
-    const scrollPosition = window.scrollY
+    setIsMoved(window.scrollY > scrollThreshold);
+  };
 
-    if (scrollPosition > scroll) {
-      setIsMoved(true)
-    } else {
-      setIsMoved(false)
-    }
-  }
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+  const handleResize = () => {
+    setScrollThreshold(getMaxScrollY() * 0.995);
+  };
+
+  useLayoutEffect(() => {
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [scroll]) // Dependencia de `scroll` para que se actualice correctamente
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [scrollThreshold]); 
+
   return (
     <div className={styles.fondo1} id="footer">
       <div className={`${styles.footerStr} row`}>

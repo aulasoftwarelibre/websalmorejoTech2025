@@ -91,3 +91,20 @@
     transform: translateY(0px);
   }
 }
+@media (max-width: 1024px) {
+  .movableDivLeft {
+    transform: translateY(50px);
+  }
+
+  .movableDivRight {
+    transform: translateY(50px);
+  }
+
+  .moved {
+    transform: translateY(0);
+  }
+
+  .movedLeft {
+    transform: translateY(0);
+  }
+}
