@@ -52,7 +52,7 @@ export default function Cards() {
         <h3 className={styles.group}>GENERAL</h3>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Coordino el SalmorejoTech 2025, y en mi tiempo libre estudio Ingeniería Informática"
                 photo={Belen}
@@ -64,7 +64,7 @@ export default function Cards() {
                 Belén María Montes Caro
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 2°Ingeniería informática UCO"
                 photo={Cañete}
@@ -74,7 +74,7 @@ export default function Cards() {
                 Antonio Cañete lopez
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiando informática en la UCO"
                 photo={CarlosTorres}
@@ -84,7 +84,7 @@ export default function Cards() {
                 Carlos Torres Jiménez{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 1°Ingeniería Informática."
                 lklink="https://www.linkedin.com/in/david-s%C3%A1nchez-palomino-a06671322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -96,7 +96,7 @@ export default function Cards() {
                 David Sánchez Palomino{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de Ingeniería Informática en la UCO"
                 photo={Cuco}
@@ -110,7 +110,7 @@ export default function Cards() {
         <h3 className={styles.group}>Infraestructura</h3>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 4º de ingeniería informática y fanático del cacharreo"
                 photo={Arturo}
@@ -123,7 +123,7 @@ export default function Cards() {
                 Arturo Vicente Perez
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de ingenieria informatica de la Uco"
                 photo={DavidMart}
@@ -135,7 +135,7 @@ export default function Cards() {
                 David Martínez Molina{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 2° de Ingeniería informática 😄 
                 A tope con el salmorejo para aprender y disfrutar 🎉"
@@ -149,7 +149,7 @@ export default function Cards() {
                 Dario Martínez Kostyuk
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de informática, Delegado de relaciones externas del aula e interesado en aprender y mejorar "
                 photo={Tefry}
@@ -160,7 +160,7 @@ export default function Cards() {
                 Manuel Reyes Serrano (Tefry)
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 2° de ingeniería informática con muchas ganas de aprender."
                 photo={Juanan}
@@ -177,7 +177,7 @@ export default function Cards() {
           <h3 className={styles.group}>Diseño</h3>
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="Estudiante de ingeniería informática amante del arte, un poco 'The best of both worlds' :)"
                   photo={Elena}
@@ -189,7 +189,7 @@ export default function Cards() {
                   Elena Molero Padilla
                 </Card>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="Funciono con código: 
                             if(café === true) { productividad++; } else {error('Requiere más café');"
@@ -201,7 +201,7 @@ export default function Cards() {
                   Antonio José Serrano Maestre{' '}
                 </Card>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="2°Ingeniería Informática Grupo diseño"
                   photo={AntonioMerlo}
@@ -217,7 +217,7 @@ export default function Cards() {
           <h3 className={styles.group}>Marketing</h3>
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="2ndo de Ingeniería Informática en la UCO
                                 Subdelegado de las relaciones externas del Aula de Software Libre
@@ -232,7 +232,7 @@ export default function Cards() {
                   Jaime Hernández Pérez{' '}
                 </Card>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="Ojala el meme de Cristiano y Messi hubiese sido idea mía"
                   photo={Minghan}
@@ -242,7 +242,7 @@ export default function Cards() {
                   Minghan Wang{' '}
                 </Card>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-5 col-lg-4">
                 <Card
                   description="Estudiante de ingeniería informática de la UCO"
                   photo={Roxana}
@@ -258,7 +258,7 @@ export default function Cards() {
         <h3 className={styles.group}>Gestión</h3>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 4 de ingeniería informática apasionado del desarrollo de software con muchas ganas de aprender"
                 photo={Alvaro}
@@ -270,7 +270,7 @@ export default function Cards() {
                 Álvaro Serrano Lopéz{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 2 curso de ingeniería informática por la UCO"
                 photo={Pablo}
@@ -282,7 +282,7 @@ export default function Cards() {
                 Pablo Miguel Martín Segovia{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de ingeniería informática en la UCO. Utilizaré un algoritmo de búsqueda O(1) para encontrar lo antes posible tu corazón."
                 photo={Sergio}
@@ -294,7 +294,7 @@ export default function Cards() {
                 Sergio Palacios López{' '}
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="✍️ Promoviendo el Software Libre en Europa"
                 photo={Sofia}
@@ -303,7 +303,7 @@ export default function Cards() {
                 Sofía Aritz Albors Escobés
               </Card>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de Ing. Informática en la UCO, miembro del ASL"
                 photo={Alejandro}

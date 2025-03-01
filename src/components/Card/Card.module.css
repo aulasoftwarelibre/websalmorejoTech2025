@@ -121,6 +121,20 @@
   text-align: center;
   padding-top: 10px;
 }
+.textcontainer {
+  margin-top: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente */
+  align-items: center; /* Centra el texto horizontalmente */
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.74);
+  word-wrap: break-word;
+  overflow: hidden; /* Asegura que el texto no se desborde */
+}
 
 /* Image inside the photo container */
 .photoContainer img {
@@ -131,15 +145,119 @@
   border-radius: 30px;
 }
 
+
+@media (max-width: 989px)  {
+  .NameText {
+    margin-top: 3%;
+    
+    font-family: Oswald;
+    color: #A8041A;
+    font-size: 190%;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se desborde */
+    overflow: hidden; /* Oculta el texto que se desborde */
+     max-width: 100%; /* Asegura que el ancho no se desborde */
+  }
+  
+  .DescriptionText {
+    font-family: Oswald;
+    color: #A8041A;
+    font-size: clamp(25.2px, 0.9svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
+    text-align: center;
+    overflow-wrap: break-word; /* Permite saltos de línea en palabras largas */
+    word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+}
+@media (min-width: 770px) and (max-width: 990px) {
+.NameText {
+  margin-top: 3%;
+  
+  font-family: Oswald;
+  color: #A8041A;
+  font-size: 110%;
+  text-align: center;
+  white-space: nowrap; /* Evita que el texto se desborde */
+  overflow: hidden; /* Oculta el texto que se desborde */
+   max-width: 100%; /* Asegura que el ancho no se desborde */
+}
+
 .DescriptionText {
   font-family: Oswald;
   color: #A8041A;
-  font-size: auto;
+  font-size: clamp(12.3px, 0.9svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
+  text-align: center;
+  overflow-wrap: break-word; /* Permite saltos de línea en palabras largas */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
 }
 
-.NameText {
-  margin-top: 1%;
-  font-family: Oswald;
-  color: #A8041A;
-  font-size: 150%;
 }
+@media (min-width: 991px)  and (max-width: 1200px){
+  .NameText {
+    margin-top: 3%;
+    
+    font-family: Oswald;
+    color: #A8041A;
+    font-size: 120%;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se desborde */
+    overflow: hidden; /* Oculta el texto que se desborde */
+     max-width: 100%; /* Asegura que el ancho no se desborde */
+  }
+  
+  .DescriptionText {
+    font-family: Oswald;
+    color: #A8041A;
+    font-size: clamp(13px, 0.9svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
+    text-align: center;
+    overflow-wrap: break-word; /* Permite saltos de línea en palabras largas */
+    word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  
+  }
+  @media (min-width: 1201px)  {
+    .NameText {
+      margin-top: 3%;
+      
+      font-family: Oswald;
+      color: #A8041A;
+      font-size: 150%;
+      text-align: center;
+      white-space: nowrap; /* Evita que el texto se desborde */
+      overflow: hidden; /* Oculta el texto que se desborde */
+       max-width: 100%; /* Asegura que el ancho no se desborde */
+    }
+    
+    .DescriptionText {
+      font-family: Oswald;
+      color: #A8041A;
+      font-size: clamp(17.1px, 0.9svw, 18px); /* Ajusta dinámicamente según el tamaño de la pantalla */
+      text-align: center;
+      overflow-wrap: break-word; /* Permite saltos de línea en palabras largas */
+      word-break: break-word; /* Rompe palabras largas si es necesario */
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
+    
+    }

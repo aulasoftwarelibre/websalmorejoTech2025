@@ -34,8 +34,8 @@ export default function Card({
             <img src={photo} alt="Foto de perfil" />
           </div>
           <div className={styles.textcontainer}>
-            <h5 className={styles.NameText}>{children}</h5>
-            <p className={styles.DescriptionText}>{description}</p>
+            <div><h5 className={styles.NameText}>{children}</h5></div>
+            <div ><p className={styles.DescriptionText}>{description}</p></div>
           </div>
         </div>
         <div
