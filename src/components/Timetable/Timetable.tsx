@@ -224,17 +224,20 @@ const SingleCardJose: React.FC<{
 }
 
 const SingleCard: React.FC<{
-  title: string
-  author: string
-  image: string
-  descripcion: string
-  descripcionCharla: string
+  title: string;
+  author: string;
+  image: string;
+  descripcion: string;
+  descripcionCharla: string;
+  tba?: boolean;
 }> = (props) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
-    setIsModalOpen(!isModalOpen)
-  }
+    if (!props.tba) {
+      setIsModalOpen(!isModalOpen);
+    }
+  };
 
   return (
     <>
@@ -246,30 +249,31 @@ const SingleCard: React.FC<{
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-                {props.title}
+                {props.tba ? 'TBA' : props.title} { }
               </h3>
             </div>
-            <div>
-              <h5
-                className={styles.scheduleAuthor}
-                style={{ color: '#A8041A' }}
-              >
-                {props.author}
-              </h5>
+            {!props.tba && (
+              <div>
+                <h5 className={styles.scheduleAuthor} style={{ color: '#A8041A' }}>
+                  {props.author}
+                </h5>
+              </div>
+            )}
+          </div>
+          {!props.tba && (
+            <div className="col-lg-5 col-md-12 py-4 ">
+              <img
+                src={props.image}
+                className={`img-fluid ${styles.singleImg}`}
+                alt="..."
+                style={{ maxHeight: '100%' }}
+              />
             </div>
-          </div>
-          <div className="col-lg-5 col-md-12 py-4 ">
-            <img
-              src={props.image}
-              className={`img-fluid ${styles.singleImg}`}
-              alt="..."
-              style={{ maxHeight: '100%' }}
-            />
-          </div>
+          )}
         </div>
       </div>
 
-      {isModalOpen && (
+      {isModalOpen && !props.tba && (
         <div className={styles.modal} onClick={toggleModal}>
           <div className={styles.modalContentSingle}>
             <span className={styles.close} onClick={toggleModal}>
@@ -295,8 +299,8 @@ const SingleCard: React.FC<{
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
 // const SingleCardTalleres: React.FC<{
 //   title: string
@@ -453,11 +457,26 @@ const ScheduleCard: React.FC<{
   image: string
   descripcion: string
   descripcionCharla: string
+  isTba: boolean
 }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen)
+  }
+
+  if (props.isTba) {
+    return (
+      <div className={`col-5 container-fluid d-flex ${styles.card}`}>
+        <div className="row align-items-center mx-auto">
+          <div className="col-12 py-4">
+            <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+              TBA
+            </h3>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -570,6 +589,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Socióloga especializada en psicología social y comportamiento humano."
           descripcionCharla="¿Es mejor trabajar en una empresa de producto o de servicios? ¿Qué tengo que tener en cuenta para dirigir mi carrera profesional hacia donde realmente quiero? ¿Por qué me contactan tantos recruiters pero sólo para puestos que no me interesan?"
+          tba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -615,6 +635,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Tech Lead de Vercel"
           descripcionCharla="Vengo a hablar de React, server components, streaming, suspense y server actions, contando un poco de dónde venimos."
+          isTba={true}
         />
 
         <ScheduleCard
@@ -623,6 +644,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Desarrolladora de software | Women Techmaker Ambassador | Mentora en Step4ward"
           descripcionCharla="Mi objetivo es compartir algunos recursos que he ido aprendiendo trabajando en proyectos de este tipo, enfocados por un lado, a seguir añadiendo nuevas funcionalidades a nuestro código sin incrementar la complejidad, y por otro, al refactoring, que nos permite conseguir tener un código más sostenible en el tiempo."
+          isTba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -648,6 +670,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Profesional de la tecnología con más de 15 años de experiencia internacional"
           descripcionCharla="En esta charla dejamos un poquito de lado cuestiones filosóficas de arquitecturas y plataforma. para centrarnos en lo que de verdad importa en cuanto a microservicios. contenedores. Kubernetes & friends: Qué son? Qué me aportan? Qué tengo que hacer para aprovecharlos al máximo?"
+          isTba={true}
         />
         <ScheduleCard
           title="FLUTTER + IA CON GEMINI"
@@ -655,6 +678,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="GDE de Flutter y Dart, Co-organizer @GDGMarbella & @flutterconfes"
           descripcionCharla="¿Has oído hablar de Flutter? El framework multiplataforma desarrollado por Google, con el que podrás desplegar tus aplicaciones en todas las plataformas desde un mismo código.¿Pero de la IA si, verdad? También conoceremos a Gemini, el LLM más avanzado de Google, y cómo podremos conectarlo a nuestras aplicaciones de Flutter de una forma muy muy sencilla. Después de esta charla ya no tendrás excusa para desarrollar tu próxima app."
+          isTba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -699,6 +723,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Trabajando en Red Hat haciendo cosas de observabilidad"
           descripcionCharla="¿Has escuchado hablar de Service Mesh? ¿Istio? ¿Maistra? Pero vamos a ver ¿qué es todo eso ahora? Vente a esta charla y te cuento qué son las mallas de servicios, para qué sirven y qué pueden hacer por ti."
+          isTba={true}
         />
         <ScheduleCard
           title="SPRING BOOT <3 TESTCONTAINERS"
@@ -706,6 +731,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Iván es desarrollador JVM con 20 años de experiencia. Actualmente trabaja en VMware."
           descripcionCharla="En esta charla aprenderás qué es Testcontainers y cómo se integra con Spring Boot y los beneficios de utilizarlo en tus tests de integración."
+          isTba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -731,15 +757,16 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Ingeniera de telecomunicaciones y consultora certificada con mas de 23 años de experiencia en tecnologías de la información y comunicaciones"
           descripcionCharla="Durante la presentación se expondrá la importancia de esta tecnología, exponiendo sus oportunidades y riesgos. Asimismo, se introducirán los factores claves para una integración exitosa de la Inteligencia Artificial, haciendo referencia a la utilización de código libre en el desarrollo de esta tecnología."
+          isTba={true}
         />
-        <DoubleCard
-          title="EPISODIO 1. EN EL QUE APRENDES BDD"
-          author="Ana Cáceres y Ariane Zanardi"
+        <ScheduleCard
+          title="EL PM, ¿AMIGO O ENEMIGO?"
+          author="Guiomar"
           image={IreneMorgado}
-          image2={IreneMorgado}
-          descripcion1="Ingenieras de Software centradas en el desarrollo de software y buenas prácticas."
-          descripcion2=""
-          descripcionCharla='En esta charla sobre Behavior-Driven Development (BDD), exploraremos en qué consiste BDD. El objetivo principal es tratar los conceptos fundamentales y mostrar cómo se puede aplicar en proyectos reales, Inspirándonos en "FRIENDS", descubriremos cómo BDD puede estar presente para apoyarnos en la creación de software de calidad.'
+          descripcion="Trabajo en la frontera del PM y el PO pero sin simples etiquetas para acotar todo el trabajo que hago en equipo para desarrollar productos digitales."
+          descripcionCharla="Hablaremos de la figura del PM en el equipo del desarrollo y cómo entre todo se hace el producto"
+          isTba={true}
+
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -784,6 +811,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Soy Patricia Vazquez, software Engineer y apasionada de la cultura japonesa."
           descripcionCharla="En esta charla exploraremos la estética y diseño detrás de las páginas web japonesas. Descubriremos cómo la rica cultura japonesa influye en cada aspecto del diseño web, desde la elección de colores y fuentes hasta la disposición de los elementos interactivos."
+          isTba={true}
         />
         <ScheduleCard
           title="¡COOKIEGEDDON! BYE A LAS COOKIES DE TERCEROS"
@@ -791,6 +819,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Principal Engineer at Labster"
           descripcionCharla="Chrome ya ha empezado a bloquear las 3rd Party Cookies. A partir del Q1 de 2024, el 1% de todos los Chromes del mundo empezarán a bloquear cookies de terceros, y progresivamente se extenderá a toda la fucking internet."
+          isTba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -816,6 +845,7 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Graduado en Ing, Informática por la UGR, Trabajo en Backend e investigo temas random"
           descripcionCharla="¿Te gustaría tener un Chatbot pero no te mola pagar por Azure ni Dialogflow? ¿No te gusta tirar de ChatGPT? ¿Estás leyendo esto con voz de Teletienda? Si es así, en esta charla hablaremos de Rasa, una solución de código abierto que puedes editar desde tu PC y desplegarlo ahí mismo. Crea tus preguntas y respuestas, dale acceso a Internet para buscar. Con YAML y Python puedes hacerlo fácilmente"
+          isTba={true}
         />
         <ScheduleCard
           title="EL PM, ¿AMIGO O ENEMIGO?"
@@ -823,6 +853,8 @@ const Schedule: React.FC = () => {
           image={IreneMorgado}
           descripcion="Trabajo en la frontera del PM y el PO pero sin simples etiquetas para acotar todo el trabajo que hago en equipo para desarrollar productos digitales."
           descripcionCharla="Hablaremos de la figura del PM en el equipo del desarrollo y cómo entre todo se hace el producto"
+          isTba={true}
+
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -842,12 +874,14 @@ const Schedule: React.FC = () => {
             <h3>18:45</h3>
           </div>
         </div>
-        <SingleCardJose
+        <SingleCard
           title="SHIP. VALIDATE. ITERATE AND REPEAT"
           author="José Fernández"
           image={IreneMorgado}
           descripcion="Software Developer @Qualifyze Del @ASL pa toda la vida ❤️‍🔥"
           descripcionCharla="En esta charla cuento una experiencia personal en la que se ha montado un producto desde 0 a toda velocidad, todo ello siguiendo una filosofía de buenas prácticas"
+          tba={true}
+
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
