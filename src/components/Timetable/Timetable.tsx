@@ -58,170 +58,170 @@ const Card: React.FC<{ title: string }> = (props) => {
   )
 }
 
-const DoubleCard: React.FC<{
-  title: string
-  author: string
-  image: string
-  image2: string
-  descripcion1: string
-  descripcion2: string
-  descripcionCharla: string
-}> = (props) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+// const DoubleCard: React.FC<{
+//   title: string
+//   author: string
+//   image: string
+//   image2: string
+//   descripcion1: string
+//   descripcion2: string
+//   descripcionCharla: string
+// }> = (props) => {
+//   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen)
-  }
+//   const toggleModal = () => {
+//     setIsModalOpen(!isModalOpen)
+//   }
 
-  return (
-    <>
-      <div
-        className={`col-5 container-fluid d-flex ${styles.card}`}
-        onClick={toggleModal}
-      >
-        <div className="row align-items-center">
-          <div className="col-lg-7 col-md-12 py-4">
-            <div className="row">
-              <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-                {props.title}
-              </h3>
-            </div>
-            <div>
-              <h5
-                className={styles.scheduleAuthor}
-                style={{ color: '#A8041A' }}
-              >
-                {props.author}
-              </h5>
-            </div>
-          </div>
-          <div className="col-lg-5 col-md-12 py-4">
-            <img
-              src={props.image}
-              className={`img-fluid ${styles.singleImg}`}
-              alt="..."
-              style={{ maxHeight: '100%', maxWidth: '50%' }}
-            />
-            <img
-              src={props.image2}
-              className={`img-fluid ${styles.singleImg}`}
-              alt="..."
-              style={{ maxHeight: '100%', maxWidth: '50%' }}
-            />
-          </div>
-        </div>
-      </div>
+//   return (
+//     <>
+//       <div
+//         className={`col-5 container-fluid d-flex ${styles.card}`}
+//         onClick={toggleModal}
+//       >
+//         <div className="row align-items-center">
+//           <div className="col-lg-7 col-md-12 py-4">
+//             <div className="row">
+//               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+//                 {props.title}
+//               </h3>
+//             </div>
+//             <div>
+//               <h5
+//                 className={styles.scheduleAuthor}
+//                 style={{ color: '#A8041A' }}
+//               >
+//                 {props.author}
+//               </h5>
+//             </div>
+//           </div>
+//           <div className="col-lg-5 col-md-12 py-4">
+//             <img
+//               src={props.image}
+//               className={`img-fluid ${styles.singleImg}`}
+//               alt="..."
+//               style={{ maxHeight: '100%', maxWidth: '50%' }}
+//             />
+//             <img
+//               src={props.image2}
+//               className={`img-fluid ${styles.singleImg}`}
+//               alt="..."
+//               style={{ maxHeight: '100%', maxWidth: '50%' }}
+//             />
+//           </div>
+//         </div>
+//       </div>
 
-      {isModalOpen && (
-        <div className={styles.modal} onClick={toggleModal}>
-          <div className={styles.modalContent}>
-            <span className={styles.close} onClick={toggleModal}>
-              &times;
-            </span>
-            <h2>{props.title}</h2>
-            <p>Author: {props.author}</p>
-            <div className="row">
-              <div className="col-lg-7 col-md-12 py-4">
-                <p className="m-0">{props.descripcion1} </p>
-                <p className="m-0">{props.descripcion2}</p>
-                <p className="mt-4">{props.descripcionCharla}</p>
-              </div>
-              <div className="col-lg-5 col-md-12 py-lg-4">
-                <img
-                  src={props.image}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '50%' }}
-                />
-                <img
-                  src={props.image2}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '50%' }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
-  )
-}
+//       {isModalOpen && (
+//         <div className={styles.modal} onClick={toggleModal}>
+//           <div className={styles.modalContent}>
+//             <span className={styles.close} onClick={toggleModal}>
+//               &times;
+//             </span>
+//             <h2>{props.title}</h2>
+//             <p>Author: {props.author}</p>
+//             <div className="row">
+//               <div className="col-lg-7 col-md-12 py-4">
+//                 <p className="m-0">{props.descripcion1} </p>
+//                 <p className="m-0">{props.descripcion2}</p>
+//                 <p className="mt-4">{props.descripcionCharla}</p>
+//               </div>
+//               <div className="col-lg-5 col-md-12 py-lg-4">
+//                 <img
+//                   src={props.image}
+//                   className={`img-fluid ${styles.singleImg}`}
+//                   alt="..."
+//                   style={{ maxHeight: '100%', maxWidth: '50%' }}
+//                 />
+//                 <img
+//                   src={props.image2}
+//                   className={`img-fluid ${styles.singleImg}`}
+//                   alt="..."
+//                   style={{ maxHeight: '100%', maxWidth: '50%' }}
+//                 />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   )
+// }
 
-const SingleCardJose: React.FC<{
-  title: string
-  author: string
-  image: string
-  descripcion: string
-  descripcionCharla: string
-}> = (props) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+// const SingleCardJose: React.FC<{
+//   title: string
+//   author: string
+//   image: string
+//   descripcion: string
+//   descripcionCharla: string
+// }> = (props) => {
+//   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen)
-  }
+//   const toggleModal = () => {
+//     setIsModalOpen(!isModalOpen)
+//   }
 
-  return (
-    <>
-      <div
-        className={`col-10 container-fluid d-flex ${styles.cardEmptySingle}`}
-        onClick={toggleModal}
-      >
-        <div className="row align-items-center mx-auto">
-          <div className="col-lg-7 col-md-12 py-4">
-            <div className="row">
-              <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-                {props.title}
-              </h3>
-            </div>
-            <div>
-              <h5
-                className={styles.scheduleAuthor}
-                style={{ color: '#A8041A' }}
-              >
-                {props.author}
-              </h5>
-            </div>
-          </div>
-          <div className="col-lg-5 col-md-12 py-4 ">
-            <img
-              src={props.image}
-              className={`img-fluid ${styles.singleImg}`}
-              alt="..."
-              style={{ maxWidth: '50%' }}
-            />
-          </div>
-        </div>
-      </div>
+//   return (
+//     <>
+//       <div
+//         className={`col-10 container-fluid d-flex ${styles.cardEmptySingle}`}
+//         onClick={toggleModal}
+//       >
+//         <div className="row align-items-center mx-auto">
+//           <div className="col-lg-7 col-md-12 py-4">
+//             <div className="row">
+//               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+//                 {props.title}
+//               </h3>
+//             </div>
+//             <div>
+//               <h5
+//                 className={styles.scheduleAuthor}
+//                 style={{ color: '#A8041A' }}
+//               >
+//                 {props.author}
+//               </h5>
+//             </div>
+//           </div>
+//           <div className="col-lg-5 col-md-12 py-4 ">
+//             <img
+//               src={props.image}
+//               className={`img-fluid ${styles.singleImg}`}
+//               alt="..."
+//               style={{ maxWidth: '50%' }}
+//             />
+//           </div>
+//         </div>
+//       </div>
 
-      {isModalOpen && (
-        <div className={styles.modal} onClick={toggleModal}>
-          <div className={styles.modalContentSingle}>
-            <span className={styles.close} onClick={toggleModal}>
-              &times;
-            </span>
-            <h2>{props.title}</h2>
-            <p>Author: {props.author}</p>
-            <div className="row">
-              <div className="col-lg-7 col-md-12 py-4">
-                <p>{props.descripcion}</p>
-                <p className="mt-3">{props.descripcionCharla}</p>
-              </div>
-              <div className="col-lg-5 col-md-12 py-lg-4">
-                <img
-                  src={props.image}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '60%' }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
-  )
-}
+//       {isModalOpen && (
+//         <div className={styles.modal} onClick={toggleModal}>
+//           <div className={styles.modalContentSingle}>
+//             <span className={styles.close} onClick={toggleModal}>
+//               &times;
+//             </span>
+//             <h2>{props.title}</h2>
+//             <p>Author: {props.author}</p>
+//             <div className="row">
+//               <div className="col-lg-7 col-md-12 py-4">
+//                 <p>{props.descripcion}</p>
+//                 <p className="mt-3">{props.descripcionCharla}</p>
+//               </div>
+//               <div className="col-lg-5 col-md-12 py-lg-4">
+//                 <img
+//                   src={props.image}
+//                   className={`img-fluid ${styles.singleImg}`}
+//                   alt="..."
+//                   style={{ maxHeight: '100%', maxWidth: '60%' }}
+//                 />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   )
+// }
 
 const SingleCard: React.FC<{
   title: string;

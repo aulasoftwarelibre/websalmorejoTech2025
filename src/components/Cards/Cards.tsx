@@ -220,7 +220,7 @@ export default function Cards() {
               <div className="col-md-5 col-lg-4">
                 <Card
                   description="2º de Ing. Informática en la UCO
-                                Subdelegado de las relaciones externas del Aula de Software Libre
+                                Subdelegado de las relaciones externas del ASL
                                 Distribuidor oficial de memes del Salmorejo"
                   photo={Jaime}
                   backphoto={JaimeOP}
