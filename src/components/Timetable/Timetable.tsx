@@ -561,7 +561,7 @@ const Schedule: React.FC = () => {
             <h3>08:30</h3>
           </div>
           <div className="row">
-            <h3>09:00</h3>
+            <h3>08:55</h3>
           </div>
         </div>
         <FirstCard title="Check In" />
@@ -577,12 +577,32 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>09:10</h3>
+            <h3>09:00</h3>
           </div>
           <div className="row pt-4">
-            <h3>10:10</h3>
+            <h3>9:25</h3>
           </div>
         </div>
+        <FirstCard title="Acto de Bienvenida" />
+      </div>
+      <div className="row pt-2" style={{ alignItems: 'stretch' }}>
+        <div
+          className={`col-1 d-flex min-vw-35 ${styles.scheduleDiv} flex-column container-fluid tamaño flex-column justify-content-between `}
+          style={{
+            borderRadius: '10px',
+            background: 'rgba(255, 255, 255, 0.22)',
+            backdropFilter: 'blur(4px)',
+            boxShadow: '0px 4px 4px 0px #00000040',
+          }}
+        >
+          <div className="row pb-5">
+            <h3>09:30</h3>
+          </div>
+          <div className="row pt-4">
+            <h3>10:20</h3>
+          </div>
+        </div>
+
         <SingleCard
           title="FIND YOUR FUTURE"
           author="Irene M. Morgado"
@@ -603,10 +623,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row">
-            <h3>10:20</h3>
+            <h3>10:25</h3>
           </div>
           <div className="row">
-            <h3>11:00</h3>
+            <h3>10:55</h3>
           </div>
         </div>
         <Card title="Desayuno" />
@@ -695,7 +715,7 @@ const Schedule: React.FC = () => {
             <h3>12:30</h3>
           </div>
           <div className="row">
-            <h3>13:15</h3>
+            <h3>13:05</h3>
           </div>
         </div>
         <Card title="Tapa" />
@@ -711,10 +731,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>13:20</h3>
+            <h3>13:10</h3>
           </div>
           <div className="row pt-4">
-            <h3>14:00</h3>
+            <h3>13:50</h3>
           </div>
         </div>
         <ScheduleCard
@@ -745,10 +765,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>14:00</h3>
+            <h3>13:55</h3>
           </div>
           <div className="row pt-4">
-            <h3>14:40</h3>
+            <h3>14:35</h3>
           </div>
         </div>
         <ScheduleCard
@@ -780,10 +800,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row">
-            <h3>14:45</h3>
+            <h3>14:40</h3>
           </div>
           <div className="row">
-            <h3>15:45</h3>
+            <h3>15:50</h3>
           </div>
         </div>
         <Card title="Comida" />
@@ -799,10 +819,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>16:00</h3>
+            <h3>15:55</h3>
           </div>
           <div className="row pt-4">
-            <h3>16:40</h3>
+            <h3>16:35</h3>
           </div>
         </div>
         <ScheduleCard
@@ -833,10 +853,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>16:45</h3>
+            <h3>16:40</h3>
           </div>
           <div className="row pt-4">
-            <h3>17:25</h3>
+            <h3>17:20</h3>
           </div>
         </div>
         <ScheduleCard
@@ -868,10 +888,10 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row pb-5">
-            <h3>17:30</h3>
+            <h3>17:25</h3>
           </div>
           <div className="row pt-4">
-            <h3>18:45</h3>
+            <h3>18:15</h3>
           </div>
         </div>
         <SingleCard
@@ -895,7 +915,7 @@ const Schedule: React.FC = () => {
           }}
         >
           <div className="row">
-            <h3>19:00</h3>
+            <h3>18:30</h3>
           </div>
           <div className="row">
             <h3>20:00</h3>
