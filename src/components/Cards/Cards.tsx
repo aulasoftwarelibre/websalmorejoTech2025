@@ -112,7 +112,7 @@ export default function Cards() {
           <div className="row justify-content-center">
             <div className="col-md-5 col-lg-4">
               <Card
-                description="Estudiante de 4º de ingeniería informática y fanático del cacharreo"
+                description="Estudiante de 4º de Ingeniería Informática y fanático del cacharreo"
                 photo={Arturo}
                 backphoto={ArturoOP}
                 twlink="https://x.com/ARVIPE_01?t=T_ewGHnc8Ml2dm6G60lObA&s=09"
