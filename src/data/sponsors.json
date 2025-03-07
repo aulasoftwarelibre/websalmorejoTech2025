@@ -4,40 +4,6 @@
     "type": "PERA",
     "imageUrl": "/2025/sponsors/audiense.svg",
     "href": "https://es.audiense.com/"
-  },
-
-  {
-    "name": "Rti",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/rti.png",
-    "href": "https://www.rti.com/en/"
-  },
-
-  {
-    "name": "Sticker Mule",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/stickermule.png",
-    "href": "https://www.stickermule.com/es?utm_source=google&utm_medium=cpc&src=GOOG&cid=425673967&gad_source=1&gclid=Cj0KCQiA2oW-BhC2ARIsADSIAWqJi5v7xarXLOi_gUutGlbzsRmcW2tBjfaoYF5GtJxRfPFipccBxuwaAkW2EALw_wcB"
-  },
-
-  {
-    "name": "Cátedra Eprinsa",
-    "type": "PERA",
-    "imageUrl": "/2025/sponsors/catedra_eprinsa.png",
-    "href": "https://www.linkedin.com/in/c%C3%A1tedra-eprinsa-uco-transformaci%C3%B3n-digital-51333a217/"
-  },
-  {
-    "name": "Atmira",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/atmira.png",
-    "href": "https://www.atmira.com/"
-  },
-
-  {
-    "name": "Codely",
-    "type": "CHERRY",
-    "imageUrl": "/2025/sponsors/codely.png",
-    "href": "https://codely.com/"
   }
   
 ]
