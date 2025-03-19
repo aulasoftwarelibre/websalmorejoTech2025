@@ -286,17 +286,6 @@ export default function Cards() {
                 Álvaro Serrano Lopéz{' '}
               </Card>
             </div>
-            <div className="col-md-5 col-lg-4">
-              <Card
-                description="Graduado en Ingeniería Informática especializado en Software y coordinador de Aula de Software Libre"
-                photo={Chema}
-                backphoto={ChemaOP}
-                lklink="https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-mu%C3%B1oz-l%C3%B3pez-28babb222/"
-              >
-                {' '}
-                José María Muñoz López{' '}
-              </Card>
-            </div>
             <div className="col-md-4">
                 <Card
                 description="Estudiante de ingeniería informática especializado en software y coordinador de aula de software libre." 
