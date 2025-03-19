@@ -23,6 +23,7 @@ import Cuco from '../../sprites/PeoplePhotos/front/Cuco.jpeg'
 import Arturo from '../../sprites/PeoplePhotos/front/Arturo.jpg'
 import Jimenez from '../../sprites/PeoplePhotos/front/Jimenez.jpg'
 import Gonzalo from '../../sprites/PeoplePhotos/front/Gonzalo.jpg'
+import Chema from '../../sprites/PeoplePhotos/front/Chema(1).jpg'
 
 
 import DavidMartOP from '../../sprites/PeoplePhotos/back/OPDavid Martinez Molina.jpeg'
@@ -48,6 +49,7 @@ import CucoOP from '../../sprites/PeoplePhotos/back/OPCuco.jpeg'
 import ArturoOP from '../../sprites/PeoplePhotos/back/OPArturo.png'
 import JimenezOP from '../../sprites/PeoplePhotos/back/OPJimenez.jpg'
 import GonzaloOP from '../../sprites/PeoplePhotos/back/OPGonzalo.jpg'
+import ChemaOP from '../../sprites/PeoplePhotos/back/OPChema.jpg'
 
 
 export default function Cards() {
@@ -284,6 +286,17 @@ export default function Cards() {
               >
                 {' '}
                 Álvaro Serrano Lopéz{' '}
+              </Card>
+            </div>
+            <div className="col-md-5 col-lg-4">
+              <Card
+                description="Graduado en Ingeniería Informática especializado en Software y coordinador de Aula de Software Libre"
+                photo={Chema}
+                backphoto={ChemaOP}
+                lklink="https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-mu%C3%B1oz-l%C3%B3pez-28babb222/"
+              >
+                {' '}
+                José María Muñoz López{' '}
               </Card>
             </div>
             <div className="col-md-4">
