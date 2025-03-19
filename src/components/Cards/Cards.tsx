@@ -21,6 +21,9 @@ import Alejandro from '../../sprites/PeoplePhotos/front/Alejandro Martos Bellido
 import Sergio from '../../sprites/PeoplePhotos/front/Sergio Palacios López.jpg'
 import Cuco from '../../sprites/PeoplePhotos/front/Cuco.jpeg'
 import Arturo from '../../sprites/PeoplePhotos/front/Arturo.jpg'
+import Jimenez from '../../sprites/PeoplePhotos/front/Jimenez.jpg'
+import Gonzalo from '../../sprites/PeoplePhotos/front/Gonzalo.jpg'
+
 
 import DavidMartOP from '../../sprites/PeoplePhotos/back/OPDavid Martinez Molina.jpeg'
 import CarlosTorresOP from '../../sprites/PeoplePhotos/back/OPCarlos Torres Jiménez.jpg'
@@ -43,6 +46,9 @@ import AlejandroOP from '../../sprites/PeoplePhotos/back/OPAlejandro Martos Bell
 import SergioOP from '../../sprites/PeoplePhotos/back/OPSergio Palacios López.jpg'
 import CucoOP from '../../sprites/PeoplePhotos/back/OPCuco.jpeg'
 import ArturoOP from '../../sprites/PeoplePhotos/back/OPArturo.png'
+import JimenezOP from '../../sprites/PeoplePhotos/back/OPJimenez.jpg'
+import GonzaloOP from '../../sprites/PeoplePhotos/back/OPGonzalo.jpg'
+
 
 export default function Cards() {
   return (
@@ -217,6 +223,16 @@ export default function Cards() {
           <h3 className={styles.group}>Marketing</h3>
           <div className="container">
             <div className="row justify-content-center">
+              <div className="col-md-4">
+                <Card
+                description="Graduado en Ingeniería Informática especializado en Software y coordinador de Aula de Software Libre" 
+                photo={Gonzalo}
+                backphoto={GonzaloOP}  
+                lklink='https://www.linkedin.com/in/gonzalo-márquez' 
+                ghlink='https://github.com/marquez2002' > 
+                Gonzalo Márquez de Torres   
+                </Card>
+              </div>
               <div className="col-md-5 col-lg-4">
                 <Card
                   description="2º de Ing. Informática en la UCO
@@ -270,6 +286,17 @@ export default function Cards() {
                 Álvaro Serrano Lopéz{' '}
               </Card>
             </div>
+            <div className="col-md-4">
+                <Card
+                description="Estudiante de ingeniería informática especializado en software y coordinador de aula de software libre." 
+                photo={Jimenez}
+                backphoto={JimenezOP}  
+                twlink="https://x.com/antoniojj1712"
+                ghlink="https://github.com/jimenez1712"
+                lklink="https://www.linkedin.com/in/antonio-jim%C3%A9nez-jim%C3%A9nez-084645222/">
+                Antonio Jiménez 
+                </Card>
+              </div>
             <div className="col-md-5 col-lg-4">
               <Card
                 description="Estudiante de 2 curso de ingeniería informática por la UCO"
