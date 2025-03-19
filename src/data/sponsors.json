@@ -4,6 +4,11 @@
     "type": "PERA",
     "imageUrl": "/2025/sponsors/audiense.svg",
     "href": "https://es.audiense.com/"
+  },
+  {
+    "name": "Universidad de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/2025/sponsors/uco.png",
+    "href": "http://www.uco.es/"
   }
-  
 ]
