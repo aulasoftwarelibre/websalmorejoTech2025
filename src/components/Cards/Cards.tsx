@@ -23,7 +23,7 @@ import Cuco from '../../sprites/PeoplePhotos/front/Cuco.jpeg'
 import Arturo from '../../sprites/PeoplePhotos/front/Arturo.jpg'
 import Jimenez from '../../sprites/PeoplePhotos/front/Jimenez.jpg'
 import Gonzalo from '../../sprites/PeoplePhotos/front/Gonzalo.jpg'
-import Chema from '../../sprites/PeoplePhotos/front/Chema(1).jpg'
+import Chema from '../../sprites/PeoplePhotos/front/Chema.png'
 
 
 import DavidMartOP from '../../sprites/PeoplePhotos/back/OPDavid Martinez Molina.jpeg'
@@ -49,7 +49,7 @@ import CucoOP from '../../sprites/PeoplePhotos/back/OPCuco.jpeg'
 import ArturoOP from '../../sprites/PeoplePhotos/back/OPArturo.png'
 import JimenezOP from '../../sprites/PeoplePhotos/back/OPJimenez.jpg'
 import GonzaloOP from '../../sprites/PeoplePhotos/back/OPGonzalo.jpg'
-import ChemaOP from '../../sprites/PeoplePhotos/back/OPChema.jpg'
+import ChemaOP from '../../sprites/PeoplePhotos/back/OPChema.png'
 
 
 export default function Cards() {
