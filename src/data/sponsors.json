@@ -16,5 +16,11 @@
     "type": "PERA",
     "imageUrl": "/2025/sponsors/uco.png",
     "href": "http://www.uco.es/"
+  },
+  {
+    "name": "Escuela Politécnica Superior de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/2024/sponsors/epsc.svg",
+    "href": "https://www.uco.es/eps/es/"
   }
 ]
