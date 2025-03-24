@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import IreneMorgado from '../../sprites/ponentes/IreneM.Morgado.png'
-import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.png'
+import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.jpg'
 
 import styles from './Timetable.module.css'
 
@@ -658,7 +658,7 @@ const Schedule: React.FC = () => {
           descripcionCharla="Explicaremos el proceso de como realizamos un traductor de Lenguaje de Signos con IA.
 Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos hasta la obtención del resultado.
 Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
-          isTba={false}
+          isTba={true}
         />
 
         <ScheduleCard
@@ -775,12 +775,14 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
           </div>
         </div>
         <ScheduleCard
-          title="INTEGRACIÓN CON ÉXITO DE LA INTELIGENCIA ARTIFICIAL"
-          author="Belén Feu"
-          image={IreneMorgado}
-          descripcion="Ingeniera de telecomunicaciones y consultora certificada con mas de 23 años de experiencia en tecnologías de la información y comunicaciones"
-          descripcionCharla="Durante la presentación se expondrá la importancia de esta tecnología, exponiendo sus oportunidades y riesgos. Asimismo, se introducirán los factores claves para una integración exitosa de la Inteligencia Artificial, haciendo referencia a la utilización de código libre en el desarrollo de esta tecnología."
-          isTba={true}
+          title="Cómo construir un interprete de lenguaje de signos con IA"
+          author="Rafa, Alba y Jesús"
+          image={RafaAlbaJesus}
+          descripcion="Somos tres amigos de la carrera y exmiembros del ASL a los que les encanta apuntarse a todo. Después de varios años en la organización del Salmorejo, hemos decidido ver cómo se vive todo desde el otro lado. Tenemos poquita experiencia dando charlas, pero esperamos estar a la altura. En el networking seguro que nadie nos supera, nos vemos allí."
+          descripcionCharla="Explicaremos el proceso de como realizamos un traductor de Lenguaje de Signos con IA.
+Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos hasta la obtención del resultado.
+Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
+          isTba={false}
         />
         <ScheduleCard
           title="EL PM, ¿AMIGO O ENEMIGO?"
