@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import IreneMorgado from '../../sprites/ponentes/IreneM.Morgado.png'
+import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.png'
 
 import styles from './Timetable.module.css'
 
@@ -506,7 +507,7 @@ const ScheduleCard: React.FC<{
               src={props.image}
               className={`img-fluid ${styles.singleImg}`}
               alt="..."
-              style={{ maxHeight: '100%', maxWidth: '80%' }}
+              style={{ maxHeight: '100%', maxWidth: '90%' }}
             />
           </div>
         </div>
@@ -530,7 +531,7 @@ const ScheduleCard: React.FC<{
                   src={props.image}
                   className={`img-fluid ${styles.singleImg}`}
                   alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '50%' }}
+                  style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
               </div>
             </div>
@@ -650,12 +651,14 @@ const Schedule: React.FC = () => {
         </div>
 
         <ScheduleCard
-          title="DOCTOR, MI COMPONENTE DE REACT TIENE SQL"
-          author="Javi Velasco"
-          image={IreneMorgado}
-          descripcion="Tech Lead de Vercel"
-          descripcionCharla="Vengo a hablar de React, server components, streaming, suspense y server actions, contando un poco de dónde venimos."
-          isTba={true}
+          title="Cómo construir un interprete de lenguaje de signos con IA"
+          author="Rafa, Alba y Jesús"
+          image={RafaAlbaJesus}
+          descripcion="Somos 3 chicos de Cordoba y es nuestra primera vez en el SalmorejoTech, espero que nuestro nivel esté a la altura de un evento de estas características. Nos han comentado que los coordinadores de gestión y el coordinador del evento del año pasado eran unos maquinas, no sabemos quienes serán los de este año pero esperamos que nos regalen algo."
+          descripcionCharla="Explicaremos el proceso de como realizamos un traductor de Lenguaje de Signos con IA.
+Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos hasta la obtención del resultado.
+Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
+          isTba={false}
         />
 
         <ScheduleCard

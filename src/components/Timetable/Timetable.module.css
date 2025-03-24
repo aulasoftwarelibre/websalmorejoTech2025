@@ -13,7 +13,7 @@
   margin-left: 100dvw;
   margin: 0 auto;
   display: block;
-  width: calc(20vw + 10vh - 22vmin);
+  /* width: calc(20vw + 10vh - 22vmin); */
   border: white 0.3vw solid;
   border-radius: 25%;
 }
@@ -297,7 +297,7 @@
   font-style: normal;
   font-weight: 350;
   line-height: normal;
-  font-size: 1.5vw;
+ 
 }
 .scheduleAuthor {
   color: #fff;
@@ -306,7 +306,7 @@
   font-style: normal;
   font-weight: 200;
   line-height: normal;
-  font-size: 2vw;
+
 }
 
 @media (max-width: 600px) {
