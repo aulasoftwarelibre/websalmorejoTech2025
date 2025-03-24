@@ -654,7 +654,7 @@ const Schedule: React.FC = () => {
           title="Cómo construir un interprete de lenguaje de signos con IA"
           author="Rafa, Alba y Jesús"
           image={RafaAlbaJesus}
-          descripcion="Somos 3 chicos de Cordoba y es nuestra primera vez en el SalmorejoTech, espero que nuestro nivel esté a la altura de un evento de estas características. Nos han comentado que los coordinadores de gestión y el coordinador del evento del año pasado eran unos maquinas, no sabemos quienes serán los de este año pero esperamos que nos regalen algo."
+          descripcion="Somos tres amigos de la carrera y exmiembros del ASL a los que les encanta apuntarse a todo. Después de varios años en la organización del Salmorejo, hemos decidido ver cómo se vive todo desde el otro lado. Tenemos poquita experiencia dando charlas, pero esperamos estar a la altura. En el networking seguro que nadie nos supera, nos vemos allí."
           descripcionCharla="Explicaremos el proceso de como realizamos un traductor de Lenguaje de Signos con IA.
 Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos hasta la obtención del resultado.
 Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
