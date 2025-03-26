@@ -16,5 +16,23 @@
     "type": "PERA",
     "imageUrl": "/2025/sponsors/uco.png",
     "href": "http://www.uco.es/"
+  },
+  {
+    "name": "Escuela Politécnica Superior de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/2025/sponsors/epsc.svg",
+    "href": "https://www.uco.es/eps/es/"
+  },
+  {
+    "name": "Consejo Social UCO",
+    "type": "PERA",
+    "imageUrl": "/2025/sponsors/consejo-social.png",
+    "href": "http://www.uco.es/organizacion/consejosocial/index.php/es/"
+  },
+  {
+    "name": "Ayuntamiento de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/2025/sponsors/ayto_cordoba.png",
+    "href": "http://www.uco.es/"
   }
 ]

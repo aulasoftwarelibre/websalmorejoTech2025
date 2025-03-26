@@ -1,5 +1,5 @@
 import styles from './Map.module.css'
-import mapa from '../../sprites/map.png'
+import mapa from '../../sprites/map.jpg'
 
 export default function Map() {
   return (
