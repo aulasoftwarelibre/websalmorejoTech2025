@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import IreneMorgado from '../../sprites/ponentes/IreneM.Morgado.png'
 import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.jpg'
+import Marc from '../../sprites/ponentes/marc.jpg'
 
 import styles from './Timetable.module.css'
 
@@ -507,7 +508,97 @@ const ScheduleCard: React.FC<{
               src={props.image}
               className={`img-fluid ${styles.singleImg}`}
               alt="..."
-              style={{ maxHeight: '100%', maxWidth: '90%' }}
+              style={{ maxHeight: '100%', maxWidth: '80%' }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {isModalOpen && (
+        <div className={styles.modal} onClick={toggleModal}>
+          <div className={styles.modalContent}>
+            <span className={styles.close} onClick={toggleModal}>
+              &times;
+            </span>
+            <h2>{props.title}</h2>
+            <p>Author: {props.author}</p>
+            <div className="row">
+              <div className="col-lg-7 col-md-12 py-4">
+                <p>{props.descripcion}</p>
+                <p>{props.descripcionCharla}</p>
+              </div>
+              <div className="col-lg-5 col-md-12 py-lg-4">
+                <img
+                  src={props.image}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '70%' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
+
+const DoubleCard: React.FC<{
+  title: string
+  author: string
+  image: string
+  descripcion: string
+  descripcionCharla: string
+  isTba: boolean
+}> = (props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
+
+  if (props.isTba) {
+    return (
+      <div className={`col-5 container-fluid d-flex ${styles.card}`}>
+        <div className="row align-items-center mx-auto">
+          <div className="col-12 py-4">
+            <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+              TBA
+            </h3>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <>
+      <div
+        className={`col-5 container-fluid d-flex ${styles.card}`}
+        onClick={toggleModal}
+      >
+        <div className="row align-items-center">
+          <div className="col-lg-7 col-md-12 py-4">
+            <div className="row">
+              <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+                {props.title}
+              </h3>
+            </div>
+            <div>
+              <h5
+                className={styles.scheduleAuthor}
+                style={{ color: '#A8041A' }}
+              >
+                {props.author}
+              </h5>
+            </div>
+          </div>
+          <div className="col-lg-5 col-md-12 py-4">
+            <img
+              src={props.image}
+              className={`img-fluid ${styles.singleImg}`}
+              alt="..."
+              style={{ maxHeight: '100%', maxWidth: '100%' }}
             />
           </div>
         </div>
@@ -651,22 +742,21 @@ const Schedule: React.FC = () => {
         </div>
 
         <ScheduleCard
-          title="Cómo construir un interprete de lenguaje de signos con IA"
-          author="Rafa, Alba y Jesús"
+          title="Beyond the Tab: How Modern Browsers are being built"
+          author="Marc Rodríguez"
           image={RafaAlbaJesus}
-          descripcion="Somos tres amigos de la carrera y exmiembros del ASL a los que les encanta apuntarse a todo. Después de varios años en la organización del Salmorejo, hemos decidido ver cómo se vive todo desde el otro lado. Tenemos poquita experiencia dando charlas, pero esperamos estar a la altura. En el networking seguro que nadie nos supera, nos vemos allí."
-          descripcionCharla="Explicaremos el proceso de como realizamos un traductor de Lenguaje de Signos con IA.
-Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos hasta la obtención del resultado.
-Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
+          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
+          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={true}
         />
 
         <ScheduleCard
-          title="NO TODO EL CAMPO ES 'GREEN'. CÓMO LIDIAR CON LEGACY CODE"
-          author="Concha Asensio"
-          image={IreneMorgado}
-          descripcion="Desarrolladora de software | Women Techmaker Ambassador | Mentora en Step4ward"
-          descripcionCharla="Mi objetivo es compartir algunos recursos que he ido aprendiendo trabajando en proyectos de este tipo, enfocados por un lado, a seguir añadiendo nuevas funcionalidades a nuestro código sin incrementar la complejidad, y por otro, al refactoring, que nos permite conseguir tener un código más sostenible en el tiempo."
+          title="Beyond the Tab: How Modern Browsers are being built"
+          author="Marc Rodríguez"
+          
+          image={Marc}
+          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
+          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={true}
         />
       </div>
@@ -688,13 +778,12 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
           </div>
         </div>
         <ScheduleCard
-          title="MICROSERVICIOS. CONTENEDORES. KUBERNETES TODO A LA VEZ!"
-          author="Marisa Martín Serrano"
-          image={IreneMorgado}
-          descripcion="Profesional de la tecnología con más de 15 años de experiencia internacional"
-          descripcionCharla="En esta charla dejamos un poquito de lado cuestiones filosóficas de arquitecturas y plataforma. para centrarnos en lo que de verdad importa en cuanto a microservicios. contenedores. Kubernetes & friends: Qué son? Qué me aportan? Qué tengo que hacer para aprovecharlos al máximo?"
-          isTba={true}
-        />
+          title="Beyond the Tab: How Modern Browsers are being built"
+          author="Marc Rodríguez"
+          image={Marc}
+          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
+          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
+          isTba={false}       />
         <ScheduleCard
           title="FLUTTER + IA CON GEMINI"
           author="Alfredo Bautista"
@@ -774,7 +863,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
             <h3>14:35</h3>
           </div>
         </div>
-        <ScheduleCard
+        <DoubleCard
           title="Cómo construir un interprete de lenguaje de signos con IA"
           author="Rafa, Alba y Jesús"
           image={RafaAlbaJesus}
