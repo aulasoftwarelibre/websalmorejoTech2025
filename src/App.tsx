@@ -24,13 +24,13 @@ function App() {
     return () => {clearTimeout(timer)}; 
   }, []);
 
-  if (loading) {
-    return (
-      <div className={`appContainerLogo loader-container ${animationClass}`}>
-        <Loader />
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className={`appContainerLogo loader-container ${animationClass}`}>
+  //       <Loader />
+  //     </div>
+  //   );
+  // }
 
   return (
     <>
