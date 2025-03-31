@@ -708,8 +708,7 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         <FirstCard title="Acto de Bienvenida" />
-      </div>
-      <div className="row pt-2" style={{ alignItems: 'stretch' }}>
+        <div className="row pt-2" style={{ alignItems: 'stretch' }}>
         <div
           className={`col-1 d-flex min-vw-35 ${styles.scheduleDiv} flex-column container-fluid tamaño flex-column justify-content-between `}
           style={{
@@ -726,15 +725,25 @@ const Schedule: React.FC = () => {
             <h3>10:20</h3>
           </div>
         </div>
-
-        <SingleCard
-          title="FIND YOUR FUTURE"
-          author="Irene M. Morgado"
+        <ScheduleCard
+          title="Beyond the Tab: How Modern Browsers are being built"
+          author="Marc Rodríguez"
+          image={Marc}
+          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
+          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
+          isTba={true}       />
+        <ScheduleCard
+          title="FLUTTER + IA CON GEMINI"
+          author="Alfredo Bautista"
           image={IreneMorgado}
-          descripcion="Socióloga especializada en psicología social y comportamiento humano."
-          descripcionCharla="¿Es mejor trabajar en una empresa de producto o de servicios? ¿Qué tengo que tener en cuenta para dirigir mi carrera profesional hacia donde realmente quiero? ¿Por qué me contactan tantos recruiters pero sólo para puestos que no me interesan?"
-          tba={true}
+          descripcion="GDE de Flutter y Dart, Co-organizer @GDGMarbella & @flutterconfes"
+          descripcionCharla="¿Has oído hablar de Flutter? El framework multiplataforma desarrollado por Google, con el que podrás desplegar tus aplicaciones en todas las plataformas desde un mismo código.¿Pero de la IA si, verdad? También conoceremos a Gemini, el LLM más avanzado de Google, y cómo podremos conectarlo a nuestras aplicaciones de Flutter de una forma muy muy sencilla. Después de esta charla ya no tendrás excusa para desarrollar tu próxima app."
+          isTba={true}
         />
+      </div>
+      
+
+
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
         <div
@@ -815,7 +824,7 @@ const Schedule: React.FC = () => {
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={false}       />
+          isTba={true}       />
         <ScheduleCard
           title="FLUTTER + IA CON GEMINI"
           author="Alfredo Bautista"
