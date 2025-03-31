@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import IreneMorgado from '../../sprites/ponentes/IreneM.Morgado.png'
 import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.jpg'
 import Marc from '../../sprites/ponentes/marc.jpg'
+import Karsagudo from '../../sprites/ponentes/CarlosCloudFare.jpg'
+import Marisa from '../../sprites/ponentes/fotoperfilmarisa.jpg'
+import Lourdes from '../../sprites/ponentes/fotoLourdesMartinez.jpeg'
+
 
 import styles from './Timetable.module.css'
 
@@ -372,86 +376,113 @@ const SingleCard: React.FC<{
 //   )
 // }
 
-// const BigDoubleCard: React.FC<{
-//   title: string
-//   author: string
-//   image: string
-//   descripcion: string
-//   descripcionCharla: string
-//   image2: string
-// }> = (props) => {
-//   const [isModalOpen, setIsModalOpen] = useState(false)
+const BigDoubleCard: React.FC<{
+  title: string
+  author: string
+  image: string
+  descripcion: string
+  descripcionCharla: string
+  image2: string
+  isTba: boolean
+}> = (props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
-//   const toggleModal = () => {
-//     setIsModalOpen(!isModalOpen)
-//   }
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
 
-//   return (
-//     <>
-//       <div
-//         className={`col-10 container-fluid d-flex ${styles.card}`}
-//         onClick={toggleModal}
-//       >
-//         <div className="row align-items-center mx-auto">
-//           <div className="col-lg-7 col-md-12 py-4">
-//             <div className="row">
-//               <h3 className={styles.scheduleTitle}>{props.title}</h3>
-//             </div>
-//             <div>
-//               <h5 className={styles.scheduleAuthor}>{props.author}</h5>
-//             </div>
-//           </div>
-//           <div className="col-lg-5 col-md-12 py-4">
-//             <img
-//               src={props.image}
-//               className="img-fluid"
-//               alt="..."
-//               style={{ maxHeight: '100%', maxWidth: '45%' }}
-//             />
-//             <img
-//               src={props.image2}
-//               className="img-fluid"
-//               alt="..."
-//               style={{ maxHeight: '100%', maxWidth: '45%' }}
-//             />
-//           </div>
-//         </div>
-//       </div>
+  if (props.isTba) {
+    return (
+      <div className={`col-5 container-fluid d-flex ${styles.card}`}>
+        <div className="row align-items-center mx-auto">
+          <div className="col-12 py-4">
+            <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+              TBA
+            </h3>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
-//       {isModalOpen && (
-//         <div className={styles.modal} onClick={toggleModal}>
-//           <div className={styles.modalContentSingleTalleres}>
-//             <span className={styles.close} onClick={toggleModal}>
-//               &times;
-//             </span>
-//             <h2>{props.title}</h2>
-//             <p>Author: {props.author}</p>
-//             <div className="row">
-//               <div className="col-lg-7 col-md-12 py-4">
-//                 <p>{props.descripcion}</p>
-//                 <p className="mt-3">{props.descripcionCharla}</p>
-//               </div>
-//               <div className="col-lg-5 col-md-12 py-lg-4">
-//                 <img
-//                   src={props.image}
-//                   className="img-fluid"
-//                   alt="..."
-//                   style={{ maxHeight: '100%', maxWidth: '50%' }}
-//                 />
-//                 <img
-//                   src={props.image2}
-//                   className="img-fluid"
-//                   alt="..."
-//                   style={{ maxHeight: '100%', maxWidth: '50%' }}
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       )}
-//     </>
-//   )
-// }
+  return (
+    <>
+      <div
+        className={`col-5 container-fluid d-flex ${styles.card}`}
+        onClick={toggleModal}
+      >
+        <div className="row align-items-center">
+          <div className="col-lg-7 col-md-12 py-4">
+            <div className="row">
+              <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+                {props.title}
+              </h3>
+            </div>
+            <div>
+              <h5
+                className={styles.scheduleAuthor}
+                style={{ color: '#A8041A' }}
+              >
+                {props.author}
+              </h5>
+            </div>
+          </div>
+          <div className="col-lg-5 col-md-12 py-lg-4">
+                <img
+                  src={props.image}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '60%' }}
+                />
+                <img
+                  src={props.image2}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '60%' }}
+                />
+              </div>
+        </div>
+      </div>
+
+      {isModalOpen && (
+        <div className={styles.modal} onClick={toggleModal}>
+          <div className={styles.modalContent}>
+            <span className={styles.close} onClick={toggleModal}>
+              &times;
+            </span>
+            <h2>{props.title}</h2>
+            <p>Author: {props.author}</p>
+            <div className="row">
+              <div className="col-lg-6 col-md-12 py-4">
+                <p>{props.descripcion}</p>
+                <p>{props.descripcionCharla}</p>
+              </div>
+           
+              <div className="col-lg-3 col-md-12 py-4">
+                <img
+                  src={props.image}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '100%' }}
+                />
+               
+              </div>
+              <div className='col-lg-3 col-md-12 py-4'>
+              <img
+                  src={props.image2}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '80%' }}
+                />
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
 
 const ScheduleCard: React.FC<{
   title: string
@@ -510,6 +541,7 @@ const ScheduleCard: React.FC<{
               alt="..."
               style={{ maxHeight: '100%', maxWidth: '80%' }}
             />
+            
           </div>
         </div>
       </div>
@@ -593,14 +625,14 @@ const DoubleCard: React.FC<{
               </h5>
             </div>
           </div>
-          <div className="col-lg-5 col-md-12 py-4">
-            <img
-              src={props.image}
-              className={`img-fluid ${styles.singleImg}`}
-              alt="..."
-              style={{ maxHeight: '100%', maxWidth: '100%' }}
-            />
-          </div>
+          <div className="col-lg-5 col-md-12 py-lg-4">
+                <img
+                  src={props.image}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '100%' }}
+                />
+              </div>
         </div>
       </div>
 
@@ -830,12 +862,21 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         <ScheduleCard
-          title="SERVICE MESH: ¿Y ESO AHORA QUÉ ES?"
-          author="Isra"
-          image={IreneMorgado}
-          descripcion="Trabajando en Red Hat haciendo cosas de observabilidad"
-          descripcionCharla="¿Has escuchado hablar de Service Mesh? ¿Istio? ¿Maistra? Pero vamos a ver ¿qué es todo eso ahora? Vente a esta charla y te cuento qué son las mallas de servicios, para qué sirven y qué pueden hacer por ti."
-          isTba={true}
+          title="Generando código en arquitectura hexagonal desde contratos"
+          author="Carlos Agudo Belloso"
+          image={Karsagudo}
+          descripcion="Team lead Fullstack -> transformo cafeina en codigo"
+          descripcionCharla="En esta charla trataremos varios puntos: 
+          Contratos openapi / standares, que información nos dan, de cara a un generador, resultados esperados de nuestro generador
+, introducción a hexagonal architecture con cada una de sus capas (aplicación, dominio, infra)
+, comunicación entre capas
+, cqrs
+, commands
+, queries
+, commands and queries desde http
+, command bus / query bus
+, demo"
+          isTba={false}
         />
         <ScheduleCard
           title="SPRING BOOT <3 TESTCONTAINERS"
@@ -873,14 +914,15 @@ Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desd
 Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
           isTba={false}
         />
-        <ScheduleCard
-          title="EL PM, ¿AMIGO O ENEMIGO?"
-          author="Guiomar"
-          image={IreneMorgado}
-          descripcion="Trabajo en la frontera del PM y el PO pero sin simples etiquetas para acotar todo el trabajo que hago en equipo para desarrollar productos digitales."
-          descripcionCharla="Hablaremos de la figura del PM en el equipo del desarrollo y cómo entre todo se hace el producto"
-          isTba={true}
-
+                <BigDoubleCard
+          title="Mamá de mayor quiero ser ponente"
+          author="Marisa Martín y Lourdes Martínez"
+          image={Marisa}
+          image2={Lourdes}
+          descripcion="Mentoras de Tech SHEssions Madrid."
+          descripcionCharla="Nunca dijo nadie y sin embargo, muchos pensamos. Pero, ¿qué nos frena a dar ese paso? ¿Por qué nos estamos perdiendo esas oportunidades de aprender, de compartir, de crecer personal y profesionalmente? 
+En esta charla, te contamos nuestros secretos como mentoras del programa de Tech SHEssions Madrid para que te animes a ser ponente!"
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
