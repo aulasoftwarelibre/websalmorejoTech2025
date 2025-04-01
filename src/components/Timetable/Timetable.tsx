@@ -733,7 +733,7 @@ const Schedule: React.FC = () => {
         <ScheduleCard
           title="Beyond the Tab: How Modern Browsers are being built"
           author="Marc Rodríguez"
-          image={RafaAlbaJesus}
+          image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={true}
@@ -790,7 +790,7 @@ const Schedule: React.FC = () => {
         <ScheduleCard
           title="Beyond the Tab: How Modern Browsers are being built"
           author="Marc Rodríguez"
-          image={RafaAlbaJesus}
+          image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={true}
@@ -829,7 +829,7 @@ const Schedule: React.FC = () => {
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={true}       />
+          isTba={false}       />
         <ScheduleCard
           title="FLUTTER + IA CON GEMINI"
           author="Alfredo Bautista"
