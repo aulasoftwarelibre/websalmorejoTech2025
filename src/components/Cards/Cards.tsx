@@ -14,7 +14,6 @@ import AntonioJose from '../../sprites/PeoplePhotos/front/Antonio José Serrano 
 import AntonioMerlo from '../../sprites/PeoplePhotos/front/ant2005onio.jpg'
 import Jaime from '../../sprites/PeoplePhotos/front/Jaime Hernández Pérez.jpg'
 import Minghan from '../../sprites/PeoplePhotos/front/Minghan Wang.jpg'
-import Sofia from '../../sprites/PeoplePhotos/front/Sofía Aritz.png'
 import Alvaro from '../../sprites/PeoplePhotos/front/alvaro serrano.jpg'
 import Pablo from '../../sprites/PeoplePhotos/front/PMMS.jpg'
 import Alejandro from '../../sprites/PeoplePhotos/front/Alejandro Martos Bellido.jpg'
@@ -40,7 +39,6 @@ import AntonioJoseOP from '../../sprites/PeoplePhotos/back/OPAntonio José Serra
 import AntonioMerloOP from '../../sprites/PeoplePhotos/back/OPant2005onio.jpg'
 import JaimeOP from '../../sprites/PeoplePhotos/back/OPJaime Hernández Pérez.jpg'
 import MinghanOP from '../../sprites/PeoplePhotos/back/OPMinghan Wang.jpg'
-import SofiaOP from '../../sprites/PeoplePhotos/back/OPSofía Aritz.png'
 import AlvaroOP from '../../sprites/PeoplePhotos/back/OPalvaro serrano.jpg'
 import PabloOP from '../../sprites/PeoplePhotos/back/OPPMMS.jpg'
 import AlejandroOP from '../../sprites/PeoplePhotos/back/OPAlejandro Martos Bellido.jpg'
@@ -332,15 +330,6 @@ export default function Cards() {
               >
                 {' '}
                 Sergio Palacios López{' '}
-              </Card>
-            </div>
-            <div className="col-md-5 col-lg-4">
-              <Card
-                description="✍️ Promoviendo el Software Libre en Europa"
-                photo={Sofia}
-                backphoto={SofiaOP}
-              >
-                Sofía Aritz Albors Escobés
               </Card>
             </div>
             <div className="col-md-5 col-lg-4">

@@ -5,6 +5,9 @@ import Marc from '../../sprites/ponentes/marc.jpg'
 import Karsagudo from '../../sprites/ponentes/CarlosCloudFare.jpg'
 import Marisa from '../../sprites/ponentes/fotoperfilmarisa.jpg'
 import Lourdes from '../../sprites/ponentes/fotoLourdesMartinez.jpeg'
+import Edu from '../../sprites/ponentes/edu.jpg'
+import Sofia from "../../sprites/ponentes/sofia.jpg"
+
 
 
 import styles from './Timetable.module.css'
@@ -831,12 +834,12 @@ const Schedule: React.FC = () => {
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={false}       />
         <ScheduleCard
-          title="FLUTTER + IA CON GEMINI"
-          author="Alfredo Bautista"
-          image={IreneMorgado}
-          descripcion="GDE de Flutter y Dart, Co-organizer @GDGMarbella & @flutterconfes"
-          descripcionCharla="¿Has oído hablar de Flutter? El framework multiplataforma desarrollado por Google, con el que podrás desplegar tus aplicaciones en todas las plataformas desde un mismo código.¿Pero de la IA si, verdad? También conoceremos a Gemini, el LLM más avanzado de Google, y cómo podremos conectarlo a nuestras aplicaciones de Flutter de una forma muy muy sencilla. Después de esta charla ya no tendrás excusa para desarrollar tu próxima app."
-          isTba={true}
+          title="Awesome Selfhosted versión gratuita"
+          author="Eduardo Roldán Pijuán"
+          image={Edu}
+          descripcion="Ex miembro del ASL y actual Tech Lead en comercio electrónico en Redsys"
+          descripcionCharla="Aprende cómo conseguir de forma gratuita tu servidor y dominio gracias a Oracle y GitHub, y empieza a desplegar todo tipo de cosas de forma autónoma, segura y gratuita."
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -893,12 +896,14 @@ const Schedule: React.FC = () => {
           isTba={false}
         />
         <ScheduleCard
-          title="SPRING BOOT <3 TESTCONTAINERS"
-          author="Iván López"
-          image={IreneMorgado}
-          descripcion="Iván es desarrollador JVM con 20 años de experiencia. Actualmente trabaja en VMware."
-          descripcionCharla="En esta charla aprenderás qué es Testcontainers y cómo se integra con Spring Boot y los beneficios de utilizarlo en tus tests de integración."
-          isTba={true}
+          title="Datos y política: MP Scrape"
+          author="Sofia Aritz Albors Escobés"
+          image={Sofia}
+          descripcion="Programadora apasionada por la tecnología como herramienta de transformación social."
+          descripcionCharla="En un mundo donde los gigantes dominan el diálogo político, es crucial que los activistas puedan hacer oír su voz. MP Scrape, una herramienta desarrollada por la FSFE, te da las herramientas para poder conectar directamente con tus representantes, extraer información clave y defender el Software Libre.
+
+Aprende cómo esta herramienta puede ayudarte a defender las causas que más te importan."
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
