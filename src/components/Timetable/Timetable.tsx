@@ -431,19 +431,22 @@ const BigDoubleCard: React.FC<{
             </div>
           </div>
           <div className="col-lg-5 col-md-12 py-lg-4">
-                <img
-                  src={props.image}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '60%' }}
-                />
-                <img
-                  src={props.image2}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '60%' }}
-                />
-              </div>
+            <div className="d-flex justify-content-center gap-2 flex-wrap flex-md-nowrap">
+              <img
+                src={props.image}
+                className={`img-fluid ${styles.singleImg}`}
+                alt="..."
+                style={{ maxHeight: '100px', maxWidth: '100%' }}
+              />
+              <img
+                src={props.image2}
+                className={`img-fluid ${styles.singleImg}`}
+                alt="..."
+                style={{ maxHeight: '100px', maxWidth: '100%' }}
+              />
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -460,7 +463,7 @@ const BigDoubleCard: React.FC<{
                 <p>{props.descripcion}</p>
                 <p>{props.descripcionCharla}</p>
               </div>
-           
+
               <div className="col-lg-3 col-md-12 py-4">
                 <img
                   src={props.image}
@@ -468,17 +471,17 @@ const BigDoubleCard: React.FC<{
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
-               
+
               </div>
               <div className='col-lg-3 col-md-12 py-4'>
-              <img
+                <img
                   src={props.image2}
                   className={`img-fluid ${styles.singleImg}`}
                   alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '80%' }}
+                  style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
               </div>
-          
+
             </div>
           </div>
         </div>
@@ -544,7 +547,7 @@ const ScheduleCard: React.FC<{
               alt="..."
               style={{ maxHeight: '100%', maxWidth: '80%' }}
             />
-            
+
           </div>
         </div>
       </div>
@@ -628,14 +631,14 @@ const DoubleCard: React.FC<{
               </h5>
             </div>
           </div>
-          <div className="col-lg-5 col-md-12 py-lg-4">
-                <img
-                  src={props.image}
-                  className={`img-fluid ${styles.singleImg}`}
-                  alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '100%' }}
-                />
-              </div>
+          <div className="col-lg-5 col-md-12 py-4">
+            <img
+              src={props.image}
+              className={`img-fluid ${styles.singleImg}`}
+              alt="..."
+              style={{ maxHeight: '100%', maxWidth: '80%' }}
+            />
+          </div>
         </div>
       </div>
 
@@ -657,7 +660,7 @@ const DoubleCard: React.FC<{
                   src={props.image}
                   className={`img-fluid ${styles.singleImg}`}
                   alt="..."
-                  style={{ maxHeight: '100%', maxWidth: '100%' }}
+                  style={{ maxHeight: '100%', maxWidth: '70%' }}
                 />
               </div>
             </div>
@@ -711,7 +714,7 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         <FirstCard title="Acto de Bienvenida" />
-       
+
 
 
       </div>
@@ -745,14 +748,14 @@ const Schedule: React.FC = () => {
         <ScheduleCard
           title="Beyond the Tab: How Modern Browsers are being built"
           author="Marc Rodríguez"
-          
+
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
           isTba={true}
         />
       </div>
-      
+
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
         <div
           className={`col-1 d-flex min-vw-35 ${styles.scheduleDiv} flex-column container-fluid tamaño flex-column justify-content-between `}
@@ -802,7 +805,7 @@ const Schedule: React.FC = () => {
         <ScheduleCard
           title="Beyond the Tab: How Modern Browsers are being built"
           author="Marc Rodríguez"
-          
+
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
@@ -832,7 +835,7 @@ const Schedule: React.FC = () => {
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={false}       />
+          isTba={false} />
         <ScheduleCard
           title="Awesome Selfhosted versión gratuita"
           author="Eduardo Roldán Pijuán"
@@ -933,7 +936,7 @@ Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desd
 Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
           isTba={false}
         />
-                <BigDoubleCard
+        <BigDoubleCard
           title="Mamá de mayor quiero ser ponente"
           author="Marisa Martín y Lourdes Martínez"
           image={Marisa}
