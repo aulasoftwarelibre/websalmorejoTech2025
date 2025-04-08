@@ -431,7 +431,7 @@ const BigDoubleCard: React.FC<{
             </div>
           </div>
           <div className="col-lg-5 col-md-12 py-lg-4">
-            <div className="d-flex justify-content-center gap-2 flex-wrap flex-md-nowrap">
+        
               <img
                 src={props.image}
                 className={`img-fluid ${styles.singleImg}`}
@@ -444,7 +444,7 @@ const BigDoubleCard: React.FC<{
                 alt="..."
                 style={{ maxHeight: '100px', maxWidth: '100%' }}
               />
-            </div>
+          
           </div>
 
         </div>
