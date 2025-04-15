@@ -940,7 +940,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
           isTba={false}
         />
         <BigDoubleCard
-          title="Mamá de mayor quiero ser ponente"
+          title="Mamá, de mayor quiero ser ponente"
           author="Marisa Martín y Lourdes Martínez"
           image={Marisa}
           image2={Lourdes}
