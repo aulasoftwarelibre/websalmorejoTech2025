@@ -7,6 +7,9 @@ import Marisa from '../../sprites/ponentes/fotoperfilmarisa.jpg'
 import Lourdes from '../../sprites/ponentes/fotoLourdesMartinez.jpeg'
 import Edu from '../../sprites/ponentes/edu.jpg'
 import Sofia from "../../sprites/ponentes/sofia.jpg"
+import Mariana from "../../sprites/ponentes/mariana.jpg"
+import Rolando from "../../sprites/ponentes/rolando.jpg"
+import JuanAriza from "../../sprites/ponentes/juan.png"
 
 
 
@@ -803,13 +806,13 @@ const Schedule: React.FC = () => {
         />
 
         <ScheduleCard
-          title="Beyond the Tab: How Modern Browsers are being built"
-          author="Marc Rodríguez"
+          title="Debug Your Life: Enfrentando el Burnout en Tech"
+          author="Mariana Rolfo"
 
-          image={Marc}
-          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
-          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={true}
+          image={Mariana}
+          descripcion="AI & Process Automation Expert|Community Builder|Technical Writer in Web Technology"
+          descripcionCharla="Como desarrolladores, es conocido cómo depurar código, pero ¿sabes cómo depurar tu vida cuando todo parece estar al límite? Entre deadlines imposibles, guardias nocturnas y la presión constante por mantenernos actualizados, el burnout se ha convertido en el error no controlado más común en nuestra industria."
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -992,12 +995,13 @@ En esta charla, te contamos nuestros secretos como mentoras del programa de Tech
           isTba={true}
         />
         <ScheduleCard
-          title="¡COOKIEGEDDON! BYE A LAS COOKIES DE TERCEROS"
-          author="Francisco Javier Barrena"
-          image={IreneMorgado}
-          descripcion="Principal Engineer at Labster"
-          descripcionCharla="Chrome ya ha empezado a bloquear las 3rd Party Cookies. A partir del Q1 de 2024, el 1% de todos los Chromes del mundo empezarán a bloquear cookies de terceros, y progresivamente se extenderá a toda la fucking internet."
-          isTba={true}
+          title="Buenas Prácticas para la Gestión de Repositorios en GitHub. "
+          author="Juan Ariza Toledano"
+          image={JuanAriza}
+          descripcion="Ingeniero software en VMware, especializado en desplegar aplicaciones en Kubernetes."
+          descripcionCharla="Publicar y gestionar un proyecto open-source implica mucho más que crear un repositorio en GitHub y subir código para que otros lo usen.
+En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes considerar antes de dar este paso, como la gestión de contribuciones e incidencias, la documentación, la organización del proyecto, GitHub Actions o la seguridad."
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -1018,12 +1022,12 @@ En esta charla, te contamos nuestros secretos como mentoras del programa de Tech
           </div>
         </div>
         <ScheduleCard
-          title="HAZ TUS CHATBOTS CON RASA OPENSOURCE (¡AHORA SIN LLMs!)"
-          author="Ivan Valero"
-          image={IreneMorgado}
-          descripcion="Graduado en Ing, Informática por la UGR, Trabajo en Backend e investigo temas random"
-          descripcionCharla="¿Te gustaría tener un Chatbot pero no te mola pagar por Azure ni Dialogflow? ¿No te gusta tirar de ChatGPT? ¿Estás leyendo esto con voz de Teletienda? Si es así, en esta charla hablaremos de Rasa, una solución de código abierto que puedes editar desde tu PC y desplegarlo ahí mismo. Crea tus preguntas y respuestas, dale acceso a Internet para buscar. Con YAML y Python puedes hacerlo fácilmente"
-          isTba={true}
+          title="No, lo que haces no es DDD (y tampoco pasa nada)"
+          author="Rolando Caldas Sánchez"
+          image={Rolando}
+          descripcion="Team Lead, ex-CTO y organizador de CraftersVigo y la pulpoCon"
+          descripcionCharla="Se nos llena la boca con conceptos como agregados, value objects, CQRS, servicios de dominio, etc. porque en DDD patatas. Cuando la realidad es que muchas veces no llegamos ni a POO. Qué te parece si hacemos un recorrido por lo que nos gusta decir que hacemos y lo que realmente ocurre? Que no pasa nada por no hacer DDD, ni tener VO, etc etc. El problema sería pensar que lo hacemos sin hacerlo ¿no?"
+          isTba={false}
         />
         <ScheduleCard
           title="EL PM, ¿AMIGO O ENEMIGO?"
