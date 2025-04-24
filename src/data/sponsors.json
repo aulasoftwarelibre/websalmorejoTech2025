@@ -70,7 +70,18 @@
     "type": "CHERRY",
     "imageUrl": "/2025/sponsors/fuzetea.jpeg",
     "href": "https://www.coca-cola.com/es/es/brands/fuze-tea?utm_source=google_p&utm_medium=Search&utm_campaign=EU25A0CHA058&utm_content=link&gad_source=1&gbraid=0AAAAAoTdRSVc6n5fCw3hzfDgBgxqcECcL&gclid=CjwKCAjw5PK_BhBBEiwAL7GTPdxAik_iagDDnmi0aLbndm1tNwkwRhBwxMslabrJs2XPmE5apYIVphoCCzkQAvD_BwE"
-  }
+  },
+  {
+    "name": "VANT",
+    "type": "PERA",
+    "imageUrl": "/2025/sponsors/vant.png",
+    "href": "https://www.vantpc.es/"},
+    {
+      "name": "CATEDRA ATMIRA",
+      "type": "PERA",
+      "imageUrl": "/2025/sponsors/atmira.png",
+      "href": "https://www.atmira.com/"}
+
 
   
 ]

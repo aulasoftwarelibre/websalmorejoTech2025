@@ -10,6 +10,10 @@ import Sofia from "../../sprites/ponentes/sofia.jpg"
 import Mariana from "../../sprites/ponentes/mariana.jpg"
 import Rolando from "../../sprites/ponentes/rolando.jpg"
 import JuanAriza from "../../sprites/ponentes/juan.png"
+import Gabi from "../../sprites/ponentes/gabi.jpg"
+import Ainoa from "../../sprites/ponentes/ainoa.jpg"
+import Gloria from "../../sprites/ponentes/gloria.jpg"
+import Ruben from "../../sprites/ponentes/ruben.jpg"
 
 
 
@@ -749,13 +753,12 @@ const Schedule: React.FC = () => {
         />
 
         <ScheduleCard
-          title="Beyond the Tab: How Modern Browsers are being built"
-          author="Marc Rodríguez"
-
-          image={Marc}
-          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
-          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={true}
+          title="Cómo convertirse en el perfil que todos los recruiters quieran fichar"
+          author="Gabriela Alba Ballesteros"
+          image={Gabi}
+          descripcion="Psicóloga y Reclutadora IT. Me dedico a planificar y transformar tu carrera laboral."
+          descripcionCharla="Cómo encontrar tu primer empleo Tech nace con la misión de ayudar a jóvenes ingenieros y estudiantes de informática a destacar en el competitivo mercado laboral. Revelaré las tácticas más avanzadas de 2025 para optimizar tu perfil de LinkedIn y hacerte visible para reclutadores y headhunters, mientras transformamos tu CV en un imán irresistible de oportunidades."
+          isTba={false}
         />
       </div>
 
@@ -797,12 +800,12 @@ const Schedule: React.FC = () => {
         </div>
 
         <ScheduleCard
-          title="Beyond the Tab: How Modern Browsers are being built"
-          author="Marc Rodríguez"
-          image={Marc}
-          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
-          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={true}
+          title="De la Universidad al Mundo Laboral"
+          author="Ruben Aguilera"
+          image={Ruben}
+          descripcion="Liderando equipos de desarrollo de software"
+          descripcionCharla="Iremos desde ejemplos simples de composición hasta ejemplos complejos con inyección de dependencias para integrarlos en arquitecturas hexagonales o modificar su funcionamiento según dónde los incorporemos. Un recorrido completo sobre las bases de los Web Components hasta cómo implementar i18n, conexión con datos mediante Contexto o manejar estado con Signals."
+          isTba={false}
         />
 
         <ScheduleCard
@@ -986,13 +989,14 @@ En esta charla, te contamos nuestros secretos como mentoras del programa de Tech
             <h3>16:35</h3>
           </div>
         </div>
-        <ScheduleCard
-          title="¿POR QUÉ LAS PÁGINAS WEB SON TAN DIFERENTES?"
-          author="Patricia Vázquez"
-          image={IreneMorgado}
-          descripcion="Soy Patricia Vazquez, software Engineer y apasionada de la cultura japonesa."
-          descripcionCharla="En esta charla exploraremos la estética y diseño detrás de las páginas web japonesas. Descubriremos cómo la rica cultura japonesa influye en cada aspecto del diseño web, desde la elección de colores y fuentes hasta la disposición de los elementos interactivos."
-          isTba={true}
+        <BigDoubleCard
+          title="Game of Forums"
+          author="Ainoa Guillén González y Gloria Jorge Lema"
+          image={Ainoa}
+          image2={Gloria}
+          descripcion="Criminóloga, ciberseguridad, especializada en ciberinteligencia, divulgadora y docente."
+          descripcionCharla="Explorarán la evolución de los foros del cibercrimen, el impacto de las operaciones policiales y la migración hacia Telegram y plataformas descentralizadas, analizando posibles escenarios futuros y y las medidas que podrían adoptar los gobiernos y las fuerzas de seguridad ante esta situación."
+          isTba={false}
         />
         <ScheduleCard
           title="Buenas Prácticas para la Gestión de Repositorios en GitHub. "
