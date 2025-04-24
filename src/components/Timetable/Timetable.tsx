@@ -800,11 +800,11 @@ const Schedule: React.FC = () => {
         </div>
 
         <ScheduleCard
-          title="De la Universidad al Mundo Laboral"
+          title="Arquitectura Limpia en el Front"
           author="Ruben Aguilera"
           image={Ruben}
           descripcion="Liderando equipos de desarrollo de software"
-          descripcionCharla="Iremos desde ejemplos simples de composición hasta ejemplos complejos con inyección de dependencias para integrarlos en arquitecturas hexagonales o modificar su funcionamiento según dónde los incorporemos. Un recorrido completo sobre las bases de los Web Components hasta cómo implementar i18n, conexión con datos mediante Contexto o manejar estado con Signals."
+          descripcionCharla="En esta charla vamos a ver una aproximación a una arquitectura limpia en el front para poder hacer aplicaciones SPA más evolucionables y mantenibles."
           isTba={false}
         />
 
