@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Past from './pages/Past/Index.tsx';
 
-const Past = lazy(() => import('./pages/Past/Index.tsx'));
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
