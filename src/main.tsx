@@ -1,19 +1,30 @@
+import React from 'react'
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './App.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Past from './pages/Past/Index.tsx';
-
+import Loading from './components/Loading/Loading.tsx'; // Correctly import the Loading component
+//import App from './App.tsx';
+//import Past from './pages/Past/Index.tsx';
+const LazyApp =React.lazy(()=> import('./App.tsx'));
+const LazyPast =React.lazy(()=> import('./pages/Past/Index.tsx'));
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
         <Routes>
-          <Route path="/2025/" element={<App />} />
-          <Route path="/2025/past" element={<Past />} />
+          <Route path="/2025/" element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyApp />
+            </React.Suspense>
+            }/>
+          <Route path="/2025/past" element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyPast />
+            </React.Suspense>
+          }/>
         </Routes>
     </Router>
   </StrictMode>

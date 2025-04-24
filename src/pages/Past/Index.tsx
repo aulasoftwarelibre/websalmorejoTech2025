@@ -6,7 +6,7 @@ import imagen4 from '../../sprites/Past/2021.png'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 
-export default function Past() {
+function Past() {
   return (
     <div className={styles.gradient}>
       <Navbar />
@@ -47,3 +47,5 @@ export default function Past() {
     </div>
   )
 }
+
+export default Past
