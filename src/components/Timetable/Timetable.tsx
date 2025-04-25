@@ -1104,8 +1104,8 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           title="openSUSE Linux Install Party"
           author="openSUSE"
           image={openSUSE}
-          descripcion="Software Developer @Qualifyze Del @ASL pa toda la vida ❤️‍🔥"
-          descripcionCharla="En esta charla cuento una experiencia personal en la que se ha montado un producto desde 0 a toda velocidad, todo ello siguiendo una filosofía de buenas prácticas"
+          descripcion="¡No tires tu portátil! Dale una segunda oportunidad con openSUSE."
+          descripcionCharla="En este taller práctico de la comunidad openSUSE, te invitamos a traer ese compañero tecnológico olvidado. Olvídate de la obsolescencia programada y descubre el poder del código abierto para transformar tu equipo"
           tba={false}
         />
       </div>
