@@ -1,5 +1,5 @@
 .navback {
-  position: fixed;
+  position: sticky;
   width: 100%;
   color: #fff;
   font-family: 'Oswald', sans-serif;
@@ -12,7 +12,8 @@
 .navback::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  display: block;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
