@@ -6,16 +6,15 @@ import Karsagudo from '../../sprites/ponentes/CarlosCloudFare.jpg'
 import Marisa from '../../sprites/ponentes/fotoperfilmarisa.jpg'
 import Lourdes from '../../sprites/ponentes/fotoLourdesMartinez.jpeg'
 import Edu from '../../sprites/ponentes/edu.jpg'
-import Sofia from "../../sprites/ponentes/sofia.jpg"
-import Mariana from "../../sprites/ponentes/mariana.jpg"
-import Rolando from "../../sprites/ponentes/rolando.jpg"
-import JuanAriza from "../../sprites/ponentes/juan.png"
-import Gabi from "../../sprites/ponentes/gabi.jpg"
-import Ainoa from "../../sprites/ponentes/ainoa.jpg"
-import Gloria from "../../sprites/ponentes/gloria.jpg"
-import Ruben from "../../sprites/ponentes/ruben.jpg"
-
-
+import Sofia from '../../sprites/ponentes/sofia.jpg'
+import Mariana from '../../sprites/ponentes/mariana.jpg'
+import Rolando from '../../sprites/ponentes/rolando.jpg'
+import JuanAriza from '../../sprites/ponentes/juan.png'
+import Gabi from '../../sprites/ponentes/gabi.jpg'
+import Ainoa from '../../sprites/ponentes/ainoa.jpg'
+import Gloria from '../../sprites/ponentes/gloria.jpg'
+import Ruben from '../../sprites/ponentes/ruben.jpg'
+import openSUSE from '../../sprites/ponentes/openSUSE.jpg'
 
 import styles from './Timetable.module.css'
 
@@ -240,20 +239,20 @@ const Card: React.FC<{ title: string }> = (props) => {
 // }
 
 const SingleCard: React.FC<{
-  title: string;
-  author: string;
-  image: string;
-  descripcion: string;
-  descripcionCharla: string;
-  tba?: boolean;
+  title: string
+  author: string
+  image: string
+  descripcion: string
+  descripcionCharla: string
+  tba?: boolean
 }> = (props) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const toggleModal = () => {
     if (!props.tba) {
-      setIsModalOpen(!isModalOpen);
+      setIsModalOpen(!isModalOpen)
     }
-  };
+  }
 
   return (
     <>
@@ -265,12 +264,15 @@ const SingleCard: React.FC<{
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-                {props.tba ? 'TBA' : props.title} { }
+                {props.tba ? 'TBA' : props.title} {}
               </h3>
             </div>
             {!props.tba && (
               <div>
-                <h5 className={styles.scheduleAuthor} style={{ color: '#A8041A' }}>
+                <h5
+                  className={styles.scheduleAuthor}
+                  style={{ color: '#A8041A' }}
+                >
                   {props.author}
                 </h5>
               </div>
@@ -315,8 +317,8 @@ const SingleCard: React.FC<{
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
 // const SingleCardTalleres: React.FC<{
 //   title: string
@@ -438,22 +440,19 @@ const BigDoubleCard: React.FC<{
             </div>
           </div>
           <div className="col-lg-5 col-md-12 py-lg-4">
-        
-              <img
-                src={props.image}
-                className={`img-fluid ${styles.singleImg}`}
-                alt="..."
-                style={{ maxHeight: '100px', maxWidth: '100%' }}
-              />
-              <img
-                src={props.image2}
-                className={`img-fluid ${styles.singleImg}`}
-                alt="..."
-                style={{ maxHeight: '100px', maxWidth: '100%' }}
-              />
-          
+            <img
+              src={props.image}
+              className={`img-fluid ${styles.singleImg}`}
+              alt="..."
+              style={{ maxHeight: '100px', maxWidth: '100%' }}
+            />
+            <img
+              src={props.image2}
+              className={`img-fluid ${styles.singleImg}`}
+              alt="..."
+              style={{ maxHeight: '100px', maxWidth: '100%' }}
+            />
           </div>
-
         </div>
       </div>
 
@@ -478,9 +477,8 @@ const BigDoubleCard: React.FC<{
                   alt="..."
                   style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
-
               </div>
-              <div className='col-lg-3 col-md-12 py-4'>
+              <div className="col-lg-3 col-md-12 py-4">
                 <img
                   src={props.image2}
                   className={`img-fluid ${styles.singleImg}`}
@@ -488,7 +486,6 @@ const BigDoubleCard: React.FC<{
                   style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -554,7 +551,6 @@ const ScheduleCard: React.FC<{
               alt="..."
               style={{ maxHeight: '100%', maxWidth: '80%' }}
             />
-
           </div>
         </div>
       </div>
@@ -721,9 +717,6 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         <FirstCard title="Acto de Bienvenida" />
-
-
-
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
         <div
@@ -811,7 +804,6 @@ const Schedule: React.FC = () => {
         <ScheduleCard
           title="Debug Your Life: Enfrentando el Burnout en Tech"
           author="Mariana Rolfo"
-
           image={Mariana}
           descripcion="AI & Process Automation Expert|Community Builder|Technical Writer in Web Technology"
           descripcionCharla="Como desarrolladores, es conocido cómo depurar código, pero ¿sabes cómo depurar tu vida cuando todo parece estar al límite? Entre deadlines imposibles, guardias nocturnas y la presión constante por mantenernos actualizados, el burnout se ha convertido en el error no controlado más común en nuestra industria."
@@ -841,7 +833,8 @@ const Schedule: React.FC = () => {
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
           descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={false} />
+          isTba={false}
+        />
         <ScheduleCard
           title="Awesome Selfhosted versión gratuita"
           author="Eduardo Roldán Pijuán"
@@ -1040,7 +1033,6 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           descripcion="Trabajo en la frontera del PM y el PO pero sin simples etiquetas para acotar todo el trabajo que hago en equipo para desarrollar productos digitales."
           descripcionCharla="Hablaremos de la figura del PM en el equipo del desarrollo y cómo entre todo se hace el producto"
           isTba={true}
-
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -1067,7 +1059,6 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           descripcion="Software Developer @Qualifyze Del @ASL pa toda la vida ❤️‍🔥"
           descripcionCharla="En esta charla cuento una experiencia personal en la que se ha montado un producto desde 0 a toda velocidad, todo ello siguiendo una filosofía de buenas prácticas"
           tba={true}
-
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -1088,6 +1079,35 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           </div>
         </div>
         <Card title="Networking" />
+      </div>
+      <div className={styles.text}>
+        <a>Taller</a>
+      </div>
+      <div className="row pt-2" style={{ alignItems: 'stretch' }}>
+        <div
+          className={`col-1 d-flex min-vw-35 ${styles.scheduleDiv} flex-column container-fluid tamaño flex-column justify-content-between `}
+          style={{
+            borderRadius: '10px',
+            background: 'rgba(255, 255, 255, 0.22)',
+            backdropFilter: 'blur(4px)',
+            boxShadow: '0px 4px 4px 0px #00000040',
+          }}
+        >
+          <div className="row pb-5">
+            <h3>17:25</h3>
+          </div>
+          <div className="row pt-4">
+            <h3>18:15</h3>
+          </div>
+        </div>
+        <SingleCard
+          title="openSUSE Linux Install Party"
+          author="openSUSE"
+          image={openSUSE}
+          descripcion="¡No tires tu portátil! Dale una segunda oportunidad con openSUSE."
+          descripcionCharla="En este taller práctico de la comunidad openSUSE, te invitamos a traer ese compañero tecnológico olvidado. Olvídate de la obsolescencia programada y descubre el poder del código abierto para transformar tu equipo"
+          tba={false}
+        />
       </div>
     </div>
   )
