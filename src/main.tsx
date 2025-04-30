@@ -24,6 +24,22 @@ const RootComponent = () => {
   const [progress, setProgress] = useState(10)
   const [fadeClass, setFadeClass] = useState('')
 
+  // Efecto para controlar el scroll
+  useEffect(() => {
+    if (isLoading) {
+      document.body.classList.add('no-scroll')
+      document.documentElement.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('no-scroll')
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('no-scroll')
+    }
+  }, [isLoading])
+
   useEffect(() => {
     const loadResources = async () => {
       const interval = setInterval(() => {
@@ -33,8 +49,8 @@ const RootComponent = () => {
       await new Promise((resolve) => setTimeout(resolve, 2000))
       clearInterval(interval)
 
-      setFadeClass('fade-out') // Añade la clase de fundido para el loader
-      setTimeout(() => setIsLoading(false), 1000) // Espera a que termine la animación
+      setFadeClass('fade-out')
+      setTimeout(() => setIsLoading(false), 1000)
     }
 
     loadResources()
