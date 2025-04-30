@@ -21,7 +21,8 @@ const LazyPast = React.lazy(() =>
 
 const RootComponent = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [progress, setProgress] = useState(10) // Inicializa con un valor mínimo visible
+  const [progress, setProgress] = useState(10)
+  const [fadeClass, setFadeClass] = useState('')
 
   useEffect(() => {
     const loadResources = async () => {
@@ -29,10 +30,11 @@ const RootComponent = () => {
         setProgress((prev) => Math.min(prev + Math.random() * 15, 100))
       }, 150)
 
-      // Esperar el tiempo mínimo de 2 segundos
       await new Promise((resolve) => setTimeout(resolve, 2000))
       clearInterval(interval)
-      setIsLoading(false)
+
+      setFadeClass('fade-out') // Añade la clase de fundido para el loader
+      setTimeout(() => setIsLoading(false), 1000) // Espera a que termine la animación
     }
 
     loadResources()
@@ -41,15 +43,13 @@ const RootComponent = () => {
   return (
     <div className="root-container">
       {isLoading && (
-        <div className="loading-overlay">
-          {/* Loader visible inmediatamente */}
+        <div className={`loading-overlay ${fadeClass}`}>
           <div className="progress-bar" style={{ width: `${progress}%` }} />
           <Loading />
         </div>
       )}
 
-      {/* Contenido principal que se carga en segundo plano */}
-      <div className={`background-content ${isLoading ? 'loading' : 'loaded'}`}>
+      <div className={`background-content ${isLoading ? '' : 'fade-in'}`}>
         <Router>
           <Routes>
             <Route path="/2025/" element={<LazyApp />} />
