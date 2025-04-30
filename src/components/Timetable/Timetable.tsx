@@ -15,6 +15,7 @@ import Ainoa from '../../sprites/ponentes/ainoa.jpg'
 import Gloria from '../../sprites/ponentes/gloria.jpg'
 import Ruben from '../../sprites/ponentes/ruben.jpg'
 import openSUSE from '../../sprites/ponentes/openSUSE.jpg'
+import mia from '../../sprites/ponentes/mia.jpg'
 
 import styles from './Timetable.module.css'
 
@@ -935,15 +936,13 @@ Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desd
 Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento si es muy difícil entrenar un modelo en local o como evitar que GPT alucine."
           isTba={false}
         />
-        <BigDoubleCard
-          title="Mamá, de mayor quiero ser ponente"
-          author="Marisa Martín y Lourdes Martínez"
-          image={Marisa}
-          image2={Lourdes}
-          descripcion="Mentoras de Tech SHEssions Madrid."
-          descripcionCharla="Nunca dijo nadie y sin embargo, muchos pensamos. Pero, ¿qué nos frena a dar ese paso? ¿Por qué nos estamos perdiendo esas oportunidades de aprender, de compartir, de crecer personal y profesionalmente? 
-  En esta charla, te contamos nuestros secretos como mentoras del programa de Tech SHEssions Madrid para que te animes a ser ponente!"
-          isTba={true}
+        <DoubleCard
+          title="Accesibilidad web: Guía de supervivencia para noobies"
+          author="Mia Salazar"
+          image={mia}
+          descripcion="La accesibilidad web suele ser el gran olvidado del desarrollo. Esta situación provoca que muchas personas queden excluídas del mundo digital.  No obstante, hay ciertas cosas sencillas que se pueden hacer y que mejoran notablemente los proyectos."
+          descripcionCharla="En esta charla emprenderemos juntos un viaje hacia accesibilidad. Desde HTML semántico a navegación por teclado y mucho más."
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
