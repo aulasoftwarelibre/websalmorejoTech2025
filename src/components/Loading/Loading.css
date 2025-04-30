@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #000; /* Optional: dark background */
+  background-color: #ffff; /* Optional: dark background */
 }
 
 .loading-sprite {
   width: 100px; /* Adjust size as needed */
   height: 100px;
-  filter: brightness(1); /* Darken the sprite */
-  animation: rotate 2s linear infinite;
+  filter: brightness(0); /* Darken the sprite */
+  animation: rotate 2s ease-in-out infinite;
 }
 
 @keyframes rotate {
