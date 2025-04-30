@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Loading from './components/Loading/Loading.tsx'
 
@@ -10,7 +15,7 @@ const lazyLoadWithDelay = (
 ) => {
   return Promise.all([
     importer(),
-    new Promise((resolve) => setTimeout(resolve, 2000)),
+    new Promise((resolve) => setTimeout(resolve, 0)),
   ]).then(([module]) => module)
 }
 
@@ -20,11 +25,12 @@ const LazyPast = React.lazy(() =>
 )
 
 const RootComponent = () => {
+  const location = useLocation()
   const [isLoading, setIsLoading] = useState(true)
   const [progress, setProgress] = useState(10)
   const [fadeClass, setFadeClass] = useState('')
 
-  // Efecto para controlar el scroll
+  // Controlar scroll
   useEffect(() => {
     if (isLoading) {
       document.body.classList.add('no-scroll')
@@ -40,8 +46,13 @@ const RootComponent = () => {
     }
   }, [isLoading])
 
+  // Efecto para cambios de ruta
   useEffect(() => {
     const loadResources = async () => {
+      setIsLoading(true)
+      setProgress(10)
+      setFadeClass('')
+
       const interval = setInterval(() => {
         setProgress((prev) => Math.min(prev + Math.random() * 15, 100))
       }, 150)
@@ -54,7 +65,7 @@ const RootComponent = () => {
     }
 
     loadResources()
-  }, [])
+  }, [location.key]) // Se activa con cada cambio de ruta
 
   return (
     <div className="root-container">
@@ -66,19 +77,20 @@ const RootComponent = () => {
       )}
 
       <div className={`background-content ${isLoading ? '' : 'fade-in'}`}>
-        <Router>
-          <Routes>
-            <Route path="/2025/" element={<LazyApp />} />
-            <Route path="/2025/past" element={<LazyPast />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/2025/" element={<LazyApp />} />
+          <Route path="/2025/past" element={<LazyPast />} />
+        </Routes>
       </div>
     </div>
   )
 }
 
+// Modificar el render principal para incluir Router en el nivel superior
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RootComponent />
+    <Router>
+      <RootComponent />
+    </Router>
   </StrictMode>
 )
