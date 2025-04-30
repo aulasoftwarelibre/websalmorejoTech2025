@@ -72,18 +72,17 @@
   backdrop-filter: blur(4px);
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
-  width: 86.333333%;
+  width: 83%;
   transition: box-shadow 0.3s ease;
 }
 
 .cardEmptyFirst {
   border-radius: 10px;
-
   background: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(4px);
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
-  width: 86.333333%;
+  width: 83%;
   transition: box-shadow 0.3s ease;
 }
 
@@ -91,7 +90,7 @@
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.69);
   cursor: pointer;
-  width: 86.333333%;
+  width: 83%;
   transition: box-shadow 0.3s ease;
   backdrop-filter: blur(4px);
   box-shadow: 0px 4px 4px 0px #00000040;
