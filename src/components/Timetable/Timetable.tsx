@@ -942,8 +942,8 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
           image2={Lourdes}
           descripcion="Mentoras de Tech SHEssions Madrid."
           descripcionCharla="Nunca dijo nadie y sin embargo, muchos pensamos. Pero, ¿qué nos frena a dar ese paso? ¿Por qué nos estamos perdiendo esas oportunidades de aprender, de compartir, de crecer personal y profesionalmente? 
-En esta charla, te contamos nuestros secretos como mentoras del programa de Tech SHEssions Madrid para que te animes a ser ponente!"
-          isTba={false}
+  En esta charla, te contamos nuestros secretos como mentoras del programa de Tech SHEssions Madrid para que te animes a ser ponente!"
+          isTba={true}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
@@ -1026,13 +1026,15 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           descripcionCharla="Se nos llena la boca con conceptos como agregados, value objects, CQRS, servicios de dominio, etc. porque en DDD patatas. Cuando la realidad es que muchas veces no llegamos ni a POO. Qué te parece si hacemos un recorrido por lo que nos gusta decir que hacemos y lo que realmente ocurre? Que no pasa nada por no hacer DDD, ni tener VO, etc etc. El problema sería pensar que lo hacemos sin hacerlo ¿no?"
           isTba={false}
         />
-        <ScheduleCard
-          title="EL PM, ¿AMIGO O ENEMIGO?"
-          author="Guiomar"
-          image={IreneMorgado}
-          descripcion="Trabajo en la frontera del PM y el PO pero sin simples etiquetas para acotar todo el trabajo que hago en equipo para desarrollar productos digitales."
-          descripcionCharla="Hablaremos de la figura del PM en el equipo del desarrollo y cómo entre todo se hace el producto"
-          isTba={true}
+        <BigDoubleCard
+          title="Mamá, de mayor quiero ser ponente"
+          author="Marisa Martín y Lourdes Martínez"
+          image={Marisa}
+          image2={Lourdes}
+          descripcion="Mentoras de Tech SHEssions Madrid."
+          descripcionCharla="Nunca dijo nadie y sin embargo, muchos pensamos. Pero, ¿qué nos frena a dar ese paso? ¿Por qué nos estamos perdiendo esas oportunidades de aprender, de compartir, de crecer personal y profesionalmente? 
+  En esta charla, te contamos nuestros secretos como mentoras del programa de Tech SHEssions Madrid para que te animes a ser ponente!"
+          isTba={false}
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
