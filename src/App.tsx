@@ -1,12 +1,12 @@
 //import { useState, useEffect } from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/HeaderPhone/Header';
-import Footer from './components/Footer/Footer';
-import Info from './components/InfoTest/Info';
-import { SponsorProps } from './components/Sponsors';
-import sponsors from './data/sponsors.json';
-import { SponsorsGrid } from './components/Sponsors/grid';
+import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import Header from './components/HeaderPhone/Header'
+import Footer from './components/Footer/Footer'
+import Info from './components/InfoTest/Info'
+import { SponsorProps } from './components/Sponsors'
+import sponsors from './data/sponsors.json'
+import { SponsorsGrid } from './components/Sponsors/grid'
 //import Loader from './components/Loader';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
   //    // setAnimationClass('slide-out'); // Trigger slide-out animation for the entire page
   //   }, 1800); // Time before starting the slide-out animation
 
-  //   return () => {clearTimeout(timer)}; 
+  //   return () => {clearTimeout(timer)};
   // }, []);
 
   // if (loading) {
@@ -42,7 +42,7 @@ function App() {
       <SponsorsGrid sponsors={sponsors as SponsorProps[]} />
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

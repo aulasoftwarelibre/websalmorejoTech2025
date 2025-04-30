@@ -21,11 +21,10 @@ const LazyPast = React.lazy(() =>
 
 const RootComponent = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(10) // Inicializa con un valor mínimo visible
 
   useEffect(() => {
     const loadResources = async () => {
-      // Simular carga de recursos en segundo plano
       const interval = setInterval(() => {
         setProgress((prev) => Math.min(prev + Math.random() * 15, 100))
       }, 150)
@@ -43,6 +42,7 @@ const RootComponent = () => {
     <div className="root-container">
       {isLoading && (
         <div className="loading-overlay">
+          {/* Loader visible inmediatamente */}
           <div className="progress-bar" style={{ width: `${progress}%` }} />
           <Loading />
         </div>
