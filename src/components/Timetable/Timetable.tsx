@@ -741,7 +741,7 @@ const Schedule: React.FC = () => {
 
         <BigDoubleCard
           title="Seguridad exponencial para un tráfico exponencial: Inside Plenitas"
-          author="José Antonio Castelo Plá y Jaime Esquivias Sauras"
+          author="José Antonio Castelo y Jaime Esquivias"
           image={jose}
           image2={jaime}
           descripcion="(José) CTO y confundador de Plenitas (Jaime) hacker e investigador."
