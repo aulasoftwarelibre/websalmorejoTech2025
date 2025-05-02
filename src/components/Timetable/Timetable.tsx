@@ -16,7 +16,7 @@ import Ruben from '../../sprites/ponentes/ruben.jpg'
 import openSUSE from '../../sprites/ponentes/openSUSE.jpg'
 import mia from '../../sprites/ponentes/mia.jpg'
 import leifer from "../../sprites/ponentes/leifer.jpeg"
-import jose from "../../sprites/ponentes/jose.jpg"
+import jose from "../../sprites/ponentes/Jose.jpg"
 import jaime from "../../sprites/ponentes/jaime.jpg"
 
 import styles from './Timetable.module.css'
