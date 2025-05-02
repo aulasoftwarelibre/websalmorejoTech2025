@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import IreneMorgado from '../../sprites/ponentes/IreneM.Morgado.png'
 import RafaAlbaJesus from '../../sprites/ponentes/rafaalbajesus.jpg'
 import Marc from '../../sprites/ponentes/marc.jpg'
 import Karsagudo from '../../sprites/ponentes/CarlosCloudFare.jpg'
