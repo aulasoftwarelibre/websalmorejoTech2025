@@ -21,9 +21,9 @@ const lazyLoadWithDelay = (
 }
 
 const LazyApp = React.lazy(() => lazyLoadWithDelay(() => import('./App.tsx')))
-const LazyPast = React.lazy(() =>
-  lazyLoadWithDelay(() => import('./pages/Past/Index.tsx'))
-)
+//const LazyPast = React.lazy(() =>
+//  lazyLoadWithDelay(() => import('./pages/Past/Index.tsx'))
+//)
 
 const RootComponent = () => {
   const location = useLocation()
