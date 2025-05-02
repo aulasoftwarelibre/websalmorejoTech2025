@@ -85,7 +85,30 @@
         "name": "RTI",
         "type": "CHERRY",
         "imageUrl": "/2025/sponsors/rti.png",
-        "href": "https://www.rti.com/industries?utm_source=google&utm_medium=cpc&utm_campaign=performance_max&utm_term=dynamic_terms&utm_content=autonomous_systems&utm_source=google&utm_medium=cpc&utm_campaign=performance_max&utm_term=dynamic_terms&utm_content=autonomous_systems&utm_term=&utm_campaign=cJ+%7C+Leads+%7C+Performance+Max+%7C+USA+%7C+Max.+Conversion&utm_source=adwords&utm_medium=ppc&hsa_acc=4872307840&hsa_cam=20568517177&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGV3mfe2fPuOBcdffD9GrACgosIUpgEJKqXAvak3Nk_ilX7c-LSVPUaAt6UEALw_wcB"}
+        "href": "https://www.rti.com/industries?utm_source=google&utm_medium=cpc&utm_campaign=performance_max&utm_term=dynamic_terms&utm_content=autonomous_systems&utm_source=google&utm_medium=cpc&utm_campaign=performance_max&utm_term=dynamic_terms&utm_content=autonomous_systems&utm_term=&utm_campaign=cJ+%7C+Leads+%7C+Performance+Max+%7C+USA+%7C+Max.+Conversion&utm_source=adwords&utm_medium=ppc&hsa_acc=4872307840&hsa_cam=20568517177&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGV3mfe2fPuOBcdffD9GrACgosIUpgEJKqXAvak3Nk_ilX7c-LSVPUaAt6UEALw_wcB"},
+  {
+    "name":"INFOJOBS",
+    "type":"PERA",
+    "imageUrl":"/2025/sponsors/infojobs.png",
+    "href":"https://www.infojobs.net/"
+
+  },
+  {
+    "name":"SUSE",
+    "type":"CHERRY",
+    "imageUrl":"/2025/sponsors/suse.png",
+    "href":"https://www.suse.com/es-es/"
+  },
+  {"name":"REDSYS",
+    "type":"PERA",
+    "imageUrl":"/2025/sponsors/redsys.jpg",
+    "href":"https://redsys.es/"},
+    {
+      "name": "Plenitas",
+      "type": "PERA",
+      "imageUrl": "/2025/sponsors/plenitas.svg",
+      "href": "https://plenitas.com/"
+    }
 
 
   

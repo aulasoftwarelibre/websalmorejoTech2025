@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Loading from './components/Loading/Loading.tsx'
+import Past from './pages/Past/Index.tsx'
 
 const lazyLoadWithDelay = (
   importer: () => Promise<{ default: React.ComponentType }>
@@ -79,7 +80,7 @@ const RootComponent = () => {
       <div className={`background-content ${isLoading ? '' : 'fade-in'}`}>
         <Routes>
           <Route path="/2025/" element={<LazyApp />} />
-          <Route path="/2025/past" element={<LazyPast />} />
+          <Route path="/2025/past" element={<Past />} />
         </Routes>
       </div>
     </div>

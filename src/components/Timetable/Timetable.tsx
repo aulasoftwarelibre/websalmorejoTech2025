@@ -16,6 +16,9 @@ import Gloria from '../../sprites/ponentes/gloria.jpg'
 import Ruben from '../../sprites/ponentes/ruben.jpg'
 import openSUSE from '../../sprites/ponentes/openSUSE.jpg'
 import mia from '../../sprites/ponentes/mia.jpg'
+import leifer from "../../sprites/ponentes/leifer.jpeg"
+import jose from "../../sprites/ponentes/jose.jpg"
+import jaime from "../../sprites/ponentes/jaime.jpg"
 
 import styles from './Timetable.module.css'
 
@@ -164,80 +167,80 @@ const Card: React.FC<{ title: string }> = (props) => {
 //   )
 // }
 
-// const SingleCardJose: React.FC<{
-//   title: string
-//   author: string
-//   image: string
-//   descripcion: string
-//   descripcionCharla: string
-// }> = (props) => {
-//   const [isModalOpen, setIsModalOpen] = useState(false)
+const SingleCardJose: React.FC<{
+  title: string
+  author: string
+  image: string
+  descripcion: string
+  descripcionCharla: string
+}> = (props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
-//   const toggleModal = () => {
-//     setIsModalOpen(!isModalOpen)
-//   }
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
 
-//   return (
-//     <>
-//       <div
-//         className={`col-10 container-fluid d-flex ${styles.cardEmptySingle}`}
-//         onClick={toggleModal}
-//       >
-//         <div className="row align-items-center mx-auto">
-//           <div className="col-lg-7 col-md-12 py-4">
-//             <div className="row">
-//               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-//                 {props.title}
-//               </h3>
-//             </div>
-//             <div>
-//               <h5
-//                 className={styles.scheduleAuthor}
-//                 style={{ color: '#A8041A' }}
-//               >
-//                 {props.author}
-//               </h5>
-//             </div>
-//           </div>
-//           <div className="col-lg-5 col-md-12 py-4 ">
-//             <img
-//               src={props.image}
-//               className={`img-fluid ${styles.singleImg}`}
-//               alt="..."
-//               style={{ maxWidth: '50%' }}
-//             />
-//           </div>
-//         </div>
-//       </div>
+  return (
+    <>
+      <div
+        className={`col-10 container-fluid d-flex ${styles.cardEmptySingle}`}
+        onClick={toggleModal}
+      >
+        <div className="row align-items-center mx-auto">
+          <div className="col-lg-7 col-md-12 py-4">
+            <div className="row">
+              <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
+                {props.title}
+              </h3>
+            </div>
+            <div>
+              <h5
+                className={styles.scheduleAuthor}
+                style={{ color: '#A8041A' }}
+              >
+                {props.author}
+              </h5>
+            </div>
+          </div>
+          <div className="col-lg-5 col-md-12 py-4 ">
+            <img
+              src={props.image}
+              className={`img-fluid ${styles.singleImg}`}
+              alt="..."
+              style={{ maxWidth: '50%' }}
+            />
+          </div>
+        </div>
+      </div>
 
-//       {isModalOpen && (
-//         <div className={styles.modal} onClick={toggleModal}>
-//           <div className={styles.modalContentSingle}>
-//             <span className={styles.close} onClick={toggleModal}>
-//               &times;
-//             </span>
-//             <h2>{props.title}</h2>
-//             <p>Author: {props.author}</p>
-//             <div className="row">
-//               <div className="col-lg-7 col-md-12 py-4">
-//                 <p>{props.descripcion}</p>
-//                 <p className="mt-3">{props.descripcionCharla}</p>
-//               </div>
-//               <div className="col-lg-5 col-md-12 py-lg-4">
-//                 <img
-//                   src={props.image}
-//                   className={`img-fluid ${styles.singleImg}`}
-//                   alt="..."
-//                   style={{ maxHeight: '100%', maxWidth: '60%' }}
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       )}
-//     </>
-//   )
-// }
+      {isModalOpen && (
+        <div className={styles.modal} onClick={toggleModal}>
+          <div className={styles.modalContentSingle}>
+            <span className={styles.close} onClick={toggleModal}>
+              &times;
+            </span>
+            <h2>{props.title}</h2>
+            <p>Author: {props.author}</p>
+            <div className="row">
+              <div className="col-lg-7 col-md-12 py-4">
+                <p>{props.descripcion}</p>
+                <p className="mt-3">{props.descripcionCharla}</p>
+              </div>
+              <div className="col-lg-5 col-md-12 py-lg-4">
+                <img
+                  src={props.image}
+                  className={`img-fluid ${styles.singleImg}`}
+                  alt="..."
+                  style={{ maxHeight: '100%', maxWidth: '60%' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
 
 const SingleCard: React.FC<{
   title: string
@@ -265,7 +268,7 @@ const SingleCard: React.FC<{
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
-                {props.tba ? 'TBA' : props.title} {}
+                {props.tba ? 'TBA' : props.title} { }
               </h3>
             </div>
             {!props.tba && (
@@ -737,13 +740,24 @@ const Schedule: React.FC = () => {
           </div>
         </div>
 
-        <ScheduleCard
-          title="Beyond the Tab: How Modern Browsers are being built"
-          author="Marc Rodríguez"
-          image={Marc}
-          descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
-          descripcionCharla="En los últimos años hemos visto un auge de nuevos navegadores web: Arc, Vivaldi, Brave, Zen, Orion… En un mercado dominado por Chrome, con una cuota del 70%, ¿qué ha cambiado para que surjan tantas alternativas en tan poco tiempo? En esta charla no solo exploraremos qué es realmente un navegador y cómo se están construyendo, sino que también los destriparemos para ver qué hay bajo el capó."
-          isTba={true}
+        <BigDoubleCard
+          title="Seguridad exponencial para un tráfico exponencial: Inside Plenitas"
+          author="José Antonio Castelo Plá y Jaime Esquivias Sauras"
+          image={jose}
+          image2={jaime}
+          descripcion="(José) CTO y confundador de Plenitas (Jaime) hacker e investigador."
+          descripcionCharla="Detrás de cada producto digital exitoso hay un trabajo constante, muchas veces invisible, que
+asegura que todo funcione como debe.
+En esta charla, te invitamos a descubrir cómo el equipo de Infraestructura y el equipo de
+Ciberseguridad de Plenitas trabajan en conjunto para garantizar disponibilidad, escalabilidad y
+protección de nuestros sistemas y datos.
+Desde cómo diseñamos nuestra arquitectura para soportar el crecimiento, hasta cómo
+prevenimos y respondemos a amenazas de seguridad en tiempo real, esta charla es un
+recorrido práctico por las decisiones, herramientas y desafíos que enfrentamos día a día.
+Tanto si sois parte del mundo tech como si simplemente quieres entender qué hay detrás del
+funcionamiento seguro de una empresa tecnológica moderna, esta charla te dará una visión
+clara y realista."
+          isTba={false}
         />
 
         <ScheduleCard
@@ -986,7 +1000,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
           author="Ainoa Guillén González y Gloria Jorge Lema"
           image={Ainoa}
           image2={Gloria}
-          descripcion="Criminóloga, ciberseguridad, especializada en ciberinteligencia, divulgadora y docente."
+          descripcion="(Ainoa) Criminóloga, ciberseguridad, especializada en ciberinteligencia, divulgadora y docente (Gloria) relaciones Internacionales, ciberintelgiencia, especializada en hacktivismo."
           descripcionCharla="Explorarán la evolución de los foros del cibercrimen, el impacto de las operaciones policiales y la migración hacia Telegram y plataformas descentralizadas, analizando posibles escenarios futuros y y las medidas que podrían adoptar los gobiernos y las fuerzas de seguridad ante esta situación."
           isTba={false}
         />
@@ -1053,13 +1067,12 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
             <h3>18:15</h3>
           </div>
         </div>
-        <SingleCard
-          title="SHIP. VALIDATE. ITERATE AND REPEAT"
-          author="José Fernández"
-          image={IreneMorgado}
-          descripcion="Software Developer @Qualifyze Del @ASL pa toda la vida ❤️‍🔥"
-          descripcionCharla="En esta charla cuento una experiencia personal en la que se ha montado un producto desde 0 a toda velocidad, todo ello siguiendo una filosofía de buenas prácticas"
-          tba={true}
+        <SingleCardJose
+          title="El Poder del Código Libre. Hablemos de Open Source"
+          author="Leifer Mendez"
+          image={leifer}
+          descripcion="Software Engineer con +12 años de exp. Creador de @BuilderBot y pionero en Qwik Framework"
+          descripcionCharla="El Open Source está en todas partes: desde el smartphone que usas hasta los servidores que potencian Internet. En esta charla, exploraremos cómo el código libre está transformando la industria tecnológica, democratizando la innovación y creando oportunidades, aprenderás cómo el Open Source puede amplificar tu impacto en el mundo tecnológico."
         />
       </div>
       <div className="row pt-2" style={{ alignItems: 'stretch' }}>
