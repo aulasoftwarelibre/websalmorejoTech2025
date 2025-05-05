@@ -800,7 +800,7 @@ clara y realista."
 
         <ScheduleCard
           title="Cómo convertirse en el perfil que todos los recruiters quieran fichar"
-          trackName='Track Mudejar'
+          trackName='Track Mudéjar'
           author="Gabriela Alba Ballesteros"
           image={Gabi}
           descripcion="Psicóloga y Reclutadora IT. Me dedico a planificar y transformar tu carrera laboral."
@@ -858,7 +858,7 @@ clara y realista."
 
         <ScheduleCard
           title="Debug Your Life: Enfrentando el Burnout en Tech"
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Mariana Rolfo"
           image={Mariana}
           descripcion="AI & Process Automation Expert|Community Builder|Technical Writer in Web Technology"
@@ -894,7 +894,7 @@ clara y realista."
         />
         <ScheduleCard
           title="Awesome Selfhosted versión gratuita"
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Eduardo Roldán Pijuán"
           image={Edu}
           descripcion="Ex miembro del ASL y actual Tech Lead en comercio electrónico en Redsys"
@@ -958,7 +958,7 @@ clara y realista."
         />
         <ScheduleCard
           title="Datos y política: MP Scrape"
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Sofia Aritz Albors Escobés"
           image={Sofia}
           descripcion="Programadora apasionada por la tecnología como herramienta de transformación social."
@@ -998,7 +998,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
         />
         <DoubleCard
           title="Accesibilidad web: Guía de supervivencia para noobies"
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Mia Salazar"
           image={mia}
           descripcion="La accesibilidad web suele ser el gran olvidado del desarrollo. Esta situación provoca que muchas personas queden excluídas del mundo digital.  No obstante, hay ciertas cosas sencillas que se pueden hacer y que mejoran notablemente los proyectos."
@@ -1054,7 +1054,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
         />
         <ScheduleCard
           title="Buenas Prácticas para la Gestión de Repositorios en GitHub. "
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Juan Ariza Toledano"
           image={JuanAriza}
           descripcion="Ingeniero software en VMware, especializado en desplegar aplicaciones en Kubernetes."
@@ -1091,7 +1091,7 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
         />
         <BigDoubleCard
           title="Mamá, de mayor quiero ser ponente"
-           trackName='Track Mudejar'
+           trackName='Track Mudéjar'
           author="Marisa Martín y Lourdes Martínez"
           image={Marisa}
           image2={Lourdes}

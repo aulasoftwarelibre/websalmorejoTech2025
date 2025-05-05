@@ -77,7 +77,7 @@ export default function Cards() {
                 backphoto={CañeteOP}
               >
                 {' '}
-                Antonio Cañete lopez
+                Antonio Cañete López
               </Card>
             </div>
             <div className="col-md-5 col-lg-4">
@@ -126,7 +126,7 @@ export default function Cards() {
                 ghlink="https://github.com/ARVIPE"
               >
                 {' '}
-                Arturo Vicente Perez
+                Arturo Vicente Pérez
               </Card>
             </div>
             <div className="col-md-5 col-lg-4">
