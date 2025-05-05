@@ -172,6 +172,7 @@ const SingleCardJose: React.FC<{
   image: string
   descripcion: string
   descripcionCharla: string
+  trackName?: string
 }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -186,6 +187,14 @@ const SingleCardJose: React.FC<{
         onClick={toggleModal}
       >
         <div className="row align-items-center mx-auto">
+          <div className="col-12 mb-3 text-center">
+            <h1 className="h1 d-none d-md-block mt-2" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+            <h1 className="h3 d-block d-md-none mt-3" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+          </div>
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
@@ -399,6 +408,7 @@ const BigDoubleCard: React.FC<{
   descripcionCharla: string
   image2: string
   isTba: boolean
+  trackName?: string
 }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -427,6 +437,15 @@ const BigDoubleCard: React.FC<{
         onClick={toggleModal}
       >
         <div className="row align-items-center">
+          <div className="col-12 mb-3 text-center">
+            <h1 className="h1 d-none d-md-block mt-2" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+            <h1 className="h3 d-block d-md-none mt-3" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+          </div>
+
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
@@ -504,6 +523,7 @@ const ScheduleCard: React.FC<{
   descripcion: string
   descripcionCharla: string
   isTba: boolean
+  trackName?: string
 }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -532,6 +552,14 @@ const ScheduleCard: React.FC<{
         onClick={toggleModal}
       >
         <div className="row align-items-center">
+        <div className="col-12 mb-3 text-center">
+            <h1 className="h1 d-none d-md-block mt-2" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+            <h1 className="h3 d-block d-md-none mt-3" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+          </div>
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
@@ -594,6 +622,7 @@ const DoubleCard: React.FC<{
   descripcion: string
   descripcionCharla: string
   isTba: boolean
+  trackName?: string
 }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -622,6 +651,14 @@ const DoubleCard: React.FC<{
         onClick={toggleModal}
       >
         <div className="row align-items-center">
+          <div className="col-12 mb-3 text-center">
+            <h1 className="h1 d-none d-md-block mt-2" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+            <h1 className="h3 d-block d-md-none mt-3" style={{ color: '#A8041A' }}>
+            {props.trackName}
+            </h1>
+          </div>
           <div className="col-lg-7 col-md-12 py-4">
             <div className="row">
               <h3 className={styles.scheduleTitle} style={{ color: '#A8041A' }}>
@@ -741,6 +778,7 @@ const Schedule: React.FC = () => {
 
         <BigDoubleCard
           title="Seguridad exponencial para un tráfico exponencial: Inside Plenitas"
+          trackName='Track Omeya'
           author="José Antonio Castelo y Jaime Esquivias"
           image={jose}
           image2={jaime}
@@ -757,10 +795,12 @@ Tanto si sois parte del mundo tech como si simplemente quieres entender qué hay
 funcionamiento seguro de una empresa tecnológica moderna, esta charla te dará una visión
 clara y realista."
           isTba={false}
+
         />
 
         <ScheduleCard
           title="Cómo convertirse en el perfil que todos los recruiters quieran fichar"
+          trackName='Track Mudejar'
           author="Gabriela Alba Ballesteros"
           image={Gabi}
           descripcion="Psicóloga y Reclutadora IT. Me dedico a planificar y transformar tu carrera laboral."
@@ -808,6 +848,7 @@ clara y realista."
 
         <ScheduleCard
           title="Arquitectura Limpia en el Front"
+          trackName='Track Omeya'
           author="Ruben Aguilera"
           image={Ruben}
           descripcion="Liderando equipos de desarrollo de software"
@@ -817,6 +858,7 @@ clara y realista."
 
         <ScheduleCard
           title="Debug Your Life: Enfrentando el Burnout en Tech"
+           trackName='Track Mudejar'
           author="Mariana Rolfo"
           image={Mariana}
           descripcion="AI & Process Automation Expert|Community Builder|Technical Writer in Web Technology"
@@ -843,6 +885,7 @@ clara y realista."
         </div>
         <ScheduleCard
           title="Beyond the Tab: How Modern Browsers are being built"
+           trackName='Track Omeya'
           author="Marc Rodríguez"
           image={Marc}
           descripcion="Backend Engineer @ Embat, del Aula desde xikitito."
@@ -851,6 +894,7 @@ clara y realista."
         />
         <ScheduleCard
           title="Awesome Selfhosted versión gratuita"
+           trackName='Track Mudejar'
           author="Eduardo Roldán Pijuán"
           image={Edu}
           descripcion="Ex miembro del ASL y actual Tech Lead en comercio electrónico en Redsys"
@@ -896,6 +940,7 @@ clara y realista."
         </div>
         <ScheduleCard
           title="Generando código en arquitectura hexagonal desde contratos"
+           trackName='Track Omeya'
           author="Carlos Agudo Belloso"
           image={Karsagudo}
           descripcion="Team lead Fullstack -> transformo cafeina en codigo"
@@ -913,6 +958,7 @@ clara y realista."
         />
         <ScheduleCard
           title="Datos y política: MP Scrape"
+           trackName='Track Mudejar'
           author="Sofia Aritz Albors Escobés"
           image={Sofia}
           descripcion="Programadora apasionada por la tecnología como herramienta de transformación social."
@@ -941,6 +987,7 @@ Aprende cómo esta herramienta puede ayudarte a defender las causas que más te 
         </div>
         <DoubleCard
           title="Cómo construir un interprete de lenguaje de signos con IA"
+           trackName='Track Omeya'
           author="Rafa, Alba y Jesús"
           image={RafaAlbaJesus}
           descripcion="Somos tres amigos de la carrera y exmiembros del ASL a los que les encanta apuntarse a todo. Después de varios años en la organización del Salmorejo, hemos decidido ver cómo se vive todo desde el otro lado. Tenemos poquita experiencia dando charlas, pero esperamos estar a la altura. En el networking seguro que nadie nos supera, nos vemos allí."
@@ -951,6 +998,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
         />
         <DoubleCard
           title="Accesibilidad web: Guía de supervivencia para noobies"
+           trackName='Track Mudejar'
           author="Mia Salazar"
           image={mia}
           descripcion="La accesibilidad web suele ser el gran olvidado del desarrollo. Esta situación provoca que muchas personas queden excluídas del mundo digital.  No obstante, hay ciertas cosas sencillas que se pueden hacer y que mejoran notablemente los proyectos."
@@ -996,6 +1044,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
         </div>
         <BigDoubleCard
           title="Game of Forums"
+           trackName='Track Omeya'
           author="Ainoa Guillén González y Gloria Jorge Lema"
           image={Ainoa}
           image2={Gloria}
@@ -1005,6 +1054,7 @@ Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron 
         />
         <ScheduleCard
           title="Buenas Prácticas para la Gestión de Repositorios en GitHub. "
+           trackName='Track Mudejar'
           author="Juan Ariza Toledano"
           image={JuanAriza}
           descripcion="Ingeniero software en VMware, especializado en desplegar aplicaciones en Kubernetes."
@@ -1032,6 +1082,7 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
         </div>
         <ScheduleCard
           title="No, lo que haces no es DDD (y tampoco pasa nada)"
+           trackName='Track Omeya'
           author="Rolando Caldas Sánchez"
           image={Rolando}
           descripcion="Team Lead, ex-CTO y organizador de CraftersVigo y la pulpoCon"
@@ -1040,6 +1091,7 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
         />
         <BigDoubleCard
           title="Mamá, de mayor quiero ser ponente"
+           trackName='Track Mudejar'
           author="Marisa Martín y Lourdes Martínez"
           image={Marisa}
           image2={Lourdes}
@@ -1068,6 +1120,7 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
         </div>
         <SingleCardJose
           title="El Poder del Código Libre. Hablemos de Open Source"
+           trackName='Track Omeya'
           author="Leifer Mendez"
           image={leifer}
           descripcion="Software Engineer con +12 años de exp. Creador de @BuilderBot y pionero en Qwik Framework"
