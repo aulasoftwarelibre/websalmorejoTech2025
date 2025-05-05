@@ -1160,10 +1160,10 @@ En esta ponencia, exploraremos buenas prácticas y aspectos clave que debes cons
           }}
         >
           <div className="row pb-5">
-            <h3>17:25</h3>
+            <h3>15:55</h3>
           </div>
           <div className="row pt-4">
-            <h3>18:15</h3>
+            <h3>17:25</h3>
           </div>
         </div>
         <SingleCard
