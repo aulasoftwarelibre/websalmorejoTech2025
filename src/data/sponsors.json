@@ -114,6 +114,12 @@
       "type": "PERA",
       "imageUrl": "/2025/sponsors/mv.png",
       "href": "https://www.mercadovictoria.com/"
+    },
+    {
+      "name": "Vercel",
+      "type": "CHERRY",
+      "imageUrl": "/2025/sponsors/vercel.jpg",
+      "href": "https://vercel.com/"
     }
 
 
